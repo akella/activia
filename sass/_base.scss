@@ -52,14 +52,6 @@ $break-large: 1180px;
       -ms-transform: skew($deg);
           transform: skew($deg);
 }
-
-// user-select
-@mixin user-select($var) {
-     -moz-user-select: $var;
-  -webkit-user-select: $var;
-          user-select: $var;
-}
-
 // box-sizing
 @mixin box-sizing($var) {
      -moz-box-sizing: $var;
@@ -68,9 +60,9 @@ $break-large: 1180px;
 }
 
 @mixin user-select() {
-     -moz-box-sizing: none;
-  -webkit-box-sizing: none;
-          box-sizing: none;
+     -moz-user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
 }
 
 // TRANSITION

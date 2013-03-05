@@ -47,15 +47,13 @@ table {
 /* ----------------------------------------- Main styles --------------------------------------- */
 body{
     min-width: 1000px;
-    color: #474747;
-    @include font;
-    font-size: 15px;
     line-height: 1.4;
+    font-family: Arial, sans-serif;
+    @include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));
 }
 a{
-    color:#00919e;
+
     &:hover{
-        text-decoration:none
     }
 }
 .l-layout {
@@ -75,9 +73,171 @@ a{
 .wrap {
     @extend %clr;
 }
+.clr {
+    clear: both;
+}
 /* ------------------------------------ //END Main styles --------------------------------------- */
  
 /* ----------------------------------------- Header --------------------------------------------- */
+.header {
+    padding: 0 10px;
+    height: 102px;
+    @include background-image(linear-gradient(top, #00a336 19%, #28ac3e)); 
+}
+.header__wrap {
+    margin: 0 auto;
+    width: 980px;
+}
+.logo {
+    float: left;
+    margin: 9px 33px 0 0;
+    a {
+        display: block;
+        @include sized-sprite($icons, logo);
+    }     
+}
+.nav {
+    float: left;
+    margin: 34px 12px 0 0;
+    ul {
+        @extend %clr;
+    }
+    li {
+        float: left;
+        margin-right: 30px;
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 5px solid transparent;
+        &:hover {
+            border-bottom-color: #ffe600;
+            @include box-shadow(0 1px 0 #4d8538);
+            a {
+                position: relative;
+                overflow: hidden;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -100px;
+                    left: 0;
+                    width: 100%;
+                    height: 75px;
+                    @include border-radius(220px);
+                    @include box-shadow(0 -30px 15px rgba(147,226,113, .4));
+                }
+            }
+            
+        }
+    }
+    a {
+        display: block;
+        color: #f3ffd7;
+        font-size: 16px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(18,83,22,.5);
+    }
+}
+.download {
+    width: 80px;
+    min-height: 90px;
+    float: left;
+    font-size: 11px;
+    line-height: 10px;
+    text-align: center;
+    @include border-radius(0 0 10px 10px);
+    background-color: #00a336;
+    @include box-shadow(inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4,93,49,.3));
+    @include background-image(linear-gradient(top, #00a336, #8fc33c));
+    i {
+        display: inline-block;
+    }
+    &:hover {
+        @include transition(all, .5s, ease-in-out);
+        .download__head {
+            background: none;
+            .icon-arr { 
+                @include sized-sprite($icons, arr2);
+            }
+        }
+        .download__drop {
+            height: 125px;
+            padding: 12px 0;
+            border-top: 1px dotted #fffc00;
+        }
+    } 
+}
+
+.download__head {
+    position: relative;
+    z-index: 2;
+    padding: 0 10px;
+    height: 90px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    @include user-select;
+    @include border-radius(0 0 8px 8px);
+    .icon-phone {
+        margin: 7px 0 2px;
+        @include sized-sprite($icons, mob);
+    }
+    .icon-arr { 
+        position: absolute;
+        bottom: 10px; 
+        left: 50%;
+        margin-left: -7px;
+        @include sized-sprite($icons, arr1);
+    }
+    span, strong {
+        display: block;
+    }
+    strong {
+        color: #fffc00;
+    } 
+}
+.download__drop {
+    height: 0;
+    overflow: hidden; 
+    @include transition(all, .5s, ease-in-out);
+    padding: 0;
+    border: 0;
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    span {
+        display: block;
+    }
+    .icon-ios {
+        @include sized-sprite($icons, ios);
+    }
+    .icon-android {
+        @include sized-sprite($icons, android);
+    }
+}
+.btn-enter {
+    float: right;
+    margin-top: 38px;
+    border: 0;
+    width: 80px;
+    height: 31px;
+    color: #025f32;
+    font: bold 12px Arial,sans-serif;
+    text-transform: uppercase;
+    @include border-radius(5px);
+    background-color: #ffed03;
+    @include box-shadow(0 2px 4px rgba(3,94,48,.43), inset 0 0 2px rgba(255,255,255,.51));
+    &:hover {
+        background: #c7e67d;
+    }
+    &:active {
+        @include box-shadow(none);
+    }
+}
 /* -------------------------------------- //END Header ------------------------------------------ */
 
 /* ------------------------------------- Independent blocks -------------------------------------- */

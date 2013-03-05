@@ -1,0 +1,94 @@
+.wrap:after, .nav ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* ------------------------------------- Reset css -------------------------------------------- */
+/* ------------------------------------- Reset css -------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+
+input[type='submit']::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+input, textarea, select, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+table { border-spacing: 0; border-collapse: collapse; }
+
+* { -webkit-text-size-adjust: none; }
+
+/* ------------------------------------- //END Reset css --------------------------------------- */
+/* ----------------------------------------- Main styles --------------------------------------- */
+body { min-width: 1000px; line-height: 1.4; font-family: Arial, sans-serif; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMwMTg0M2UiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzUwYTk0ZSIvPjxzdG9wIG9mZnNldD0iODglIiBzdG9wLWNvbG9yPSIjMDE3OTM5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDE3OTM5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #01843e), color-stop(60%, #50a94e), color-stop(88%, #017939), color-stop(100%, #017939)); background-image: -webkit-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: -moz-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: -o-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: -ms-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); }
+
+.l-layout { margin: 0 auto -120px; position: relative; min-height: 100%; height: auto !important; height: 100%; }
+
+.push { clear: both; height: 120px; }
+
+.wrapper { overflow: hidden; }
+
+.clr { clear: both; }
+
+/* ------------------------------------ //END Main styles --------------------------------------- */
+/* ----------------------------------------- Header --------------------------------------------- */
+.header { padding: 0 10px; height: 102px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIxOSUiIHN0b3AtY29sb3I9IiMwMGEzMzYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyOGFjM2UiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(19%, #00a336), color-stop(100%, #28ac3e)); background-image: -webkit-linear-gradient(top, #00a336 19%, #28ac3e); background-image: -moz-linear-gradient(top, #00a336 19%, #28ac3e); background-image: -o-linear-gradient(top, #00a336 19%, #28ac3e); background-image: -ms-linear-gradient(top, #00a336 19%, #28ac3e); background-image: linear-gradient(top, #00a336 19%, #28ac3e); }
+
+.header__wrap { margin: 0 auto; width: 980px; }
+
+.logo { float: left; margin: 9px 33px 0 0; }
+.logo a { display: block; background: url('../img/icons-s997d21267c.png') 0 0 no-repeat; width: 144px; height: 136px; }
+
+.nav { float: left; margin: 34px 12px 0 0; }
+.nav li { float: left; margin-right: 30px; height: 35px; line-height: 35px; border-bottom: 5px solid transparent; }
+.nav li:hover { border-bottom-color: #ffe600; -webkit-box-shadow: 0 1px 0 #4d8538; -moz-box-shadow: 0 1px 0 #4d8538; box-shadow: 0 1px 0 #4d8538; }
+.nav li:hover a { position: relative; overflow: hidden; }
+.nav li:hover a:after { content: ""; position: absolute; bottom: -100px; left: 0; width: 100%; height: 75px; -webkit-border-radius: 220px; -moz-border-radius: 220px; -ms-border-radius: 220px; -o-border-radius: 220px; border-radius: 220px; -webkit-box-shadow: 0 -30px 15px rgba(147, 226, 113, 0.4); -moz-box-shadow: 0 -30px 15px rgba(147, 226, 113, 0.4); box-shadow: 0 -30px 15px rgba(147, 226, 113, 0.4); }
+.nav a { display: block; color: #f3ffd7; font-size: 16px; text-decoration: none; text-shadow: 0 1px 0 rgba(18, 83, 22, 0.5); }
+
+.download { width: 80px; min-height: 90px; float: left; font-size: 11px; line-height: 10px; text-align: center; -webkit-border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -ms-border-radius: 0 0 10px 10px; -o-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px; background-color: #00a336; -webkit-box-shadow: inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4, 93, 49, 0.3); -moz-box-shadow: inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4, 93, 49, 0.3); box-shadow: inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4, 93, 49, 0.3); background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYTMzNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhmYzMzYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a336), color-stop(100%, #8fc33c)); background-image: -webkit-linear-gradient(top, #00a336, #8fc33c); background-image: -moz-linear-gradient(top, #00a336, #8fc33c); background-image: -o-linear-gradient(top, #00a336, #8fc33c); background-image: -ms-linear-gradient(top, #00a336, #8fc33c); background-image: linear-gradient(top, #00a336, #8fc33c); }
+.download i { display: inline-block; }
+.download:hover { -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.download:hover .download__head { background: none; }
+.download:hover .download__head .icon-arr { background: url('../img/icons-s997d21267c.png') 0 -297px no-repeat; width: 14px; height: 7px; }
+.download:hover .download__drop { height: 125px; padding: 12px 0; border-top: 1px dotted #fffc00; }
+
+.download__head { position: relative; z-index: 2; padding: 0 10px; height: 90px; color: #fff; font-weight: bold; cursor: pointer; -moz-user-select: none; -webkit-user-select: none; user-select: none; -webkit-border-radius: 0 0 8px 8px; -moz-border-radius: 0 0 8px 8px; -ms-border-radius: 0 0 8px 8px; -o-border-radius: 0 0 8px 8px; border-radius: 0 0 8px 8px; }
+.download__head .icon-phone { margin: 7px 0 2px; background: url('../img/icons-s997d21267c.png') 0 -248px no-repeat; width: 15px; height: 22px; }
+.download__head .icon-arr { position: absolute; bottom: 10px; left: 50%; margin-left: -7px; background: url('../img/icons-s997d21267c.png') 0 -280px no-repeat; width: 14px; height: 7px; }
+.download__head span, .download__head strong { display: block; }
+.download__head strong { color: #fffc00; }
+
+.download__drop { height: 0; overflow: hidden; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; padding: 0; border: 0; }
+.download__drop li { margin-bottom: 10px; }
+.download__drop a { color: #fff; }
+.download__drop a:hover { text-decoration: none; }
+.download__drop span { display: block; }
+.download__drop .icon-ios { background: url('../img/icons-s997d21267c.png') 0 -197px no-repeat; width: 33px; height: 41px; }
+.download__drop .icon-android { background: url('../img/icons-s997d21267c.png') 0 -146px no-repeat; width: 33px; height: 41px; }
+
+.btn-enter { float: right; margin-top: 38px; border: 0; width: 80px; height: 31px; color: #025f32; font: bold 12px Arial,sans-serif; text-transform: uppercase; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: #ffed03; -webkit-box-shadow: 0 2px 4px rgba(3, 94, 48, 0.43), inset 0 0 2px rgba(255, 255, 255, 0.51); -moz-box-shadow: 0 2px 4px rgba(3, 94, 48, 0.43), inset 0 0 2px rgba(255, 255, 255, 0.51); box-shadow: 0 2px 4px rgba(3, 94, 48, 0.43), inset 0 0 2px rgba(255, 255, 255, 0.51); }
+.btn-enter:hover { background: #c7e67d; }
+.btn-enter:active { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+/* -------------------------------------- //END Header ------------------------------------------ */
+/* ------------------------------------- Independent blocks -------------------------------------- */
+/* ---------------------------------- //END Independent blocks ----------------------------------- */
+/* ----------------------------------------- Footer ---------------------------------------------- */
+.footer { position: relative; height: 120px; }
+
+/* -------------------------------------- //END Footer ------------------------------------------- */
+.wrap:after, .nav ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.wrap:after, .nav ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.wrap:after, .nav ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
