@@ -52,12 +52,12 @@ body{
     @include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));
 }
 a{
-
     &:hover{
+        text-decoration: none;
     }
 }
 .l-layout {
-    margin: 0 auto -120px;
+    margin: 0 auto -175px;
     position: relative;
     min-height: 100%;
     height: auto !important;
@@ -65,7 +65,7 @@ a{
 }
 .push {
     clear: both;
-    height: 120px;
+    height: 175px;
 }
 .wrapper {
     overflow: hidden;
@@ -121,6 +121,7 @@ a{
                     left: 0;
                     width: 100%;
                     height: 75px;
+                    opacity: 1;
                     @include border-radius(220px);
                     @include box-shadow(0 -30px 15px rgba(147,226,113, .4));
                 }
@@ -241,11 +242,97 @@ a{
 /* -------------------------------------- //END Header ------------------------------------------ */
 
 /* ------------------------------------- Independent blocks -------------------------------------- */
+.soc {
+    li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    a {
+        display: block;
+        text-align: center;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        background: #f1b419;
+        @include border-radius(7px);
+        @include background-image(linear-gradient(#eadc50, #f1b419));
+        &:hover {
+            @include background-image(linear-gradient(#d9e2bf, #a4d03c));
+        }
+    }
+    i {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.soc__vk {
+    i {
+        @include sized-sprite($icons, vk);
+    }
+}
+.soc__fb {
+    i {
+        @include sized-sprite($icons, fb);
+    }
+}
+.soc__tw {
+    i {
+        @include sized-sprite($icons, tw); 
+    }
+}   
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
 /* ----------------------------------------- Footer ---------------------------------------------- */
 .footer {
     position: relative;
-    height: 120px;
+    color: #fff;
+    height: 175px;
+    font: normal 12px Verdana, sans-serif;
+}
+.footer__wrap {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 980px;
+}
+.footer__left {
+    float: left;
+    margin-right: 260px;
+}
+.footer__title {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    @include plr;
+    text-transform: uppercase;
+}
+.footer__nav {
+    margin-bottom: 15px;
+    li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 12px;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -2px;
+            width: 5px;
+            height: 5px;
+            background: #9ecb3a;
+            @include border-radius(50%);
+        }
+    }
+    a {
+        color: #9ecb3a;
+        font-family: Verdana,sans-serif;
+    }
+}
+.footer__right {
+    float: left;
+    .soc {
+        margin-top: 26px;
+    }
 }
 /* -------------------------------------- //END Footer ------------------------------------------- */
