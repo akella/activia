@@ -242,6 +242,8 @@
     }
 }
 .banners-wrap {
+    margin: 0 auto;
+    width: 1020px;
     overflow: hidden;
 }
 .banner {
@@ -289,6 +291,7 @@
 .banner__link {
     color: #23292d;
     font-size: 14px;
+    line-height: 18px;
     text-decoration: none;
     &:hover {
         border-bottom: 1px solid #005f32;
@@ -307,6 +310,9 @@
         font-family: Verdana, sans-serif;
     }
 }
+.banner-events-wrap {
+    margin-right: 40px;
+}
 .banner-events-wrap,
 .banner-news-wrap {
     float: left;
@@ -314,7 +320,7 @@
 .banner_events {
     width: 380px;
     overflow: hidden;
-    height: 195px;
+    height: 195px; 
     div {
         width: 100%;
     }

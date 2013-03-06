@@ -187,7 +187,7 @@ a:hover { text-decoration: none; }
 .benefit__title { display: block; width: 90%; margin: 0 auto 9px; font-weight: normal; font-style: normal; font-family: 'Conv_MyriadPro-BoldCond'; color: #006435; font-size: 30px; line-height: 30px; text-transform: uppercase; }
 .benefit__title span { text-transform: lowercase; }
 
-.banners-wrap { overflow: hidden; }
+.banners-wrap { margin: 0 auto; width: 1020px; overflow: hidden; }
 
 .banner { float: left; }
 
@@ -203,11 +203,13 @@ a:hover { text-decoration: none; }
 .banner__img img { display: block; }
 .banner__img .badge { position: absolute; right: 0; bottom: 15px; }
 
-.banner__link { color: #23292d; font-size: 14px; text-decoration: none; }
+.banner__link { color: #23292d; font-size: 14px; line-height: 18px; text-decoration: none; }
 .banner__link:hover { border-bottom: 1px solid #005f32; }
 
 .badge { display: inline-block; padding: 3px 18px 3px 11px; color: #003a1f; background: rgba(158, 203, 58, 0.7); -webkit-border-radius: 4px 0 0 4px; -moz-border-radius: 4px 0 0 4px; -ms-border-radius: 4px 0 0 4px; -o-border-radius: 4px 0 0 4px; border-radius: 4px 0 0 4px; }
 .badge strong { display: block; margin-bottom: -6px; font-size: 17px; font-family: Verdana, sans-serif; }
+
+.banner-events-wrap { margin-right: 40px; }
 
 .banner-events-wrap, .banner-news-wrap { float: left; }
 
