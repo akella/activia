@@ -6,7 +6,10 @@
 // ie7
 
 *+ html {
-	.soc li {
+	.soc li,
+    .code__text,
+    .code__form,
+    .funny-btn {
 		display: inline;
 	}
 }

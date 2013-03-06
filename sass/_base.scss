@@ -1,6 +1,8 @@
 @import "compass/css3";
 @import "lib/animations";
 @import "lib/keyframes";
+@import "lib/media";
+@import "lib/ceaser-easing/ceaser";
 @font-face {
     font-family: 'pragmaticalightcregular';
     src: url('../fonts/pragmaticalightc-webfont.eot');
@@ -12,10 +14,6 @@
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'pragmaticalightcbold';
     src: url('../fonts/pragmaticalightc-bold-webfont.eot');
@@ -26,6 +24,16 @@
     font-weight: normal;
     font-style: normal;
 
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-BoldCond';
+  src: url('../fonts/MyriadPro-BoldCond.eot');
+  src: local('☺'), 
+    url('../fonts/MyriadPro-BoldCond.woff') format('woff'), 
+    url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'), 
+    url('../fonts/MyriadPro-BoldCond.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 // gradients for ie
 $experimental-support-for-svg: true;
@@ -68,7 +76,7 @@ $break-large: 1180px;
                      M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
                zoom: 1;
 }
-
+ 
 // skew
 @mixin skew($deg) {
      -moz-transform: skew($deg);
@@ -88,15 +96,6 @@ $break-large: 1180px;
      -moz-user-select: none;
   -webkit-user-select: none;
           user-select: none;
-}
-
-// TRANSITION
-@mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
-    -moz-transition:    $what $length $easing;
-    -o-transition:      $what $length $easing;
-    -webkit-transition: $what $length $easing;
-    -ms-transition:     $what $length $easing;
-    transition:         $what $length $easing;
 }
 
 // image replacement extend
@@ -179,4 +178,9 @@ $break-large: 1180px;
     font-weight: normal;
     font-style: normal;
     font-family: 'pragmaticalightcbold';
+}
+@mixin mb {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Conv_MyriadPro-BoldCond';
 }

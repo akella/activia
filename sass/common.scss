@@ -63,6 +63,11 @@ a{
     height: auto !important;
     height: 100%;
 }
+.l-container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 980px;
+}
 .push {
     clear: both;
     height: 175px;
@@ -80,6 +85,7 @@ a{
  
 /* ----------------------------------------- Header --------------------------------------------- */
 .header {
+    margin-bottom: 26px;
     padding: 0 10px;
     height: 102px;
     @include background-image(linear-gradient(top, #00a336 19%, #28ac3e)); 
@@ -138,21 +144,19 @@ a{
     }
 }
 .download {
+    position: relative;
+    z-index: 100;
     width: 80px;
     min-height: 90px;
     float: left;
     font-size: 11px;
     line-height: 10px;
     text-align: center;
-    @include border-radius(0 0 10px 10px);
-    background-color: #00a336;
-    @include box-shadow(inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4,93,49,.3));
-    @include background-image(linear-gradient(top, #00a336, #8fc33c));
     i {
         display: inline-block;
     }
     &:hover {
-        @include transition(all, .5s, ease-in-out);
+        @include transition(all .5s ease-in-out);
         .download__head {
             background: none;
             .icon-arr { 
@@ -166,7 +170,15 @@ a{
         }
     } 
 }
-
+.download__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include background-image(linear-gradient(top, #00a336, #8fc33c));
+    @include border-radius(0 0 10px 10px);
+    background-color: #00a336;
+    @include box-shadow(inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4,93,49,.3));
+}
 .download__head {
     position: relative;
     z-index: 2;
@@ -196,16 +208,17 @@ a{
     } 
 }
 .download__drop {
+    position: relative;
     height: 0;
     overflow: hidden; 
-    @include transition(all, .5s, ease-in-out);
+    @include transition(all 500ms ceaser($easeInOutBack));
     padding: 0;
     border: 0;
     li {
         margin-bottom: 10px;
     }
     a {
-        color: #fff;
+        color: #fff; 
         &:hover {
             text-decoration: none;
         }
@@ -280,6 +293,25 @@ a{
         @include sized-sprite($icons, tw); 
     }
 }   
+
+.funny-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0 31px;
+    height: 62px;
+    line-height: 62px;
+    color: #006536;
+    font-size: 24px;
+    font-family: Arial;
+    text-decoration: none;
+    @include border-radius(7px);
+    @include transition(all .3s ease-in-out);
+    @include box-shadow(2px 2px 9px rgba(3,94,48,.43));
+    background: #ffed01 url(../img/funny-btn.png) 0 0 repeat-x;
+    &:hover {
+        background: #c7e67d url(../img/funny-btn-h.png) 0 0 repeat-x;
+    }
+}
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
 /* ----------------------------------------- Footer ---------------------------------------------- */
