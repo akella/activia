@@ -24,7 +24,7 @@
         color: #ffee35;
         line-height: 1;
         cursor: pointer;
-        font-weight: normal;
+        font-weight: normal; 
         border-bottom: 1px dashed;
     }
     span {
@@ -71,6 +71,7 @@
 }
 .main {
     clear: both;
+    margin-bottom: 110px;
 }
 .prog-ban {
     float: left;
@@ -155,13 +156,14 @@
     overflow: hidden;
     font-size: 18px;
     .wrapper {
-        padding-top: 41px;
+        padding: 41px 0;
     }
     p {
         font-style: italic;
     }
 } 
 .benefit-title {
+    margin-bottom: -2px;
     color: #feed03;
     font-size: 45px;
     @include plr;
@@ -171,7 +173,7 @@
     font-size: 18px;
     font-family: Verdana, sans-serif;
     color: #d5f390;
-    border-bottom: 1px dotted;
+    border-bottom: 2px solid #90c86f;
     text-decoration: none;
     i {
         position: absolute;
@@ -181,32 +183,145 @@
     }
 }
 .benefit {
+    position: relative;
     float: left;
     margin-left: 28px;
+    @include border-radius(45px);
+    @include box-shadow(3px 3px 0 rgba(35,119,25,.75));
+    &:first-child {
+        margin-left: 0; 
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -31px;
+        width: 100%;
+        height: 30px;
+        @include border-radius(50%);
+        @include background-image(radial-gradient(rgba(0,0,0,.2) 18%, rgba(0,0,0,0) 68%));
+    } 
+}
+.benefit__wrap {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 19px;
     width: 307px;
     text-align: center;
     font-size: 18px;
     color: #141719;
     @include border-radius(45px);
     background: #fdf5ee;
-    @include box-shadow(3px 3px 0 rgba(35,119,25,.75));
-    &:first-child {
-        margin-left: 0; 
-    }
 }
 .benefit__img {
-    padding: 22px 24px 0;
+    position: relative;
+    margin-bottom: 12px;
+    padding: 23px 24px 0;
     height: 160px;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        @include background-image(linear-gradient(left, #fdf5ee 5%, #e6ded9, #fdf5ee 95%));
+    }
 }
 .benefit__title {
     display: block;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 9px;
     @include mb;
     color: #006435;
     font-size: 30px;
+    line-height: 30px;
     text-transform: uppercase;
     span {
         text-transform: lowercase;
     }
+}
+.banners-wrap {
+    overflow: hidden;
+}
+.banner {
+    float: left;
+}
+.banner-hot-wrap {
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+.banner_hot {
+    width: 180px;
+    margin-right: 20px;
+    &:first-child {
+        margin-left: 0;
+    }
+    .banner__img {
+        width: 180px;
+        height: 132px;
+    }
+}
+.banner__title {
+    display: block;
+    margin-bottom: 12px;
+    color: #003d20;
+    font-size: 20px;
+}
+.banner__img {
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+    overflow: hidden;
+    border: 0;
+    @include border-radius(5px); 
+    @include box-shadow(0 2px 3px rgba(0,61,32,.31));
+    img {
+        display: block;
+    }
+    .badge {
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+    }
+}
+.banner__link {
+    color: #23292d;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {
+        border-bottom: 1px solid #005f32;
+    }
+}
+.badge {
+    display: inline-block;
+    padding: 3px 18px 3px 11px;
+    color: #003a1f;
+    background: rgba(158,203,58, .7);
+    @include border-radius(4px 0 0 4px);
+    strong {
+        display: block;
+        margin-bottom: -6px;
+        font-size: 17px;
+        font-family: Verdana, sans-serif;
+    }
+}
+.banner-events-wrap,
+.banner-news-wrap {
+    float: left;
+}
+.banner_events {
+    width: 380px;
+    overflow: hidden;
+    height: 195px;
+    div {
+        width: 100%;
+    }
+   .banner__img {
+       width: 100%;
+   }
+}
+.banner-news-wrap {
+    width: 180px;
 }
