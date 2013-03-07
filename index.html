@@ -1,6 +1,6 @@
 <!doctype html>
 <!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU" class="index"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
@@ -53,34 +53,39 @@
             <div class="clr"></div>
         </div>
     </header>
-    <div class="l-container">
-        <div class="code">
-            <div class="code__text">Маєш <strong>код з упаковки</strong>? <span>Введи його тут</span></div>
-            <div class="code__form">
-                <form>
-                    <input type="text" class="code__input">
-                    <input type="submit" class="code__submit" value="Зарахувати">
-                </form>
+    <div class="main-wrap">
+        <div class="l-container">
+            <div class="code">
+                <div class="code__text">Маєш <strong>код з упаковки</strong>? <span>Введи його тут</span></div>
+                <div class="code__form">
+                    <form>
+                        <input type="text" class="code__input">
+                        <input type="submit" class="code__submit" value="Зарахувати">
+                    </form>
+                </div>
+            </div>
+            <div class="main">
+                <div class="prog-ban">
+                    <span class="prog-ban__title">
+                        <span>Программа</span><strong>легкості</strong>
+                        <i></i>
+                    </span>
+                    <p>Готуйся до літа з персональною программою вдосконалення від Активіа</p>
+                    <a href="#" class="funny-btn">Розпочати программу</a>
+                </div>
+                <div class="video">
+                    <a href="#">
+                        <img src="img/video.png" alt="">
+                        <i></i>
+                    </a>
+                </div>
+                <div class="clr"></div>
             </div>
         </div>
-        <div class="main">
-            <div class="prog-ban">
-                <span class="prog-ban__title">
-                    <span>Программа</span><strong>легкості</strong>
-                    <i></i>
-                </span>
-                <p>Готуйся до літа з персональною программою вдосконалення від Активіа</p>
-                <a href="#" class="funny-btn">Розпочати программу</a>
-            </div>
-            <div class="video">
-                <a href="#">
-                    <img src="img/video.png" alt="">
-                    <i></i>
-                </a>
-            </div>
-            <div class="clr"></div>
-        </div>
-        <div class="benefits-wrap">
+        <span class="line-1"></span>
+    </div>
+    <div class="benefits-wrap">
+        <div class="l-container">
             <h2 class="benefit-title">Скористайся перевагами Активіа клубу</h2>
             <a href="#" class="more-link">Дізнатися більше<i></i></a>
             <div class="wrapper">
@@ -113,6 +118,7 @@
                 </div>
             </div>
         </div>
+        <span class="line-2"></span>
     </div> 
     <div class="banners-wrap">
         <div class="banner-hot-wrap">
@@ -140,7 +146,13 @@
         </div>
         <div class="banner-events-wrap">
             <strong class="banner__title">Останні події</strong>
-            <div class="banner banner_events">
+            <div class="banner banner_events js-scroll-ban">
+                <div>
+                    <a href="#" class="banner__img">
+                        <img src="img/ban3.png" alt="">
+                    </a>
+                    <a href="#" class="banner__link">Смакуй нову Activia!</a>
+                </div>
                 <div>
                     <a href="#" class="banner__img">
                         <img src="img/ban3.png" alt="">
@@ -154,6 +166,7 @@
                     <a href="#" class="banner__link">Смакуй нову Activia!</a>
                 </div>
             </div>
+            <div class="scroll-nav"></div>
         </div>
         <div class="banner-news-wrap">
             <strong class="banner__title">Гарячі пропозиції</strong>
@@ -167,7 +180,7 @@
     </div>
     <div class="push"></div>
 </section>
-<!-- <footer class="footer">
+<footer class="footer">
     <div class="footer__wrap">
         <div class="footer__left">
             <strong class="footer__title">Активіа клуб</strong>
@@ -189,6 +202,48 @@
             </ul>
         </div>
     </div>
-</footer> -->
+</footer>
+<div class="popup popup_enter">
+    <div>
+        <span>За цим кодом ти можешь отримати</span>
+        <strong>2034</strong> балів!
+    </div>
+    <p>Щоб зарахували бали, увійди до Клубу за допомогою:</p>
+    <ul class="enter-soc">
+        <li><a href="#" class="enter-soc__od"><i></i>Одноклассники</a></li>
+        <li><a href="#" class="enter-soc__fb"><i></i>Facebook</a></li>
+        <li><a href="#" class="enter-soc__vk"><i></i>ВКонтакте</a></li>
+    </ul>
+    <button class="popup__close"></button>
+</div>
+<div class="popup">
+    <div class="popup__user">
+        <img src="http://placehold.it/124x124" alt="">
+        <div>
+            <strong>Вітаємо!</strong>
+            Мамаєва Катруся
+        </div>
+    </div>
+    <div class="field">
+        <label for="input1">Перевір пошту:</label>
+        <input class="input" type="text" id="input1">
+    </div>
+    <div class="con-group">
+        <span>Приєднайся до групи:</span> 
+        <a href="#" class="btn btn_like"><i></i>Like</a>
+        <div><a href="#" class="btn btn_enter-group">Вступити в клуб</a></div>
+    </div>
+    <button class="popup__close"></button>
+</div>
+<div class="popup popup_done">
+    <strong class="popup_done__title">Вітаємо у Клубі!</strong>
+    <img src="img/icons/popup-done.png" alt="">
+    <div>
+       <p>Biтаемо!</p>
+        <p>Ви отримали бейдж «Початківець»</p>
+        <p>Тепер ти рівноправний учасник клубу!</p>
+    </div>
+    <button class="popup__close"></button>
+</div>
 </body>
 </html>

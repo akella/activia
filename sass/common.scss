@@ -15,7 +15,7 @@ output, ruby, section, summary,time, mark, audio, video {
     vertical-align: baseline;
 }
 body, html {
-    height: 100%
+    height: 100%;
 }
 img,fieldset {border:none;}
 input[type="submit"], button {cursor:pointer;}
@@ -49,10 +49,19 @@ body{
     min-width: 1000px;
     line-height: 1.4;
     font-family: Arial, sans-serif;
+    background: #50a94e;
     @include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));
 }
+.index {
+    min-height: 100%;
+    height: auto;
+    body {
+        min-height: 100%;
+        height: auto;
+    }
+}
 a{
-    &:hover{
+    &:hover{ 
         text-decoration: none;
     }
 }
@@ -294,6 +303,51 @@ a{
     }
 }   
 
+.enter-soc {
+    margin: 22px auto 0;
+    width: 184px;
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        display: block;
+        width: 100%;
+        height: 44px;
+        font: bold 16px/44px Arial,sans-serif;
+        text-align: left;
+        color: #7d5a1d;
+        text-decoration: none;
+        text-shadow: 0 2px 2px #fff35f;
+        background: #f1b419;
+        @include border-radius(7px);
+        @include background-image(linear-gradient(#eadc50, #f1b419));
+        &:hover {
+            @include background-image(linear-gradient(#d9e2bf, #a4d03c));
+        }
+    }
+    i {
+        display: inline-block;
+        margin: 0 10px 0 15px; 
+        vertical-align: middle;
+    }
+}
+.enter-soc__od {
+    i {
+        @include sized-sprite($icons, odn2); 
+    }
+}
+.enter-soc__fb {
+    i { 
+        margin-right: 14px;
+        @include sized-sprite($icons, fb2);  
+    }
+}
+.enter-soc__vk {
+    i {
+        @include sized-sprite($icons, vk2); 
+    }
+}   
+
 .funny-btn {
     position: relative;
     display: inline-block;
@@ -311,6 +365,131 @@ a{
     &:hover {
         background: #c7e67d url(../img/funny-btn-h.png) 0 0 repeat-x;
     }
+}
+.btn {
+    display: inline-block;
+    padding: 0 25px;
+    height: 44px;
+    font: bold 16px/44px Arial,sans-serif;
+    text-align: left;
+    color: #7d5a1d;
+    text-decoration: none;
+    text-shadow: 0 2px 2px #fff35f;
+    background: #f1b419;
+    border: 0;
+    @include border-radius(7px);
+    @include background-image(linear-gradient(#eadc50, #f1b419));
+    &:hover {
+        @include background-image(linear-gradient(#d9e2bf, #a4d03c));
+    }
+    i {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.btn_like {
+    padding: 0 27px 0 17px;
+    font-size: 24px;
+    i {
+        margin-right: 20px;
+        @include sized-sprite($icons, like);
+    }
+}
+// form
+.field {
+    margin-bottom: 21px;
+    label {
+        display: block;
+        font-size: 18px;
+        color: #e6f9bb;
+        font-family: Arial,sans-serif;
+    }
+}
+.input {
+    width: 100%; 
+    padding: 0 7px;
+    height: 27px;
+    line-height: 1;
+    border: 1px solid #185522;
+    border-bottom: 0;
+    border-right: 0;
+    color: #e6f9bb;
+    background: #358f48;
+    font: normal 12px Verdana, sans-serif;
+    @include border-radius(5px);
+    @include box-sizing(border-box);
+    @include box-shadow(inset 1px 1px 2px rgba(24,78,20, .4));
+    @include background-image(linear-gradient(#009041, #00AB3B));
+}
+// popups
+.popup {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-left: -225px;
+    padding: 30px 35px 20px;
+    z-index: 1000;
+    width: 434px;
+    background: #017135;
+    @include plr;
+    font-size: 24px;
+    color: #e6f9bb;
+    border: 2px solid #fefdcc;
+    @include border-radius(4px);
+}
+.popup_enter {
+    padding-right: 15px;
+    width: 455px;
+    text-align: center;
+    strong {
+        font: normal 36px Arial,sans-serif; 
+    }
+    p {
+        text-align: left;
+        font: normal 18px Arial,sans-serif; 
+    }
+}
+.popup__close {
+    position: absolute;
+    top: -18px;
+    right: -19px;
+    border: 0;
+    @include sized-sprite($icons, close);
+}
+.popup__user {
+    margin-bottom: 16px;
+    img {
+        display: inline-block;
+        margin-right: 22px;
+        vertical-align: middle;
+        border: 2px solid #fefdcc;
+        @include border-radius(4px);
+    }
+    div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    strong {
+        display: block;
+        @include plb;
+    }
+}
+.popup_done {
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial,sans-serif;
+    img {
+        margin: -34px 0 -20px;
+    }
+    div {
+        padding-left: 55px;
+        text-align: left;
+    }
+}
+.popup_done__title {
+    font-size: 33px;
+    @include plb;
 }
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 

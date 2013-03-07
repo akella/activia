@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
-	$('.banner_events').cycle({ 
-	    fx:      'scrollRight', 
+	$('.js-scroll-ban').cycle({ 
+	    fx:      'scrollHorz', 
 	    timeout:  0, 
-	    easing:  'easeInOutBack' 
+        pager:  '.scroll-nav',
+        pagerAnchorBuilder: function(index, el) {
+            return '<button></button>'; // whatever markup you want
+        }
 	});
 
 });

@@ -1,12 +1,20 @@
 @import "base";
 // ie6-8
 .lteie8 {
-
+    .code {
+        &:after {
+            height: 66px !important;
+        }
+    }
+    .benefit__title {
+        font-size: 23px;
+    }
 }
 // ie7
 
 *+ html {
 	.soc li,
+    .soc i,
     .code__text,
     .code__form,
     .funny-btn {
