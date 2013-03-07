@@ -14,9 +14,9 @@ output, ruby, section, summary,time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
 }
-body, html {
-    height: 100%;
-}
+// body, html {
+//     height: 100%;
+// }
 img,fieldset {border:none;}
 input[type="submit"], button {cursor:pointer;}
 input[type='submit']::-moz-focus-inner{padding:0;border:0}
@@ -52,14 +52,14 @@ body{
     background: #50a94e;
     @include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));
 }
-.index {
-    min-height: 100%;
-    height: auto;
-    body {
-        min-height: 100%;
-        height: auto;
-    }
-}
+// .index {
+//     min-height: 100%;
+//     height: auto;
+//     body {
+//         min-height: 100%;
+//         height: auto;
+//     }
+// }
 a{
     &:hover{ 
         text-decoration: none;
@@ -206,6 +206,7 @@ a{
         position: absolute;
         bottom: 10px; 
         left: 50%;
+        @include transition(all .5s ease-in-out);
         margin-left: -7px;
         @include sized-sprite($icons, arr1);
     }
@@ -500,10 +501,20 @@ a{
     height: 175px;
     font: normal 12px Verdana, sans-serif;
 }
+.line-3 {
+    position: absolute;
+    top: -52px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 52px;
+    background: url(../img/line3.png) 52% 0 repeat;
+}
 .footer__wrap {
+    position: relative;
     overflow: hidden;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 10px;
     width: 980px;
 }
 .footer__left {
@@ -518,6 +529,8 @@ a{
     text-transform: uppercase;
 }
 .footer__nav {
+    position: relative;
+    z-index: 2;
     margin-bottom: 15px;
     li {
         position: relative;
@@ -531,7 +544,7 @@ a{
             margin-top: -2px;
             width: 5px;
             height: 5px;
-            background: #9ecb3a;
+            background: #50a23a;
             @include border-radius(50%);
         }
     }
@@ -540,10 +553,39 @@ a{
         font-family: Verdana,sans-serif;
     }
 }
-.footer__right {
+.footer__soc {
+    position: relative;
+    z-index: 2;
     float: left;
     .soc {
         margin-top: 26px;
     }
 }
+.footer__copy {
+    position: relative;
+    z-index: 2;
+    float: right;
+    span {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #fff;
+        @include plr;
+    }
+    a {
+        color: #9ecb3a;
+        text-decoration: none;
+        font: normal 12px Verdana,sans-serif;
+    }
+}
+// .footer__circle {
+//     position: absolute;
+//     top: -440px;
+//     left: 50%;
+//     margin-left: -292px;
+//     width: 585px;
+//     height: 585px;
+//     @include border-radius(50%);
+//     background: #017035;
+// }
 /* -------------------------------------- //END Footer ------------------------------------------- */

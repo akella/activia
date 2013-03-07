@@ -1,1 +1,127 @@
 @import "base";
+
+// Test page
+.test-user {
+    margin-bottom: 13px;
+    padding: 50px 0 3px;
+    @include plb;
+    font-size: 24px;
+    overflow: hidden;
+    strong {
+        display: block;
+        color: #fefdcc;
+    }
+    span {
+        color: #feed03;
+    }
+}
+.test-user__img {
+    float: left;
+    margin-right: 30px;
+    width: 138px;
+    height: 138px;
+    overflow: hidden;
+    @include border-radius(15px);
+    @include box-shadow(2px 2px 0 rgba(35,119,25,.75));
+    img {
+        display: block;
+    }
+} 
+.test-user__info {
+    float: left;
+    width: 220px;
+}
+.bubble {
+    float: right;
+    margin: -74px 100px 0 0;
+    text-align: center;
+    line-height: 212px;
+    @include plr;
+    font-size: 34px;
+    color: #feed03;
+    @include sized-sprite($icons, bubble);
+} 
+
+.scroll {
+    
+}
+.scroll__nav {
+    text-align: center;
+    margin-bottom: 10px;
+    button {
+        margin-right: 12px;
+        width: 33px;
+        height: 33px;
+        border: 0;
+        background: #029647;
+        color: #9dd891;
+        font: normal 16px Verdana,sans-serif;
+        @include border-radius(50%)
+    }
+    .is-active {
+        color: #654d12;
+        font-weight: bold;
+        @include box-shadow(0 0 0 2px #ffed03);
+        background-color: #67b13d;
+        @include background-image(radial-gradient(#2da341, #6ebb31));
+    }
+}
+.scroll__title {
+    display: block;
+    margin-bottom: 21px;
+    color: #feed03;
+    @include plb;
+    font-size: 36px;
+    text-align: center;
+}
+.scroll__main {
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+}
+.scroll__wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 480px;
+    width: 2000em;
+    overflow: hidden;
+    p {
+        line-height: 26px; 
+    }
+    .is-active {
+        i {
+            position: absolute;
+            bottom: -11px;
+            right: 52px;
+            @include sized-sprite($icons, selected);
+        }
+    }
+}
+.scroll__slide {
+    float: left;
+    margin-right: 30px;
+    width: 300px;
+    opacity: .7;
+    color: #bdd6a1;
+    font-size: 24px;
+    cursor: pointer;
+    @include transition(all .5s ease-in-out);
+    &:hover {
+        color: #fff;
+        opacity: 1;
+    }
+}
+.scroll__img {
+    position: relative;
+    margin-bottom: 34px;
+    width: 280px;
+    height: 290px;
+    @include border-radius(50%);
+    img {
+        width: 280px;
+        height: 290px;
+        @include border-radius(50%);
+    }
+    
+}
