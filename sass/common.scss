@@ -46,7 +46,7 @@ table {
 /* ------------------------------------- //END Reset css --------------------------------------- */
 /* ----------------------------------------- Main styles --------------------------------------- */
 body{
-    min-width: 1000px;
+    min-width: 1020px;
     line-height: 1.4;
     font-family: Arial, sans-serif;
     background: #50a94e;
@@ -66,6 +66,7 @@ a{
     }
 }
 .l-layout {
+    padding-top: 128px;
     margin: 0 auto -175px;
     position: relative;
     min-height: 100%;
@@ -94,6 +95,11 @@ a{
  
 /* ----------------------------------------- Header --------------------------------------------- */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     margin-bottom: 26px;
     padding: 0 10px;
     height: 102px;
@@ -277,7 +283,7 @@ a{
         height: 44px;
         line-height: 44px;
         background: #f1b419;
-        @include border-radius(7px);
+        @include border-radius(10px);
         @include background-image(linear-gradient(#eadc50, #f1b419));
         &:hover {
             @include background-image(linear-gradient(#d9e2bf, #a4d03c));
@@ -289,7 +295,7 @@ a{
     }
 }
 .soc__vk {
-    i {
+    i { 
         @include sized-sprite($icons, vk);
     }
 }
@@ -298,13 +304,13 @@ a{
         @include sized-sprite($icons, fb);
     }
 }
-.soc__tw {
+.soc__odn {
     i {
-        @include sized-sprite($icons, tw); 
+        @include sized-sprite($icons, odn); 
     }
 }   
 
-.enter-soc {
+.enter-soc { 
     margin: 22px auto 0;
     width: 184px;
     li {
@@ -334,18 +340,18 @@ a{
 }
 .enter-soc__od {
     i {
-        @include sized-sprite($icons, odn2); 
+        @include sized-sprite($icons, odn); 
     }
 }
 .enter-soc__fb {
     i { 
         margin-right: 14px;
-        @include sized-sprite($icons, fb2);  
+        @include sized-sprite($icons, fb);  
     }
 }
 .enter-soc__vk {
     i {
-        @include sized-sprite($icons, vk2); 
+        @include sized-sprite($icons, vk); 
     }
 }   
 
@@ -367,7 +373,7 @@ a{
         background: #c7e67d url(../img/funny-btn-h.png) 0 0 repeat-x;
     }
 }
-.btn {
+.btn { 
     display: inline-block;
     padding: 0 25px;
     height: 44px;
@@ -515,7 +521,7 @@ a{
     overflow: hidden;
     margin: 0 auto;
     padding: 10px;
-    width: 980px;
+    width: 1020px;
 }
 .footer__left {
     float: left;
@@ -535,22 +541,14 @@ a{
     li {
         position: relative;
         margin-bottom: 10px;
-        padding-left: 12px;
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            margin-top: -2px;
-            width: 5px;
-            height: 5px;
-            background: #50a23a;
-            @include border-radius(50%);
-        }
     }
     a {
         color: #9ecb3a;
         font-family: Verdana,sans-serif;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 .footer__soc {

@@ -85,6 +85,14 @@ $break-large: 1180px;
       -ms-transform: skew($deg);
           transform: skew($deg);
 }
+// translate
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform:translate($x, $y); 
+    transform: translate($x, $y);
+}
 // box-sizing
 @mixin box-sizing($var) {
      -moz-box-sizing: $var;

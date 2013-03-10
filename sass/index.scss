@@ -17,6 +17,7 @@
     float: right;
     margin-right: 52px;
     padding: 0 10px 0 29px;
+    width: 467px;
     height: 65px; 
     line-height: 65px;
     color: #e6f9bb;
@@ -186,26 +187,18 @@
     font-size: 45px;
     @include plr;
 }
-.more-link {
-    position: relative;
-    font-size: 18px;
-    font-family: Verdana, sans-serif;
-    color: #d5f390;
-    border-bottom: 2px solid #90c86f;
-    text-decoration: none;
-    i {
-        position: absolute;
-        right: -15px;
-        top: 9px;
-        @include sized-sprite($icons, arr3);
-    }
-}
+
 .benefit {
     position: relative;
-    float: left;
+    float: left; 
     margin-left: 28px;
+    text-decoration: none;
     @include border-radius(45px);
     @include box-shadow(3px 3px 0 rgba(35,119,25,.75));
+    &:hover {
+        @include transition(all .5s ease-in-out);
+        @include translate(0, -10px);
+    }
     &:first-child {
         margin-left: 0; 
     }
@@ -280,6 +273,14 @@
 }
 .banner {
     float: left;
+    text-decoration: none;
+    &:hover {
+        .banner__link {
+            border-bottom: 1px solid #005f32;
+        }
+        @include transition(all .5s ease-in-out);
+        @include translate(0, -5px);
+    }
 }
 .banner-hot-wrap {
     overflow: hidden;
@@ -325,9 +326,6 @@
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
-    &:hover {
-        border-bottom: 1px solid #005f32;
-    }
 }
 .badge {
     display: inline-block;
@@ -359,8 +357,9 @@
     width: 380px;
     overflow: hidden;
     height: 195px; 
-    div {
+    a {
         width: 100%;
+        text-decoration: none;
     }
    .banner__img {
        width: 100%;
