@@ -34,7 +34,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 /* ------------------------------------- //END Reset css --------------------------------------- */
 /* ----------------------------------------- Main styles --------------------------------------- */
-body { min-width: 1020px; line-height: 1.4; font-family: Arial, sans-serif; background: #50a94e; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMwMTg0M2UiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzUwYTk0ZSIvPjxzdG9wIG9mZnNldD0iODglIiBzdG9wLWNvbG9yPSIjMDE3OTM5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDE3OTM5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #01843e), color-stop(60%, #50a94e), color-stop(88%, #017939), color-stop(100%, #017939)); background-image: -webkit-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: -moz-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: -o-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); }
+body { min-width: 1020px; line-height: 1.4; color: #fefdcc; font-family: Arial, sans-serif; background: #50a94e; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMwMTg0M2UiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzUwYTk0ZSIvPjxzdG9wIG9mZnNldD0iODglIiBzdG9wLWNvbG9yPSIjMDE3OTM5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDE3OTM5Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #01843e), color-stop(60%, #50a94e), color-stop(88%, #017939), color-stop(100%, #017939)); background-image: -webkit-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: -moz-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: -o-linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); background-image: linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939); }
 
 a:hover { text-decoration: none; }
 
@@ -293,7 +293,9 @@ a:hover { text-decoration: none; }
 
 .wrap:after, .nav ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
-.test-user { margin-bottom: 13px; padding: 50px 0 3px; font-weight: normal; font-style: normal; font-family: 'pragmaticalightcbold'; font-size: 24px; overflow: hidden; }
+.main { padding-top: 50px; }
+
+.test-user { margin-bottom: 13px; padding: 0 0 3px; font-weight: normal; font-style: normal; font-family: 'pragmaticalightcbold'; font-size: 24px; }
 .test-user strong { display: block; color: #fefdcc; }
 .test-user span { color: #feed03; }
 
@@ -321,6 +323,24 @@ a:hover { text-decoration: none; }
 
 .scroll__img { position: relative; margin-bottom: 34px; width: 280px; height: 290px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
 .scroll__img img { width: 280px; height: 290px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
+
+.title-l-1, .title-l-2 { font-weight: normal; font-style: normal; font-family: 'pragmaticalightcregular'; color: #fefdcc; font-size: 43px; }
+.title-l-1 strong, .title-l-2 strong { font-weight: normal; font-style: normal; font-family: 'pragmaticalightcbold'; text-transform: capitalize; }
+
+.title-l-2 { font-size: 30px; }
+
+.new-prod { margin-top: 24px; }
+
+.new-prod__img { position: relative; float: left; margin-right: 20px; }
+.new-prod__img:before { content: ""; position: absolute; left: -146px; top: -172px; width: 545px; height: 545px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNjgiPjxzdG9wIG9mZnNldD0iMTglIiBzdG9wLWNvbG9yPSJyZ2JhKDI0NywgMjM0LCAyLCAwLjQpIi8+PHN0b3Agb2Zmc2V0PSI2OCUiIHN0b3AtY29sb3I9InJnYmEoMjQ3LCAyMzQsIDIsIDApIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background-size: 100%; background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 68, color-stop(18%, rgba(247, 234, 2, 0.4)), color-stop(68%, rgba(247, 234, 2, 0))); background-image: -webkit-radial-gradient(rgba(247, 234, 2, 0.4) 18%, rgba(247, 234, 2, 0) 68%); background-image: -moz-radial-gradient(rgba(247, 234, 2, 0.4) 18%, rgba(247, 234, 2, 0) 68%); background-image: -o-radial-gradient(rgba(247, 234, 2, 0.4) 18%, rgba(247, 234, 2, 0) 68%); background-image: radial-gradient(rgba(247, 234, 2, 0.4) 18%, rgba(247, 234, 2, 0) 68%); }
+.new-prod__img img { position: relative; z-index: 2; margin-top: 7px; }
+
+.new-prod__info { overflow: hidden; font-size: 18px; font-weight: normal; font-style: normal; font-family: 'pragmaticalightcregular'; }
+.new-prod__info strong { font-weight: normal; font-style: normal; font-family: 'pragmaticalightcbold'; }
+.new-prod__info ul { margin-top: 33px; }
+.new-prod__info li { margin-bottom: -3px; }
+
+.new-prod__title { margin-bottom: 4px; color: #feed03; font-size: 27px; font-weight: normal; }
 
 @font-face { font-family: 'pragmaticalightcregular'; src: url("../fonts/pragmaticalightc-webfont.eot"); src: url("../fonts/pragmaticalightc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pragmaticalightc-webfont.woff") format("woff"), url("../fonts/pragmaticalightc-webfont.ttf") format("truetype"), url("../fonts/pragmaticalightc-webfont.svg#pragmaticalightcregular") format("svg"); font-weight: normal; font-style: normal; }
 

@@ -48,6 +48,7 @@ table {
 body{
     min-width: 1020px;
     line-height: 1.4;
+    color: #fefdcc;
     font-family: Arial, sans-serif;
     background: #50a94e;
     @include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));

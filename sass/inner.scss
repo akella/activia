@@ -1,12 +1,13 @@
 @import "base";
-
+.main {
+    padding-top: 50px;
+}
 // Test page
 .test-user {
     margin-bottom: 13px;
-    padding: 50px 0 3px;
+    padding: 0 0 3px;
     @include plb;
     font-size: 24px;
-    overflow: hidden;
     strong {
         display: block;
         color: #fefdcc;
@@ -124,4 +125,61 @@
         @include border-radius(50%);
     }
     
+}
+
+.title-l-1,
+.title-l-2 {
+    @include plr;
+    color: #fefdcc;
+    font-size: 43px;
+    strong {
+       @include plb;
+       text-transform: capitalize; 
+    }
+}
+.title-l-2 {
+    font-size: 30px;
+}
+
+.new-prod {
+    margin-top: 24px;
+}
+.new-prod__img {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    &:before {
+        content: "";
+        position: absolute;
+        left: -146px;
+        top: -172px;
+        width: 545px;
+        height: 545px;
+        @include background-image(radial-gradient(rgba(247,234,2,.4) 18%, rgba(247,234,2,0) 68%));
+    }
+    img {
+        position: relative;
+        z-index: 2;
+        margin-top: 7px;
+    }
+}
+.new-prod__info {
+    overflow: hidden;
+    font-size: 18px;
+    @include plr;
+    strong {
+        @include plb;
+    }
+    ul {
+        margin-top: 33px;
+    }
+    li {
+        margin-bottom: -3px;
+    }
+}
+.new-prod__title {
+    margin-bottom: 4px;
+    color: #feed03;
+    font-size: 27px;
+    font-weight: normal;
 }
