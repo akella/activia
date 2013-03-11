@@ -54,6 +54,12 @@
     input {
         vertical-align: middle;
     }
+    .is-active {
+        background: #185522;
+        color: #e6f9bb;
+        @include box-shadow(none);
+        @include background-image(linear-gradient(#185522, #008a35));
+    }
 }
 
 .code__input {
@@ -72,6 +78,7 @@
     @include background-image(linear-gradient(#009041, #00AB3B));
 }
 .code__submit {
+    display: none;
     padding: 0 11px;
     height: 28px;
     color: #89cd88;

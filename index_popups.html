@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Index</title>
+	<title>Index popups</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/jquery.tools.min.js"></script>
     <script src="js/jquery.cycle.all.js"></script>
@@ -93,7 +93,7 @@
                         <div class="benefit__img">
                             <img src="img/img1.png" alt="">
                         </div>
-                        <strong class="benefit__title">науково <br>доведено</strong>
+                        <strong class="benefit__title">Персональна программа</strong>
                         <p>Чому Активіа корисна?</p>
                     </div>
                 </a>
@@ -204,5 +204,47 @@
         <span class="footer__circle"></span>
     </div>
 </footer>
+<div class="popup popup_enter" style="position:absolute;display:block;top:20px;">
+    <div>
+        <span>За цим кодом ти можешь отримати</span>
+        <strong>2034</strong> балів!
+    </div>
+    <p>Щоб зарахували бали, увійди до Клубу за допомогою:</p>
+    <ul class="enter-soc">
+        <li><a href="#" class="enter-soc__od"><i></i>Одноклассники</a></li>
+        <li><a href="#" class="enter-soc__fb"><i></i>Facebook</a></li>
+        <li><a href="#" class="enter-soc__vk"><i></i>ВКонтакте</a></li>
+    </ul>
+    <button class="popup__close"></button>
+</div>
+<div class="popup" style="position:absolute;display:block;top:400px">
+    <div class="popup__user">
+        <img src="http://placehold.it/124x124" alt="">
+        <div>
+            <strong>Вітаємо!</strong>
+            Мамаєва Катруся
+        </div>
+    </div>
+    <div class="field">
+        <label for="input1">Перевір пошту:</label>
+        <input class="input" type="text" id="input1">
+    </div>
+    <div class="con-group">
+        <span>Приєднайся до групи:</span> 
+        <a href="#" class="btn btn_like"><i></i>Like</a>
+        <div><a href="#" class="btn btn_enter-group">Вступити в клуб</a></div>
+    </div>
+    <button class="popup__close"></button>
+</div>
+<div class="popup popup_done"style="position:absolute;display:block;top:850px">
+    <strong class="popup_done__title">Вітаємо у Клубі!</strong>
+    <img src="img/icons/popup-done.png" alt="">
+    <div>
+       <p>Biтаемо!</p>
+        <p>Ви отримали бейдж «Початківець»</p>
+        <p>Тепер ти рівноправний учасник клубу!</p>
+    </div>
+    <button class="popup__close"></button>
+</div>
 </body>
 </html>

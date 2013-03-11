@@ -95,16 +95,19 @@ $(document).ready(function() {
         $(this).parent().parent().parent().children(".scroll-message").html(descr);
     });
 // --------------------- Input change ---------------------------- //
-    // $('.code__input').change(function() {
-    //    var text_length = $(this).val().length;
-    //    if (text_length >= 9) {
-    //         alert("YES");
-    //    }
-    //    else {
-    //         alert("NO");
-    //    }
-    // });
-
+    $('.code__input').focusin(function() {
+         $(this).next().fadeIn();
+    });
+    $('.code__input').focusout(function() {
+         $(this).next().fadeOut();
+    });
+    $('.code__input').keydown(function() {
+        var text_length = $(this).val().length;
+        if (text_length >= 8) {
+            $(this).next().addClass("is-active");
+        }
+        else {}   
+    });
 
 
 });
