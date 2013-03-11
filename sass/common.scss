@@ -200,7 +200,7 @@ a{
     padding: 0 10px;
     height: 90px;
     color: #fff;
-    font-weight: bold;
+    font-weight: bold; 
     cursor: pointer;
     @include user-select;
     @include border-radius(0 0 8px 8px);
