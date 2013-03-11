@@ -1,8 +1,9 @@
 @import "base";
-.main {
-    padding-top: 50px;
-}
+
 // Test page
+.main-test {
+    padding-top: 48px;
+}
 .test-user {
     margin-bottom: 13px;
     padding: 0 0 3px;
@@ -11,16 +12,20 @@
     strong {
         display: block;
         color: #fefdcc;
+        line-height: 1.2;
     }
     span {
         color: #feed03;
+        span {
+            font-size: 34px;
+        }
     }
 }
 .test-user__img {
     float: left;
     margin-right: 30px;
-    width: 138px;
-    height: 138px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     @include border-radius(15px);
     @include box-shadow(2px 2px 0 rgba(35,119,25,.75));
@@ -34,7 +39,7 @@
 }
 .bubble {
     float: right;
-    margin: -74px 100px 0 0;
+    margin: -66px 93px 0 0;
     text-align: center;
     line-height: 212px;
     @include plr;
@@ -139,10 +144,11 @@
 }
 .title-l-2 {
     font-size: 30px;
+    margin: 30px 0 20px;
 }
 
 .new-prod {
-    margin-top: 24px;
+    margin: 22px 0 40px 40px;
 }
 .new-prod__img {
     position: relative;
@@ -182,4 +188,261 @@
     color: #feed03;
     font-size: 27px;
     font-weight: normal;
+}
+
+.scroll-tabs {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 31px;
+    li {
+        position: relative;
+        display: inline-block;
+        margin-right: -4px;
+        padding: 15px 22px;
+        font-size: 14px;
+        font-family: Verdana, sans-serif;
+        text-align: center;
+        color: #fefdcc;
+        cursor: pointer;
+        text-align: center;
+        background: #005e23;
+        vertical-align: top;
+        border-left: 1px solid #06863d;
+        border-bottom: 1px solid #06863d;
+        @include box-shadow(inset 1px 0 0 #014918, 0 1px 0 #014918);
+        &:first-child {
+            border-left: 0;
+            @include box-shadow(0 1px 0 #014918);
+            @include border-radius(10px 0 0 10px);
+            padding-left: 22px !important;
+        }
+        &:last-child {
+            @include border-radius(0 10px 10px 0);
+        }
+    }
+    span {
+        display: block;
+    }
+    .is-active {
+        color: #ffed03;
+        padding-left: 23px;
+        border-left: 0;
+        @include box-shadow(inset 2px 0 0 #014918, 0 1px 0 #014918);
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -17px;
+            left: 50%;
+            margin-left: -24px;
+            @include sized-sprite($icons, arr3);
+        }
+    }
+} 
+
+.products {
+    padding: 46px 0 96px;
+}
+
+.scroll-prod-wrap {
+    display: none;
+    position: relative;
+}
+.scroll-prod {
+    float: left;
+    position: relative;
+    padding-top: 17px;
+    margin: 0 0 -40px 62px;
+    width: 690px;
+    height: 255px;
+    overflow: hidden;
+}
+.scroll-prod__main {
+    position: absolute;
+    width: 2000em;
+    top: 17px;
+    .is-active {
+        z-index: 2;
+        &:before { 
+            content: "";
+            position: absolute;
+            left: -68px;
+            bottom: -48px;
+            z-index: 3;
+            width: 230px;
+            height: 200px;
+            @include background-image(radial-gradient(rgba(247,234,2,.9) 18%, rgba(94,171,40,0) 68%));
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            margin-left: -24px;
+            @include sized-sprite($icons, arr4);
+        }
+    }
+    .icon-new {
+        position: absolute;
+        top: -16px;
+        right: -20px;
+        z-index: 5;
+        @include sized-sprite($icons, new);
+    }
+}
+.scroll-prod__item {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    img {
+        position: relative;
+        z-index: 4;
+    }
+}
+.prod-nav {
+    position: absolute;
+    border: 0;
+    top: 52px;
+} 
+.prod-prev {
+    left: 12px;
+    @include sized-sprite($icons, prev);
+}
+.prod-next {
+    right: 177px;
+    @include sized-sprite($icons, next);
+}
+
+.prod-mix {
+    position: relative;
+    z-index: 2;
+    float: right;
+    margin: 16px 20px 0 0;
+    width: 160px;
+    text-align: center; 
+    div {
+        margin: 0 auto;
+        width: 80%;
+    }
+    a {
+        color: #9ecb3a;
+        font-size: 14px;
+        font-family: Verdana,sans-serif;
+    }
+}
+.scroll-message {
+    clear: both;
+    position: relative;
+    padding: 20px 65px 20px 38px;
+    background: #00732c;
+    border: 2px solid #26ba00;
+    @include border-radius(7px);
+    ul {
+        float: right;
+        width: 40%; 
+    }
+} 
+.scroll-message__info {
+    float: left;
+    width: 50%;
+    color: #fefdcc;
+    font-size: 18px;
+    font-family: Verdana,sans-serif;
+}
+
+.content-outer {
+    padding-bottom: 82px;
+    position: relative;
+    background: #fff;
+}
+.line-4 {
+    position: absolute;
+    left: 0;
+    top: -46px;
+    right: 0;
+    width: 100%;
+    height: 46px;
+    background: url(../img/line4.png) 50% 0 repeat-x;
+}
+.content {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 980px;
+    color: #003d20;
+    font: normal 14px Verdana,sans-serif;
+    h1 {
+        margin: 32px 0 10px;
+        font-size: 36px;
+        @include plr;
+    }
+    h2 {
+        margin: 20px 0 15px; 
+        color: #037a39;
+        font-size: 18px;
+    }
+    p {
+        margin-bottom: 17px;
+    }
+    img {
+        margin: 30px 0;
+        @include border-radius(7px);
+        @include box-shadow(0 2px 3px rgba(0,61,32,.3));
+    }
+}
+.equal-col {
+    width: 47%;
+}
+.equal__col-left {
+    float: left;
+}
+.equal__col-right {
+    float: right;
+}
+
+.video-scroll-wrap {
+    position: relative;
+    padding-bottom: 50px;
+    .disabled {
+        display: none;
+    }
+}
+.video-nav {
+    position: absolute;
+    top: 54px;
+}
+.video-nav_prev {
+    left: 0;
+    @include sized-sprite($icons, prev2);
+}
+.video-nav_next {
+    right: 0;
+    @include sized-sprite($icons, next2);
+}
+.video-scroll {
+    position: relative;
+    margin: 0 auto; 
+    width: 862px; 
+    height: 230px;
+    overflow: hidden;
+}
+.video-scroll__wrap {
+    position: absolute;
+    top: 0;
+    width: 2000em;
+    .video-preview {
+        float: left;
+        margin-right: 25px;
+    }
+}
+
+.test {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -812px;
+    width: 1560px;
+    height: 3000px;
+    opacity: 0.5;
+    background: url(../img/test.png) 0 0 no-repeat;
 }
