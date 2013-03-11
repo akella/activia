@@ -2,10 +2,10 @@
 
 // Test page
 .main-test {
-    padding-top: 48px;
+    padding: 48px 0 72px;
 }
 .test-user {
-    margin-bottom: 13px;
+    margin-bottom: 9px;
     padding: 0 0 3px;
     @include plb;
     font-size: 24px;
@@ -39,13 +39,13 @@
 }
 .bubble {
     float: right;
-    margin: -66px 93px 0 0;
+    margin: -12px 148px 0 0;
     text-align: center;
-    line-height: 212px;
+    line-height: 107px;
     @include plr;
     font-size: 34px;
     color: #feed03;
-    @include sized-sprite($icons, bubble);
+    @include sized-sprite($icons, bubble); 
 } 
 
 .scroll {
@@ -62,7 +62,10 @@
         background: #029647;
         color: #9dd891;
         font: normal 16px Verdana,sans-serif;
-        @include border-radius(50%)
+        @include border-radius(50%);
+        &:first-child {
+            margin-left: -58px; 
+        }
     }
     .is-active {
         color: #654d12;
@@ -74,7 +77,7 @@
 }
 .scroll__title {
     display: block;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     color: #feed03;
     @include plb;
     font-size: 36px;
@@ -434,15 +437,4 @@
         float: left;
         margin-right: 25px;
     }
-}
-
-.test {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -812px;
-    width: 1560px;
-    height: 3000px;
-    opacity: 0.5;
-    background: url(../img/test.png) 0 0 no-repeat;
 }
