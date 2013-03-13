@@ -106,16 +106,34 @@ a{
     @include background-image(linear-gradient(top, #00a336 19%, #28ac3e)); 
 }
 .header__wrap {
+    position: relative;
     margin: 0 auto; 
     width: 980px;
 }
 .logo {
+    position: relative;
+    z-index: 2;
     float: left;
     margin: 9px 33px 0 6px;
     a {
         display: block;
         @include sized-sprite($icons, logo);
     }     
+}
+.enter-code {
+    position: absolute;
+    bottom: 11px;
+    left: 102px;
+    padding: 0 5px 0 40px;
+    height: 32px;
+    width: 96px;
+    color: #e6f9bb;
+    font-size: 15px;
+    font-family: Verdana,sans-serif;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+    @include border-radius(4px);
+    @include placeholder(#e6f9bb, Verdana);
+    @include background-image(linear-gradient(top, #118b3b, #6aaf24)); 
 }
 .nav {
     float: left;
@@ -249,6 +267,29 @@ a{
         @include sized-sprite($icons, android);
     }
 }
+.download_small {
+    position: absolute;
+    top: 0;
+    right: 71px;
+    min-height: 40px;
+    .download__head {
+        height: 37px;
+        padding-top: 2px;
+        span {
+            line-height: .7;
+        }
+        strong {
+            color: #fff;
+        }
+    }
+    .icon-phone {
+        display: none;
+    }
+    .icon-arr {
+        bottom: 3px;
+    }
+}
+
 .btn-enter {
     float: right;
     margin-top: 38px;
@@ -266,6 +307,35 @@ a{
     }
     &:active {
         @include box-shadow(none);
+    }
+}
+
+.user-log {
+    float: right;
+    margin-top: 40px;
+    width: 150px; 
+}
+.user-log__img {
+    float: left;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border: 2px solid #fff500;
+    @include border-radius(50%);
+    img {
+        display: block;
+        @include border-radius(50%);
+    }
+}
+.user-log__info {
+    overflow: hidden;
+    line-height: 1.2;
+    div {
+        padding-top: 3px;
+    }
+    a {
+        color: #fefdcc;
     }
 }
 /* -------------------------------------- //END Header ------------------------------------------ */
@@ -395,6 +465,16 @@ a{
         right: -60px;
         top: -23px;
         @include sized-sprite($icons, corner2);
+    }
+}
+.funny-btn_green {
+    color: #fefdcc;
+    background: #ffed01 url(../img/funny-btn-2.png) 0 0 repeat-x;
+    &:hover {
+        color: #006536;
+    }
+    &:after {
+        display: none;
     }
 }
 .video-link {
@@ -542,6 +622,25 @@ a{
     font-size: 33px;
     @include plb;
 }
+.popup_code {
+    .wtf-code {
+        margin-bottom: 5px;
+        font-size: 24px;
+        @include plr;
+    }
+    div {
+        text-align: center;
+    }
+    p {
+        font-size: 18px;
+        font-family: Arial,sans-serif;
+    }
+    img {
+        margin-top: 18px;
+        border: 2px solid #fefdcc;
+        @include border-radius(3px);
+    }
+}
 
 .outer {
     position: relative;
@@ -682,14 +781,16 @@ a{
         font: normal 12px Verdana,sans-serif;
     }
 }
-// .footer__circle {
-//     position: absolute;
-//     top: -440px;
-//     left: 50%;
-//     margin-left: -292px;
-//     width: 585px;
-//     height: 585px;
-//     @include border-radius(50%);
-//     background: #017035;
-// }
 /* -------------------------------------- //END Footer ------------------------------------------- */
+
+.test {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -780px;
+    width: 1560px;
+    height: 4000px;
+    background: url(../img/test.png) 0 0 no-repeat;
+    opacity: .7;
+    z-index: 30000;
+}
