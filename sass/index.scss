@@ -109,16 +109,6 @@
         margin-bottom: 22px;
         line-height: 1.3;
     }
-    .funny-btn {
-        position: relative;
-        &:after {
-            content: "";
-            position: absolute;
-            right: -95px;
-            top: -56px;
-            @include sized-sprite($icons, corner);
-        }
-    }
 }
 .prog-ban__title {
     position: relative;

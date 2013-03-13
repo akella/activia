@@ -374,8 +374,47 @@ a{
     @include transition(all .3s ease-in-out);
     @include box-shadow(2px 2px 9px rgba(3,94,48,.43));
     background: #ffed01 url(../img/funny-btn.png) 0 0 repeat-x;
+    &:after {
+        content: "";
+        position: absolute;
+        right: -95px;
+        top: -56px;
+        @include sized-sprite($icons, corner);
+    }
     &:hover {
-        background: #c7e67d url(../img/funny-btn-h.png) 0 0 repeat-x;
+        background: #c7e67d url(../img/funny-btn-h.png) 100% 0 repeat-x;
+    }
+}
+.funny-btn_s {
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    background-position: 100% 100%;
+    &:after {
+        position: absolute; 
+        right: -60px;
+        top: -23px;
+        @include sized-sprite($icons, corner2);
+    }
+}
+.video-link {
+    display: inline-block;
+    position: relative;
+    padding-left: 70px;
+    width: 150px;
+    color: #d5f390;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include sized-sprite($icons, play_s)
+    }
+    span {
+        vertical-align: middle;
+        border-bottom: 1px dotted;
     }
 }
 .btn { 
