@@ -442,8 +442,7 @@
 
 .program-section{
     position: relative;
-    padding-top: 83px;
-    padding-bottom: 80px;
+    padding: 77px 0 3px;
 }
 .prog-ban-img {
     position: relative;
@@ -467,7 +466,7 @@
 }
 .prog-ban_mod {
     float: right;
-    width: 580px;
+    width: 590px;
     font-size: 18px;
     @include plr;
     color: #fefdcc;
@@ -475,7 +474,11 @@
         margin-right: 90px;
     }
     .prog-ban__title {
+        margin-bottom: 5px;
         font-size: 35px;
+        strong {
+            font-size: 58px;
+        }
     }
 }
 .prog-ban__quest {
@@ -488,7 +491,7 @@
 .prog-ban__col {
     float: left;
     width: 260px;
-    margin-right: 50px;
+    margin: 0 50px 22px 0;
     strong {
         display: block;
         margin-bottom: 9px;
@@ -497,6 +500,11 @@
 }
 .prog-ban__col-right {
     margin-right: 0;
+}
+.experts-wrap {
+    .wrapper {
+        padding: 35px 0;
+    }
 }
 .expert {
     float: left;
@@ -600,7 +608,7 @@
         position: relative;
         float: left;
         margin-right: 60px;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 23px;
         height: 100px;
         line-height: 100px;
         background: #036f35;
@@ -649,7 +657,7 @@
     font-family: Verdana,sans-serif;
 }
 .step__1 {
-    width: 290px;
+    width: 300px;
     &:before {
         display: none;    
     }
@@ -658,13 +666,13 @@
     }
 } 
 .step__2 {
-    width: 210px;
+    width: 186px;
     .step__text {
         width: 120px;
     }
 } 
 .step__3 {
-    width: 315px;
+    width: 295px;
     &:after {
         display: none;
     }

@@ -99,7 +99,11 @@ $(document).ready(function() {
          $(this).next().fadeIn();
     });
     $('.code__input').focusout(function() {
-         $(this).next().fadeOut();
+        $(this).next().fadeOut();
+        if($(this).val() == "") {
+            $(this).next().removeClass("is-active");
+        }
+
     });
     $('.code__input').keydown(function() {
         var text_length = $(this).val().length;

@@ -52,14 +52,7 @@ body{
     background: #50a94e;
     @include background-image(linear-gradient(top, #01843e 40%, #50a94e 60%, #017939 88%, #017939));
 }
-// .index {
-//     min-height: 100%;
-//     height: auto;
-//     body {
-//         min-height: 100%;
-//         height: auto;
-//     }
-// }
+
 a{
     &:hover{ 
         text-decoration: none;
@@ -312,8 +305,8 @@ a{
 
 .user-log {
     float: right;
-    margin-top: 40px;
-    width: 150px; 
+    margin-top: 43px;
+    width: 190px; 
 }
 .user-log__img {
     float: left;
@@ -783,14 +776,14 @@ a{
 }
 /* -------------------------------------- //END Footer ------------------------------------------- */
 
-.test {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -780px;
-    width: 1560px;
-    height: 4000px;
-    background: url(../img/test.png) 0 0 no-repeat;
-    opacity: .7;
-    z-index: 30000;
-}
+// .test {
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     margin-left: -786px;
+//     width: 1560px;
+//     height: 4000px;
+//     background: url(../img/test.png) 0 0 no-repeat;
+//     opacity: .7;
+//     z-index: 30000;
+// }
