@@ -109,6 +109,9 @@
 }
 .scroll__slide {
     float: left;
+}
+.scroll__item {
+    float: left;
     margin-right: 30px;
     width: 300px;
     opacity: .7;
@@ -579,6 +582,7 @@
     color: #fff;
     font-size: 13px; 
     line-height: 1;
+    background: #168244;
     background: rgba(22,130,68,.7);
     @include border-radius(4px 0 0 4px);
     strong {
@@ -668,7 +672,7 @@
 .step__2 {
     width: 186px;
     .step__text {
-        width: 120px;
+        width: 110px;
     }
 } 
 .step__3 {
@@ -677,6 +681,6 @@
         display: none;
     }
     .step__text {
-        width: 230px;
+        width: 216px;
     }
 } 

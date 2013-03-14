@@ -18,14 +18,22 @@ $(document).ready(function() {
         indexed: true
     });
 
-// --------------------- Active test in scroll ---------------------------- //
-    $(".scroll__slide").click(function(){
+    // --------- Active test in scroll -------------
+    $(".scroll__item").click(function(){
         if($(this).hasClass("is-active")) {
-             $(this).removeClass("is-active");
+            $(this).removeClass("is-active");
         }
         else {
+            $(this).parent().children(".scroll__item").removeClass("is-active");
             $(this).addClass("is-active");
         }
+    });
+    
+    // ---- Scroll to next slide
+    api = $('.scroll__main').data('scrollable');
+    $('.scroll__item').click(function() {
+        next = $(this).parent().next();
+        api.seekTo(next, 700);
     });
 
 // --------------------- Scrollable video ---------------------------- //

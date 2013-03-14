@@ -9,6 +9,9 @@
     .benefit__title {
         font-size: 23px;
     }
+    .enter-code {
+        line-height: 32px;
+    }
 }
 // ie7
 
@@ -18,14 +21,23 @@
     .code__text,
     .code__form,
     .funny-btn,
-    .scroll-pagin li,
+    .scroll-pagin li, 
     .video-preview,
-    .user-log__img {
+    .user-log__img,
+    .scroll-tabs li,
+    .popup__user img,
+    .popup__user div {
 		display: inline;
 	}
+    .soc li {
+        i {
+            vertical-align: top;
+            margin-top: 10px;
+        }
+    }
 }
 
 // ie6
 * html {
 
-}
+} 
