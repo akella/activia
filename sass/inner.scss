@@ -2,62 +2,33 @@
 
 // Test page
 .main-test {
-    padding: 48px 0 72px;
-}
-.test-user {
-    margin-bottom: 9px;
-    padding: 0 0 3px;
-    @include b;
-    font-size: 24px;
-    strong {
-        display: block;
-        color: #fefdcc;
-        line-height: 1.2;
-    }
-    span {
-        color: #feed03;
-        span {
-            font-size: 34px;
-        }
-    }
-}
-.test-user__img {
-    float: left;
-    margin-right: 30px;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    @include border-radius(15px);
-    @include box-shadow(2px 2px 0 rgba(35,119,25,.75));
-    img {
-        display: block;
-    }
-} 
-.test-user__info {
-    float: left;
-    width: 220px;
+    padding: 0 0 72px;
 }
 .bubble {
     float: right;
-    margin: -12px 148px 0 0;
+    width: 70px;
+    height: 70px;
+    color: #7a5c15;
+    font-size: 30px;
+    line-height: 70px;
     text-align: center;
-    line-height: 107px;
-    @include r;
-    font-size: 34px;
-    color: #feed03;
-    @include sized-sprite($icons, bubble); 
-} 
+    text-shadow: 1px 1px 2px rgba(255,237,2, .6);
+    border: 4px solid #ffed03;
+    @include border-radius(50%);
+    background-color: #67b13d;
+    @include background-image(radial-gradient(center center, 90px 90px, rgba(232,252,62,.6) 0%, rgba(94,161,19,.1) 100%));
+}
 
 .scroll {
-    
+    clear: both;
 }
 .scroll__nav {
     text-align: center;
     margin-bottom: 10px;
     button {
         margin-right: 12px;
-        width: 33px;
-        height: 33px;
+        width: 20px;
+        height: 20px;
         border: 0;
         background: #029647;
         color: #9dd891;

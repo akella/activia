@@ -15,7 +15,6 @@ $(document).ready(function() {
         navi: ".scroll__nav",
         naviItem: 'button',
         activeClass: 'is-active',
-        indexed: true
     });
 
     // --------- Active test in scroll -------------
