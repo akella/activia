@@ -7,7 +7,7 @@
 .test-user {
     margin-bottom: 9px;
     padding: 0 0 3px;
-    @include plb;
+    @include b;
     font-size: 24px;
     strong {
         display: block;
@@ -42,7 +42,7 @@
     margin: -12px 148px 0 0;
     text-align: center;
     line-height: 107px;
-    @include plr;
+    @include r;
     font-size: 34px;
     color: #feed03;
     @include sized-sprite($icons, bubble); 
@@ -79,7 +79,7 @@
     display: block;
     margin-bottom: 20px;
     color: #feed03;
-    @include plb;
+    @include b;
     font-size: 36px;
     text-align: center;
 }
@@ -140,11 +140,11 @@
 
 .title-l-1,
 .title-l-2 {
-    @include plr;
+    @include r;
     color: #fefdcc;
     font-size: 43px;
     strong {
-       @include plb;
+       @include b;
        text-transform: capitalize; 
     }
 }
@@ -178,9 +178,9 @@
 .new-prod__info {
     overflow: hidden;
     font-size: 18px;
-    @include plr;
+    @include r;
     strong {
-        @include plb;
+        @include b;
     }
     ul {
         margin-top: 33px;
@@ -380,7 +380,7 @@
     h1 {
         margin: 32px 0 10px;
         font-size: 36px;
-        @include plr;
+        @include r;
     }
     h2 {
         margin: 20px 0 15px; 
@@ -471,7 +471,7 @@
     float: right;
     width: 590px;
     font-size: 18px;
-    @include plr;
+    @include r;
     color: #fefdcc;
     .funny-btn_s {
         margin-right: 90px;
@@ -498,7 +498,7 @@
     strong {
         display: block;
         margin-bottom: 9px;
-        @include plb;
+        @include b;
     }
 }
 .prog-ban__col-right {
@@ -682,5 +682,266 @@
     }
     .step__text {
         width: 216px;
+    }
+} 
+
+.common-wrap {
+    padding: 30px 0 80px;
+}
+.scroll-tabs_shop {
+    li {
+        padding: 0;
+        width: 20%; 
+        height: 58px;
+        line-height: 58px;
+        text-align: center;
+        &:first-child {
+            padding-left: 0 !important;
+        }
+    }
+    .is-active {
+        padding-left: 1px;
+        .icon-1 {@include sized-sprite($icons, i1-h);}
+        .icon-2 {@include sized-sprite($icons, i2-h);}
+        .icon-3 {@include sized-sprite($icons, i3-h);}
+        .icon-4 {@include sized-sprite($icons, i4-h);}
+        .icon-5 {@include sized-sprite($icons, i5-h);}
+    }
+    i, span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    i {
+        margin-right: 8px;
+    }
+    .icon-1 {@include sized-sprite($icons, i1);}
+    .icon-2 {@include sized-sprite($icons, i2);}
+    .icon-3 {@include sized-sprite($icons, i3);}
+    .icon-4 {@include sized-sprite($icons, i4);}
+    .icon-5 {@include sized-sprite($icons, i5);}
+} 
+
+.scroll-shop {
+    display: none;
+    position: relative;
+    padding: 10px 0 30px;
+    .prod-nav {
+        top: 114px;
+    }
+    .prod-prev {
+        left: 30px;
+    }
+    .prod-next {
+        right: 30px;
+    }
+}
+.scroll-nav {
+    position: absolute;
+    top: -14px;
+    right: 90px;
+}
+.scroll-shop__wrap {
+    position: relative;
+    width: 795px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.scroll-shop__items {
+    position: absolute;
+    top: 0;
+    width: 2000em;
+}
+.slide {
+    position: relative;
+    float: left;
+    width: 793px;
+    height: 350px;
+    background: #036f35;
+    border: 1px solid rgba(0,71,38,.3);
+    @include border-radius(5px);
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        width: 100%;
+        height: 30px;
+        @include border-radius(50%);
+        @include background-image(radial-gradient(rgba(0,0,0,.2) 18%, rgba(0,0,0,0) 68%));
+    }
+}
+.slide__img {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+    img {
+        display: block;
+    }
+    span {
+        position: absolute;
+        right: 0;
+        bottom: 12px;
+        padding: 0 21px 0 18px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        background: rgb(25,117,67);
+        background: rgba(25,117,67,.9);
+        @include border-radius(4px 0 0 4px);
+    }
+}
+.slide__main {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    @include r;
+    .funny-btn {
+        position: absolute;
+        bottom: 25px;
+        left: 60px;
+        padding: 0 45px;
+        height: 52px;
+        line-height: 52px;
+        &:after {
+            display: none;
+        }
+    }
+}
+.slide__price {
+    position: absolute;
+    top: -68px;
+    right: -44px;
+    width: 155px;
+    height: 155px;
+    background: #ffed03;
+    @include border-radius(50%);
+    @include box-shadow(0 5px 5px rgba(0,0,0,.3)); 
+    font-size: 21px;
+    color: #036f35;
+    line-height: 1;
+    span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        bottom: 18px;
+        left: 25px;
+        text-align: right;
+    }
+    strong {
+        display: block;
+        font-size: 42px;
+        font-weight: normal;
+    }
+}
+.slide__title {
+    padding: 28px 110px 33px 0;
+    font-size: 40px;
+    line-height: 1;
+    strong {
+        display: block;
+        @include b;
+    }
+}
+.slide__descr {
+    color: #d5f390;
+    font-size: 30px;
+}
+.banner-link {
+    display: block;
+    overflow: hidden;
+    @include border-radius(5px);
+    @include box-shadow(0 2px 3px rgba(0,61,32,.3));
+    img {
+        display: block;
+        @include border-radius(5px);
+    }
+}
+.action-wrap {
+    margin: 40px -40px 0 0;
+}
+.action {
+    float: left;
+    margin: 0 30px 40px 0;
+    width: 460px;
+    overflow: hidden;
+    @include border-radius(7px);
+    @include box-shadow(0 2px 3px rgba(0,61,32,.3));
+    img {
+        margin: 0;
+        @include box-shadow(none);
+        @include border-radius(0);
+    }
+}
+.action__img {
+    position: relative;
+    img {
+        display: block;
+    }
+    span {
+        position: absolute;
+        right: 0; 
+        top: 10px;
+        padding: 0 30px 0 25px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 13px;
+        color: #fff;
+        background: rgb(22,98,52);
+        background: rgba(22,98,52, .8);
+        @include border-radius(4px 0 0 4px);
+        strong {
+            font-size: 17px;
+            font-family: Verdana,sans-serif;
+        }
+    }
+    .action__quant {
+        top: auto;
+        bottom: 10px;
+    }
+}
+
+.action__bottom {
+    position: relative;
+    background: #d5f390;
+}
+.action__text {
+    padding-left: 130px;
+    color: #036f35;
+    line-height: 1;
+    font-size: 20px;
+    height: 65px;
+    line-height: 65px;
+    @include r;
+    span {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+    }
+    strong {
+        @include b;
+    }
+}
+.action__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 65px;
+    line-height: 65px;
+    width: 105px;
+    text-align: center;
+    background: #eefad3;
+    &:hover {
+        background: #fff;
+        &:after {
+            @include sized-sprite($icons, corner3-h);
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        right: -16px;
+        top: 0;
+        @include sized-sprite($icons, corner3);
     }
 } 

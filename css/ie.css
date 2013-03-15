@@ -8,5 +8,5 @@
 .lteie8 .benefit__title { font-size: 23px; }
 .lteie8 .enter-code { line-height: 32px; }
 
-* + html .soc li, * + html .soc i, * + html .code__text, * + html .code__form, * + html .funny-btn, * + html .scroll-pagin li, * + html .video-preview, * + html .user-log__img, * + html .scroll-tabs li, * + html .popup__user img, * + html .popup__user div { display: inline; }
+* + html .soc li, * + html .soc i, * + html .code__text, * + html .code__form, * + html .funny-btn, * + html .scroll-pagin li, * + html .video-preview, * + html .user-log__img, * + html .scroll-tabs li, * + html .popup__user img, * + html .popup__user div, * + html .action__text span { display: inline; }
 * + html .soc li i { vertical-align: top; margin-top: 10px; }

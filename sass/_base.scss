@@ -177,12 +177,12 @@ $break-large: 1180px;
 }
 
 // fonts
-@mixin plr {
+@mixin r {
     font-weight: normal;
     font-style: normal;
     font-family: 'pragmaticalightcregular';
 }
-@mixin plb {
+@mixin b {
     font-weight: normal;
     font-style: normal;
     font-family: 'pragmaticalightcbold';

@@ -27,7 +27,7 @@ input, button {
     border: 0;
 }
 input, textarea, select,
-h1,h2,h3,h4,h5,h6,a,span,a:focus {
+h1,h2,h3,h4,h5,h6,a,span,a:focus,button {
     outline: none;
 }
 ul,ol { 
@@ -128,6 +128,7 @@ a{
     @include border-radius(4px);
     @include placeholder(#e6f9bb, Verdana);
     background: #6aaf24;
+    @include box-shadow(1px 1px 0 rgba(110,151,12,.8), inset 0 -2px 13px rgba(35,31,32,.17));
     @include background-image(linear-gradient(top, #118b3b, #6aaf24)); 
 }
 .nav {
@@ -308,7 +309,7 @@ a{
 .user-log {
     position: absolute;
     top: 43px;
-    right: 25px;
+    right: 26px;
     width: 180px; 
 }
 .user-log__img {
@@ -334,6 +335,7 @@ a{
         color: #fefdcc;
     }
 }
+
 /* -------------------------------------- //END Header ------------------------------------------ */
 
 /* ------------------------------------- Independent blocks -------------------------------------- */
@@ -559,7 +561,7 @@ a{
     z-index: 1000;
     width: 434px;
     background: #017135;
-    @include plr;
+    @include r;
     font-size: 24px;
     color: #e6f9bb;
     border: 2px solid #fefdcc;
@@ -599,7 +601,7 @@ a{
     }
     strong {
         display: block;
-        @include plb;
+        @include b;
     }
 }
 .popup_done {
@@ -616,13 +618,13 @@ a{
 }
 .popup_done__title {
     font-size: 33px;
-    @include plb;
+    @include b;
 }
 .popup_code {
     .wtf-code {
         margin-bottom: 5px;
         font-size: 24px;
-        @include plr;
+        @include r;
     }
     div {
         text-align: center;
@@ -648,7 +650,7 @@ a{
     padding: 40px 0 35px;
     color: #003d20;
     font-size: 36px;
-    @include plr;
+    @include r;
 }
 .line-2 {
     position: absolute;
@@ -697,6 +699,25 @@ a{
     display: none;
 }
 
+.scroll-nav {
+    button {
+        margin-right: 4px; 
+        width: 9px;
+        height: 9px;
+        border: 0;
+        background: #fff;
+    }
+    .activeSlide {
+        background: #287e43;
+    }
+}
+
+.scroll-nav_mod {
+    .is-active {
+        background: #ffed03;
+    }
+}
+
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
 /* ----------------------------------------- Footer ---------------------------------------------- */
@@ -732,7 +753,7 @@ a{
     display: block;
     margin-bottom: 15px;
     font-size: 18px;
-    @include plr;
+    @include r;
     text-transform: uppercase;
 }
 .footer__nav {
@@ -769,7 +790,7 @@ a{
         margin-bottom: 15px;
         font-size: 18px;
         color: #fff;
-        @include plr;
+        @include r;
     }
     a {
         color: #9ecb3a;

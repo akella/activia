@@ -67,6 +67,7 @@ $(document).ready(function() {
     } 
     else {}
 
+
 // --------------------- Products tabs ---------------------------- // 
     $(".tab1").show();
     $(".scroll-tabs li:first").addClass("is-active");
@@ -76,12 +77,11 @@ $(document).ready(function() {
         }
         else {
             $(".scroll-tabs li").removeClass("is-active");
-            $(".scroll-prod-wrap").slideUp();
+            $(".js-tab-cont").slideUp();
             var active = $(this).attr("data-tab");
             $(this).addClass("is-active");
             $(active).slideDown();
         }
-        
     });
 
 // --------------------- Scrollable products  ---------------------------- //
@@ -120,6 +120,23 @@ $(document).ready(function() {
         }
         else {}   
     });
+
+// --------------------- Scrollable shop ---------------------------- //
+    $(".scroll-shop").each(function(){
+        var current = $(this).children(".js-scroll-shop");
+        var prev = $(this).children(".prod-prev");
+        var next = $(this).children(".prod-next");
+        var nav = $(this).children(".scroll-nav_mod");
+        current.scrollable({
+            prev: prev,
+            next: next
+        }).navigator({
+            navi: nav,
+            naviItem: 'button',
+            activeClass: 'is-active'
+        });
+    });
+    
 
 
 });
