@@ -457,7 +457,7 @@ a{
     font-size: 18px;
     height: 45px;
     line-height: 45px;
-    background-position: 100% 100%;
+    background-position: 100% 0;
     &:after {
         position: absolute; 
         right: -60px;
@@ -522,6 +522,24 @@ a{
     i {
         margin-right: 20px;
         @include sized-sprite($icons, like);
+    }
+}
+.btn-green {
+    display: inline-block;
+    padding: 0 12px;
+    height: 35px;
+    line-height: 35px;
+    color: #fefdcc;
+    text-decoration: none;
+    @include border-radius(20px);
+    @include box-shadow(0 2px 9px rgba(3,94,48,.43), inset 0 -1px 0 rgba(255,255,255,.29));
+    @include background-image(linear-gradient(bottom, #01833d 0%, #55a341 100%));
+    &:hover {
+        @include transition(all .2s ease-in-out);
+        @include box-shadow(none);
+    }
+    &:active {
+        @include background-image(linear-gradient(bottom, #55a341 0%, #01833d 100%));
     }
 }
 // form

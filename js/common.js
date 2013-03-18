@@ -82,6 +82,21 @@ $(document).ready(function() {
             $(active).slideDown();
         }
     });
+// --------------------- Products tabs ---------------------------- // 
+    $(".tab1").show();
+    $(".prof-tab li:first").addClass("is-active");
+    $(".prof-tab li").click(function(){
+        if ($(this).hasClass("is-active")) {
+            return false;
+        }
+        else {
+            $(".prof-tab li").removeClass("is-active");
+            $(".tab-cont").hide();
+            var active = $(this).attr("data-tab");
+            $(this).addClass("is-active");
+            $(active).slideDown();
+        }
+    });
 
 // --------------------- Scrollable products  ---------------------------- //
     $(".scroll-prod-wrap").each(function(){
