@@ -17,6 +17,10 @@
     @include border-radius(50%);
     background-color: #67b13d;
     @include background-image(radial-gradient(center center, 90px 90px, rgba(232,252,62,.6) 0%, rgba(94,161,19,.1) 100%));
+    &.inactive{
+        border: 4px solid #b4c2ac;
+        @include background-image(radial-gradient(center center, 117px 117px, rgba(255,255,255,.71) 0%, rgba(216,216,216,.71) 100%));
+    }
 }
 
 .scroll {
@@ -1103,26 +1107,30 @@
     height: 42px;
     background: #21ab3d;
     @include border-radius(7px 7px 0 0);
-    @include box-shadow(3px 0 7px -2px rgba(0,0,0,.2));
     .is-active {
-        padding-bottom: 2px;
+        //padding-bottom: 2px;
         color: #1a8845;
         background: #f7ffe4;
         border: 2px solid #fff600;
         border-bottom: 0;
+        height: 42px;
+        line-height: 42px;
         text-shadow: 0 1px 0 rgba(18,83,22,.44);
         @include border-radius(7px 7px 0 0);
         @include box-shadow(5px 0 7px -5px rgba(0,0,0,.3),-5px 0 7px -5px rgba(0,0,0,.3));
     }
     li {
         display: inline-block;
+        vertical-align: top;
         padding: 0 27px;
-        height: 40px;
-        line-height: 40px;
+        height: 44px;
+        line-height: 44px;
         color: #f3ffd7;
         cursor: pointer;
         font-size: 16px;
         text-shadow: 0 -1px 0 rgba(18,83,22,.44);
+        @include border-radius(7px 7px 0 0);
+        @include box-shadow(3px 0 7px -2px rgba(0,0,0,.2));
     }
 }
 .prof__settings {
