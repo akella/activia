@@ -1239,12 +1239,18 @@
         }
     }
 }
-.badge-1 {@include sized-sprite($badges, 1);}
-.badge-2 {@include sized-sprite($badges, 2);}
-.badge-3 {@include sized-sprite($badges, 3);} 
-.badge-4 {@include sized-sprite($badges, 4);}
-.badge-5 {@include sized-sprite($badges, 5);}
-.badge-6 {@include sized-sprite($badges, 6);}
-.badge-7 {@include sized-sprite($badges, 7);}
-.badge-8 {@include sized-sprite($badges, 8);}
-.badge-9 {@include sized-sprite($badges, 9);}
+// .badge-1 {@include sized-sprite($badges, img_1);}
+// .badge-2 {@include sized-sprite($badges, img_2);}
+// .badge-3 {@include sized-sprite($badges, img_3);} 
+// .badge-4 {@include sized-sprite($badges, img_4);}
+// .badge-5 {@include sized-sprite($badges, img_5);}
+// .badge-6 {@include sized-sprite($badges, img_6);}
+// .badge-7 {@include sized-sprite($badges, img_7);}
+// .badge-8 {@include sized-sprite($badges, img_8);}
+// .badge-9 {@include sized-sprite($badges, img_9);}
+
+$i: 1;
+    @while $i < 7 {
+        .badge-#{$i} {@include sized-sprite($badges, img_#{$i});}
+    $i: $i + 1;
+}

@@ -1,0 +1,92 @@
+@import "base";
+
+.ask-question{}
+//funny-btn_small
+.funny-btn_small{
+    padding: 0 47px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+}
+
+
+//experts
+.experts{
+    margin: -56px 0 36px 0;
+    padding: 75px 30px 55px 90px;
+    background: #f7ffe4;
+    border: 2px solid #fff600;
+    border-top: 0;
+    @include border-radius(0 0 7px 7px);
+    color: #000;
+}
+    //speech
+    .experts-speech{
+        overflow: hidden;
+        margin-bottom: 85px;
+    }
+        .experts-speech__media{
+            float: left;
+            width: 120px;
+            margin-right: 20px;
+            img{
+                @include border-radius(15px);
+            }
+        }
+        .experts-speech__info{
+            overflow: hidden;
+            padding-top: 10px;
+        }
+            .experts-speech__text{
+                font-size: 16px;
+                color: #23292c;
+                margin-bottom: 15px;
+            }
+
+    //list
+    .experts-list{
+    }
+        .experts-list__item{
+            display: inline-block;
+            width: 33%;
+        }
+            .experts-list__image{
+                position: relative;
+                width: 257px;
+                height: 233px;
+                overflow: hidden;
+                margin-bottom: 25px;
+                @include border-radius(38px);
+                img{
+                }
+            }
+                .experts-list__more{
+                    position: absolute;
+                    bottom: 20px;
+                    right: 0;
+                    z-index: 10;
+                    background-color: rgba(1, 131, 62, 0.8);
+                    @include border-radius(10px 0 0 10px);
+                    padding: 5px 25px;
+                    h3{
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                    a{
+                        font-size: 14px;
+                        color: #d5f390;
+                    }
+                }
+            .experts-list__about{
+                color: #036f35;
+                padding: 0 20px;
+            }
+                .experts-list__title{
+                    margin-bottom: 10px;
+                }
+                .experts-list__caption{
+                    margin-bottom: 25px;
+                }
+                .experts-list__ask-questions{
+                    text-align: center;
+                }

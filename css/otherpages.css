@@ -1,0 +1,35 @@
+@charset "IBM866";
+@font-face { font-family: 'pragmaticalightcregular'; src: url("../fonts/pragmaticalightc-webfont.eot"); src: url("../fonts/pragmaticalightc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pragmaticalightc-webfont.woff") format("woff"), url("../fonts/pragmaticalightc-webfont.ttf") format("truetype"), url("../fonts/pragmaticalightc-webfont.svg#pragmaticalightcregular") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'pragmaticalightcbold'; src: url("../fonts/pragmaticalightc-bold-webfont.eot"); src: url("../fonts/pragmaticalightc-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pragmaticalightc-bold-webfont.woff") format("woff"), url("../fonts/pragmaticalightc-bold-webfont.ttf") format("truetype"), url("../fonts/pragmaticalightc-bold-webfont.svg#pragmaticalightcbold") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Conv_MyriadPro-BoldCond'; src: url("../fonts/MyriadPro-BoldCond.eot"); src: local("☺"), url("../fonts/MyriadPro-BoldCond.woff") format("woff"), url("../fonts/MyriadPro-BoldCond.ttf") format("truetype"), url("../fonts/MyriadPro-BoldCond.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+.funny-btn_small { padding: 0 47px; height: 42px; line-height: 42px; font-size: 18px; }
+
+.experts { margin: -56px 0 36px 0; padding: 75px 30px 55px 90px; background: #f7ffe4; border: 2px solid #fff600; border-top: 0; -webkit-border-radius: 0 0 7px 7px; -moz-border-radius: 0 0 7px 7px; -ms-border-radius: 0 0 7px 7px; -o-border-radius: 0 0 7px 7px; border-radius: 0 0 7px 7px; color: #000; }
+
+.experts-speech { overflow: hidden; margin-bottom: 85px; }
+
+.experts-speech__media { float: left; width: 120px; margin-right: 20px; }
+.experts-speech__media img { -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; }
+
+.experts-speech__info { overflow: hidden; padding-top: 10px; }
+
+.experts-speech__text { font-size: 16px; color: #23292c; margin-bottom: 15px; }
+
+.experts-list__item { display: inline-block; width: 33%; }
+
+.experts-list__image { position: relative; width: 257px; height: 233px; overflow: hidden; margin-bottom: 25px; -webkit-border-radius: 38px; -moz-border-radius: 38px; -ms-border-radius: 38px; -o-border-radius: 38px; border-radius: 38px; }
+
+.experts-list__more { position: absolute; bottom: 20px; right: 0; z-index: 10; background-color: rgba(1, 131, 62, 0.8); -webkit-border-radius: 10px 0 0 10px; -moz-border-radius: 10px 0 0 10px; -ms-border-radius: 10px 0 0 10px; -o-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px; padding: 5px 25px; }
+.experts-list__more h3 { font-size: 18px; color: #fff; }
+.experts-list__more a { font-size: 14px; color: #d5f390; }
+
+.experts-list__about { color: #036f35; padding: 0 20px; }
+
+.experts-list__title { margin-bottom: 10px; }
+
+.experts-list__caption { margin-bottom: 25px; }
+
+.experts-list__ask-questions { text-align: center; }
