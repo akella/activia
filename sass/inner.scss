@@ -1250,7 +1250,7 @@
 // .badge-9 {@include sized-sprite($badges, img_9);}
 
 $i: 1;
-    @while $i < 7 {
+    @while $i < 10 {
         .badge-#{$i} {@include sized-sprite($badges, img_#{$i});}
     $i: $i + 1;
 }
