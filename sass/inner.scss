@@ -2,7 +2,11 @@
 
 // Test page
 .main-test {
-    padding: 0 0 72px;
+    padding: 0 0 146px;
+    margin-top: -2px;
+    .bubble{
+        margin-right: 125px;
+    }
 }
 .bubble {
     float: right;
@@ -52,7 +56,7 @@
 }
 .scroll__title {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     color: #feed03;
     @include b;
     font-size: 36px;
@@ -71,13 +75,14 @@
     width: 2000em;
     overflow: hidden;
     p {
-        line-height: 26px; 
+        line-height: 26px;
+        margin-left: 8px;
     }
     .is-active {
         i {
             position: absolute;
-            bottom: -11px;
-            right: 52px;
+            bottom: 0;
+            right: -7px;
             @include sized-sprite($icons, selected);
         }
     }
@@ -101,16 +106,15 @@
 }
 .scroll__img {
     position: relative;
-    margin-bottom: 34px;
-    width: 280px;
-    height: 290px;
+    margin-bottom: 25px;
+    width: 253px;
+    height: 265px;
     @include border-radius(50%);
     img {
-        width: 280px;
-        height: 290px;
+        max-width: 253px;
+        min-height: 265px;
         @include border-radius(50%);
     }
-    
 }
 
 .title-l-1,
