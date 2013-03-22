@@ -484,11 +484,52 @@
 		top: 40px;
 		left: -20px;
 		height: 87px;
-		width: 200px;
+		padding: 0 10px;
 		background: #89c13f;
 		@include box-shadow(1px 2px 10px rgba(15,124,58,.44));
 		@include background-image(linear-gradient(bottom, #89c13f 0%, #bfdb31 100%));
 		border-radius: 20px;
+		display: inline-block;
+		white-space: nowrap;
+		a{
+			text-decoration: none;
+			font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+			color: #003d20;
+			font-size: 11px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		&:before{
+			@include sized-sprite($icons, daypeople_arr);
+			position: absolute;
+			top: -19px;
+			left: 50%;
+			margin-left: -13px;
+			content: "";
+		}
+	}
+	.daypeople__person{
+		display: inline-block;
+		margin-top: 7px;
+		margin-right: 5px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	.daypeople__av{
+		width: 60px;
+		height: 60px;
+		@include border-radius(50%);
+		position: relative;
+		left: 50%;
+		margin-left: -30px;
+	}
+	.daypeople__name{
+		font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+		color: #003d20;
+		font-size: 11px;
+		font-style: italic;
 	}
 }
 
