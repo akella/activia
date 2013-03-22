@@ -150,6 +150,7 @@ a{
     }     
 }
 .enter-code {
+    cursor: pointer;
     position: absolute;
     bottom: 11px;
     left: 102px;
@@ -164,7 +165,11 @@ a{
     @include placeholder(#e6f9bb, Verdana);
     background: #6aaf24;
     @include box-shadow(1px 1px 0 rgba(110,151,12,.8), inset 0 -2px 13px rgba(35,31,32,.17));
-    @include background-image(linear-gradient(top, #118b3b, #6aaf24)); 
+    @include background-image(linear-gradient(top, #118b3b, #6aaf24));
+    span{
+        margin: 6px 0 0 2px;
+        display: inline-block;
+    }
 }
 .nav {
     float: left;
