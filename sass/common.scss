@@ -44,6 +44,41 @@ table {
 }
 *{-webkit-text-size-adjust: none; }
 /* ------------------------------------- //END Reset css --------------------------------------- */
+
+@font-face {
+    font-family: 'pragmaticalightcregular';
+    src: url('../fonts/pragmaticalightc-webfont.eot');
+    src: url('../fonts/pragmaticalightc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pragmaticalightc-webfont.woff') format('woff'),
+         url('../fonts/pragmaticalightc-webfont.ttf') format('truetype'),
+         url('../fonts/pragmaticalightc-webfont.svg#pragmaticalightcregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pragmaticalightcbold';
+    src: url('../fonts/pragmaticalightc-bold-webfont.eot');
+    src: url('../fonts/pragmaticalightc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pragmaticalightc-bold-webfont.woff') format('woff'),
+         url('../fonts/pragmaticalightc-bold-webfont.ttf') format('truetype'),
+         url('../fonts/pragmaticalightc-bold-webfont.svg#pragmaticalightcbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'Conv_MyriadPro-BoldCond';
+  src: url('../fonts/MyriadPro-BoldCond.eot');
+  src: local('☺'), 
+    url('../fonts/MyriadPro-BoldCond.woff') format('woff'), 
+    url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'), 
+    url('../fonts/MyriadPro-BoldCond.svg') format('svg');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+
 /* ----------------------------------------- Main styles --------------------------------------- */
 body{
     min-width: 1020px;

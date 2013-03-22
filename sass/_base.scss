@@ -3,38 +3,7 @@
 @import "lib/keyframes";
 @import "lib/media";
 @import "lib/ceaser-easing/ceaser";
-@font-face {
-    font-family: 'pragmaticalightcregular';
-    src: url('../fonts/pragmaticalightc-webfont.eot');
-    src: url('../fonts/pragmaticalightc-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pragmaticalightc-webfont.woff') format('woff'),
-         url('../fonts/pragmaticalightc-webfont.ttf') format('truetype'),
-         url('../fonts/pragmaticalightc-webfont.svg#pragmaticalightcregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-@font-face {
-    font-family: 'pragmaticalightcbold';
-    src: url('../fonts/pragmaticalightc-bold-webfont.eot');
-    src: url('../fonts/pragmaticalightc-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pragmaticalightc-bold-webfont.woff') format('woff'),
-         url('../fonts/pragmaticalightc-bold-webfont.ttf') format('truetype'),
-         url('../fonts/pragmaticalightc-bold-webfont.svg#pragmaticalightcbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-  font-family: 'Conv_MyriadPro-BoldCond';
-  src: url('../fonts/MyriadPro-BoldCond.eot');
-  src: local('☺'), 
-    url('../fonts/MyriadPro-BoldCond.woff') format('woff'), 
-    url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'), 
-    url('../fonts/MyriadPro-BoldCond.svg') format('svg');
-  font-weight: normal;
-  font-style: normal; 
-}
 // gradients for ie
 $experimental-support-for-svg: true;
 
@@ -140,6 +109,19 @@ $break-large: 1180px;
   }
 }
 
+// placeholder color
+@mixin placeholder-color($color) {
+  &.placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
 @mixin gray(){
   filter: url(../img/filter.svg#grayscale);
   filter: gray;
@@ -173,6 +155,10 @@ $break-large: 1180px;
   height: image-height($path);
 }
 @mixin sized-sprite($map, $sprite){
+  background: sprite($map, $sprite) no-repeat;
+  @include image-size(sprite-file($map, $sprite));
+}
+@mixin s($map, $sprite){
   background: sprite($map, $sprite) no-repeat;
   @include image-size(sprite-file($map, $sprite));
 }
