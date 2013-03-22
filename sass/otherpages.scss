@@ -213,9 +213,9 @@
         .questions__media_alt{
             width: 240px;
             margin-top: 0;
-            margin-bottom: -6px;
             overflow: hidden;
             img{
+                display: block;
                 max-width: 240px;
                 min-height: 143px;
                 @include border-radius(7px 0 0 7px);
