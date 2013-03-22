@@ -800,7 +800,7 @@ a{
 }
 .footer__left {
     float: left;
-    margin-right: 260px;
+    margin-right: 245px;
 }
 .footer__title {
     display: block;
@@ -813,6 +813,9 @@ a{
     position: relative;
     z-index: 2;
     margin-bottom: 23px;
+    ul{
+        padding-left: 15px;
+    }
     li {
         position: relative;
         margin-bottom: 10px;
@@ -823,6 +826,13 @@ a{
         text-decoration: none;
         &:hover {
             text-decoration: underline;
+        }
+        &:before{
+            position: absolute;
+            top: -1px;
+            left: -16px;
+            content: "●";
+            color: #50a23a;
         }
     }
 }

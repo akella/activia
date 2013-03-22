@@ -175,7 +175,7 @@
     overflow: hidden;
     font-size: 18px;
     .wrapper {
-        padding: 66px 0;
+        padding: 40px 0 65px;
     }
     p {
         font-style: italic;
@@ -188,7 +188,24 @@
     font-size: 45px;
     @include r;
 }
-
+    .i-want-more{
+        position: relative;
+        font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+        font-size: 18px;
+        color: #d5f390;
+        text-decoration: none;
+        border-bottom: 1px dotted #d5f390;
+        &:hover{
+            border-bottom: 1px dotted transparent;
+        }
+        &:after{
+            @include sized-sprite($icons, iwantmore_arr);
+            position: absolute;
+            top: 7px;
+            right: -14px;
+            content: "";
+        }
+    }
 .benefit {
     position: relative;
     float: left; 
@@ -256,16 +273,19 @@
 
 .banners-wrap {
     margin: 0 auto;
-    padding: 17px 0 14px;
+    padding: 17px 0 0;
     width: 1020px;
     overflow: hidden;
 }
 .banner {
     float: left;
     text-decoration: none;
+        .banner__link {
+            border-bottom: 1px dotted #005f32;
+        }
     &:hover {
         .banner__link {
-            border-bottom: 1px solid #005f32;
+             border-bottom: 1px solid transparent;
         }
         @include transition(all .5s ease-in-out);
         @include translate(0, -5px);
