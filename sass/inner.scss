@@ -125,21 +125,25 @@
 }
 .title-l-2 {
     font-size: 30px;
-    margin: 30px 0 20px;
+    margin: 50px 0 20px;
 }
 
 .new-prod {
-    margin: 22px 0 40px 40px;
+    margin: -5px 0 -25px;
 }
 .new-prod__img {
     position: relative;
     float: left;
-    margin-right: 20px;
+    height: 270px;
+    line-height: 270px;
+    width: 332px;
+    margin-right: 136px;
+    text-align: center;
     &:before {
         content: "";
         position: absolute;
-        left: -146px;
-        top: -172px;
+        left: -122px;
+        top: -120px;
         width: 545px;
         height: 545px;
         @include background-image(radial-gradient(rgba(247,234,2,.4) 18%, rgba(247,234,2,0) 68%));
@@ -147,12 +151,15 @@
     img {
         position: relative;
         z-index: 2;
-        margin-top: 7px;
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 .new-prod__info {
     overflow: hidden;
     font-size: 18px;
+    padding-top: 30px;
     @include r;
     strong {
         @include b;
@@ -221,7 +228,7 @@
 } 
 
 .products {
-    padding: 46px 0 96px;
+    padding: 46px 0 99px;
 }
 
 .scroll-prod-wrap {
@@ -314,21 +321,22 @@
 .scroll-message {
     clear: both;
     position: relative;
-    padding: 20px 65px 20px 38px;
+    padding: 20px 65px 29px 38px;
     background: #00732c;
     border: 2px solid #26ba00;
     @include border-radius(7px);
-    ul {
-        float: right;
-        width: 40%; 
-    }
-} 
-.scroll-message__info {
-    float: left;
-    width: 50%;
     color: #fefdcc;
     font-size: 18px;
     font-family: Verdana,sans-serif;
+    line-height: 1.2;
+    ul {
+        float: right;
+        width: 45%;
+    }
+}
+.scroll-message__info {
+    float: left;
+    width: 50%;
 }
 
 .content-outer {
@@ -363,7 +371,20 @@
         font-size: 18px;
     }
     p {
-        margin-bottom: 17px;
+        margin-bottom: 7px;
+    }
+    ul{
+        margin-bottom: 7px;
+        padding-left: 10px;
+    }
+    li{
+        position: relative;
+        &:before{
+            position: absolute;
+            top: 0;
+            left: -10px;
+            content: "-";
+        }
     }
     img {
         margin: 30px 0;
@@ -372,13 +393,15 @@
     }
 }
 .equal-col {
-    width: 47%;
+
 }
 .equal__col-left {
     float: left;
+    width: 50%;
 }
 .equal__col-right {
     float: right;
+    width: 48%;
 }
 
 .video-scroll-wrap {
