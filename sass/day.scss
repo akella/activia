@@ -107,6 +107,12 @@
 			padding: 4px 10px;
 		}
 	}
+	.sms__arr{
+		position: absolute;
+		bottom: 12px;
+		left: -13px;
+		@include s($icons, smsarr);
+	}
 }
 .advs{
 	position: absolute;
@@ -199,6 +205,98 @@
 		padding: 0 20px;
 		color: #003d20;
 		font-size: 12px;
+	}
+}
+
+.atext{
+	background: #F7FFE7;
+	border-radius: 20px;
+	padding: 20px 50px;
+	border: 2px solid #FCF870;
+	font-size: 14px;
+	color: #003d20;
+	position: relative;
+	.atext__close{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		@include s($icons,atextclose);
+		cursor: pointer;
+	}
+	.atext__arr{
+		top: -26px;
+		position: absolute;
+		right: 160px;
+		@include s($icons, atextarr);
+	}
+	p{
+		margin-bottom: 1.3em;
+	}
+	p+h2{
+		margin-top: 34px;
+	}
+	a{
+		color: #003d20;
+	}
+	h2{
+		font-size: 36px;
+		font-weight: normal;
+		font-family: 'pragmaticalightcregular',arial,sans-serif;
+		margin-bottom: 20px;
+	}
+	.atext__pic{
+		margin-bottom: 20px;
+		@extend %clr;
+		.atext__picimg{
+			float: left;
+			border-radius: 20px;
+			margin-right: 45px;
+			img{
+				display: block;
+				border-radius: 12px;
+				box-shadow:2px 2px 8px rgba(#000,.3);
+			}
+		}
+	}
+	.atext__pictext{
+		font-size: 14px;
+		color: #07873f;
+		clear: left;
+		padding-top: 8px;
+	}
+	.share{
+		display: table;
+		padding-top: 64px;
+	}
+}
+.share{
+	color: #003d20;
+	h3{
+		font-size: 20px;
+		color: #003d20;
+		font-weight: bold;
+		margin-bottom: 14px;
+	}
+	p{
+		font-style: italic;
+		font-size: 14px;
+		margin-top: 9px;
+	}
+	@each $s in fb,od,vk{
+		.share__#{$s}{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			text-decoration: none;
+			@extend %hide-text;
+			border-radius: 10px;
+			box-shadow:0 0 7px rgba(#000,0.3);
+			@include s($icons,s-#{$s});
+			opacity: .8;
+			&:hover{
+				opacity: 1;
+			}
+		}
 	}
 }
 

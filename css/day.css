@@ -1,9 +1,13 @@
+.share .share__fb, .share .share__od, .share .share__vk { font: 0/0 a; text-shadow: none; color: transparent; }
+
+.atext .atext__pic:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
 .aday { height: 356px; width: 960px; margin: 0 auto 160px auto; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -moz-background-size: cover 100%; -webkit-background-size: cover 100%; background-size: cover 100%; background: #036f35 url(../img/bg.jpg) no-repeat 50% 0; -webkit-box-shadow: 0 3px 5px rgba(10, 66, 23, 0.47), inset 0 5px 43px rgba(91, 91, 91, 0.87); -moz-box-shadow: 0 3px 5px rgba(10, 66, 23, 0.47), inset 0 5px 43px rgba(91, 91, 91, 0.87); box-shadow: 0 3px 5px rgba(10, 66, 23, 0.47), inset 0 5px 43px rgba(91, 91, 91, 0.87); position: relative; }
-.aday .aday__logo { position: absolute; background: url('../img/icons-s9a17d77f03.png') 0 -1432px no-repeat; width: 105px; height: 96px; top: 27px; right: 27px; }
+.aday .aday__logo { position: absolute; background: url('../img/icons-s4fd4a9c923.png') 0 -1486px no-repeat; width: 105px; height: 96px; top: 27px; right: 27px; }
 .aday .aday__slider { position: absolute; top: 27px; left: 50px; }
-.aday .aday__slider .aday__prev, .aday .aday__slider .aday__next { position: absolute; top: 47px; left: -30px; cursor: pointer; background: url('../img/icons-s9a17d77f03.png') 0 -3263px no-repeat; width: 17px; height: 27px; }
-.aday .aday__slider .aday__next { left: auto; right: -30px; background: url('../img/icons-s9a17d77f03.png') 0 -3226px no-repeat; width: 17px; height: 27px; }
-.aday .aday__slider .aday__day { background: url('../img/icons-s9a17d77f03.png') 0 -1080px no-repeat; width: 92px; height: 114px; position: relative; }
+.aday .aday__slider .aday__prev, .aday .aday__slider .aday__next { position: absolute; top: 47px; left: -30px; cursor: pointer; background: url('../img/icons-s4fd4a9c923.png') 0 -3527px no-repeat; width: 17px; height: 27px; }
+.aday .aday__slider .aday__next { left: auto; right: -30px; background: url('../img/icons-s4fd4a9c923.png') 0 -3490px no-repeat; width: 17px; height: 27px; }
+.aday .aday__slider .aday__day { background: url('../img/icons-s4fd4a9c923.png') 0 -1080px no-repeat; width: 92px; height: 114px; position: relative; }
 .aday .aday__slider .aday__day span { position: absolute; display: inline-block; text-align: center; color: #fefefe; font-size: 14px; padding: 1px 10px 0; line-height: 1; }
 .aday .aday__slider .aday__day strong { text-align: center; font-family: Tahoma,sans-serif; color: #02602e; font-weight: normal; display: block; font-size: 55px; width: 100%; position: absolute; bottom: 5px; left: 0; }
 
@@ -15,6 +19,7 @@
 .sms .sms__form .phone.placeholder { color: #e6f9bb; }
 .sms .sms__form .phone:-moz-placeholder { color: #e6f9bb; }
 .sms .sms__form .phone::-webkit-input-placeholder { color: #e6f9bb; }
+.sms .sms__arr { position: absolute; bottom: 12px; left: -13px; background: url('../img/icons-s4fd4a9c923.png') 0 -3388px no-repeat; width: 13px; height: 20px; }
 
 .advs { position: absolute; top: 172px; left: 55px; }
 
@@ -29,5 +34,28 @@
 .adv .adv__pic { float: left; box-shadow: 1px 3px 0 #2D7A30; border-radius: 12px; margin-right: 12px; width: 82px; height: 82px; }
 .adv .adv__name { color: #fdf5ee; font-size: 15px; display: block; line-height: 1.1; margin-bottom: 3px; }
 .adv .adv__pos { font-size: 12px; color: #e5f8bb; font-family: "Verdana"; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.28); }
-.adv .adv__pin { background: url('../img/icons-s9a17d77f03.png') 0 -2299px no-repeat; width: 29px; height: 34px; position: absolute; left: 100px; top: -20px; z-index: 10; }
+.adv .adv__pin { background: url('../img/icons-s4fd4a9c923.png') 0 -2461px no-repeat; width: 29px; height: 34px; position: absolute; left: 100px; top: -20px; z-index: 10; }
 .adv .adv__text { position: absolute; left: 0; right: 0; bottom: 20px; padding: 0 20px; color: #003d20; font-size: 12px; }
+
+.atext { background: #F7FFE7; border-radius: 20px; padding: 20px 50px; border: 2px solid #FCF870; font-size: 14px; color: #003d20; position: relative; }
+.atext .atext__close { position: absolute; top: 15px; right: 15px; background: url('../img/icons-s4fd4a9c923.png') 0 -3454px no-repeat; width: 26px; height: 26px; cursor: pointer; }
+.atext .atext__arr { top: -26px; position: absolute; right: 160px; background: url('../img/icons-s4fd4a9c923.png') 0 -3418px no-repeat; width: 50px; height: 26px; }
+.atext p { margin-bottom: 1.3em; }
+.atext p + h2 { margin-top: 34px; }
+.atext a { color: #003d20; }
+.atext h2 { font-size: 36px; font-weight: normal; font-family: 'pragmaticalightcregular',arial,sans-serif; margin-bottom: 20px; }
+.atext .atext__pic { margin-bottom: 20px; }
+.atext .atext__pic .atext__picimg { float: left; border-radius: 20px; margin-right: 45px; }
+.atext .atext__pic .atext__picimg img { display: block; border-radius: 12px; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); }
+.atext .atext__pictext { font-size: 14px; color: #07873f; clear: left; padding-top: 8px; }
+.atext .share { display: table; padding-top: 64px; }
+
+.share { color: #003d20; }
+.share h3 { font-size: 20px; color: #003d20; font-weight: bold; margin-bottom: 14px; }
+.share p { font-style: italic; font-size: 14px; margin-top: 9px; }
+.share .share__fb { display: inline-block; vertical-align: middle; margin-right: 10px; text-decoration: none; border-radius: 10px; box-shadow: 0 0 7px rgba(0, 0, 0, 0.3); background: url('../img/icons-s4fd4a9c923.png') 0 -1866px no-repeat; width: 44px; height: 44px; opacity: .8; }
+.share .share__fb:hover { opacity: 1; }
+.share .share__od { display: inline-block; vertical-align: middle; margin-right: 10px; text-decoration: none; border-radius: 10px; box-shadow: 0 0 7px rgba(0, 0, 0, 0.3); background: url('../img/icons-s4fd4a9c923.png') 0 -1387px no-repeat; width: 44px; height: 44px; opacity: .8; }
+.share .share__od:hover { opacity: 1; }
+.share .share__vk { display: inline-block; vertical-align: middle; margin-right: 10px; text-decoration: none; border-radius: 10px; box-shadow: 0 0 7px rgba(0, 0, 0, 0.3); background: url('../img/icons-s4fd4a9c923.png') 0 -1812px no-repeat; width: 44px; height: 44px; opacity: .8; }
+.share .share__vk:hover { opacity: 1; }
