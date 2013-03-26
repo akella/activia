@@ -296,13 +296,13 @@ a{
     span {
         display: block;
     }
+}
     .icon-ios {
         @include sized-sprite($icons, ios);
     }
     .icon-android {
         @include sized-sprite($icons, android);
     }
-}
 .download_small {
     position: absolute;
     top: 0;
@@ -506,10 +506,10 @@ a{
     }
 }
 .funny-btn_green {
-    color: #fefdcc;
+    color: #fefdcc  !important;
     background: #ffed01 url(../img/funny-btn-2.png) 0 0 repeat-x;
     &:hover {
-        color: #006536;
+        color: #006536  !important;
     }
     &:after {
         display: none;
