@@ -725,7 +725,7 @@ a:hover { text-decoration: none; }
 
 .sms { position: absolute; top: 38px; left: 193px; width: 615px; height: 81px; border-radius: 10px; }
 .sms .sms__av { position: absolute; left: 0; border-top-left-radius: 10px; border-bottom-left-radius: 10px; width: 98px; height: 81px; }
-.sms .sms__form { position: absolute; right: 0; top: 0; border: 2px solid #63AB49; border-left: none; height: 67px; width: 494px; padding-left: 19px; padding-top: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+.sms .sms__form { position: absolute; right: 0; top: 0; border: 2px solid #63AB49; border-left: none; height: 67px; width: 496; padding-left: 19px; padding-top: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
 .sms .sms__form label { font-size: 16px; color: #FFFA55; font-family: 'pragmaticalightcregular',arial,sans-serif; margin-bottom: 4px; display: inline-block; }
 .sms .sms__form .phone { font-size: 15px; color: #D5EDB5; width: 183px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: #519535; -webkit-box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); -moz-box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); background-color: #70B74F; padding: 4px 10px; }
 .sms .sms__form .phone.placeholder { color: #d5edb5; }
@@ -735,7 +735,7 @@ a:hover { text-decoration: none; }
 
 .advs { position: absolute; top: 172px; left: 55px; }
 
-.adv { -webkit-border-radius: 12px; -moz-border-radius: 12px; -ms-border-radius: 12px; -o-border-radius: 12px; border-radius: 12px; background-color: #E8E1DB; -webkit-box-shadow: 0 0 5px rgba(4, 60, 27, 0.25); -moz-box-shadow: 0 0 5px rgba(4, 60, 27, 0.25); box-shadow: 0 0 5px rgba(4, 60, 27, 0.25); width: 240px; height: 322px; margin-left: 70px; position: relative; float: left; }
+.adv { -webkit-border-radius: 12px; -moz-border-radius: 12px; -ms-border-radius: 12px; -o-border-radius: 12px; border-radius: 12px; background-color: #E8E1DB; -webkit-box-shadow: 0 0 5px rgba(4, 60, 27, 0.25); -moz-box-shadow: 0 0 5px rgba(4, 60, 27, 0.25); box-shadow: 0 0 5px rgba(4, 60, 27, 0.25); width: 240px; height: 322px; margin-left: 70px; position: relative; float: left; cursor: pointer; }
 .adv:first-child { margin-left: 0; }
 .adv:before, .adv:after { content: ' '; position: absolute; z-index: 1; -webkit-border-radius: 12px; -moz-border-radius: 12px; -ms-border-radius: 12px; -o-border-radius: 12px; border-radius: 12px; -webkit-box-shadow: 0 0 5px rgba(4, 60, 27, 0.75); -moz-box-shadow: 0 0 5px rgba(4, 60, 27, 0.75); box-shadow: 0 0 5px rgba(4, 60, 27, 0.75); width: 100%; height: 100%; top: 3px; background: #F7FFE7; }
 .adv:before { top: 6px; }

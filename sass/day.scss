@@ -85,7 +85,7 @@
 		border: 2px solid #63AB49;
 		border-left: none;
 		height: 81px - 4px - 10px;
-		width: 513px - 19px;
+		width: 496px;
 		padding-left: 19px;
 		padding-top: 10px;
 		border-top-right-radius:10px;
@@ -130,6 +130,7 @@
 	margin-left: 70px;
 	position: relative;
 	float: left;
+	cursor: pointer;
 	&:first-child{
 		margin-left: 0;
 	}
