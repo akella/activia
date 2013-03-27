@@ -752,12 +752,12 @@
         padding-top: 11px;
         position: relative;
         float: left;
-        width: 48%;
+        width: 43%;
         text-align: right;
         &:after{
             position: absolute;
             top: 0;
-            right: -15px;
+            right: -30px;
             content: "";
             @include sized-sprite($icons, codearr);
         }
@@ -776,6 +776,8 @@
     }
 
 .codepage__entercode{
+    margin-top: 20px;
+    margin-bottom: 50px;
     position: relative;
     font-family: Verdana;
     color: #e6f9bb;
@@ -784,11 +786,12 @@
     height: 69px;
     line-height: 69px;
     vertical-align: middle;
-    @include border-radius(5px 0 0 5px);
+    @include border-radius(5px 0 5px 5px);
     background-color: #036f35;
     @include box-shadow(0 1px 0 rgba(29,103,46,.75),
                 inset 0 -1px 0 rgba(239,239,239,.28));
-                padding: 5px;
+    padding: 0 60px;
+    width: 80%;
     a{
         color: #ffee35;
         text-decoration: none;
@@ -800,12 +803,79 @@
     &:after{
         position: absolute;
         @include sized-sprite($icons, entercodearr);
-        top: 0;
-        right: 0;
+        top: -2px;
+        right: -2px;
         content: "";
     }
 }
 
     .yourcode{
+        font-size: 15px;
+        color: #D5EDB5;
+        width: 145px;
+        @include border-radius(5px);
+        background-color: #519535;
+        @include box-shadow(inset 1px 1px 1px rgba(24,78,20,.77));
+        background-color: #70B74F;
+        padding: 4px 10px;
+        @include placeholder-color(#D5EDB5);
+    }
 
+.codepage__codeinfo{
+    @extend %clr;
+    li{
+        padding: 25px 0;
+        position: relative;
+        &:before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            @include sized-sprite($icons, codelistborder);
+        }
+    }
+}
+    .codepage__codemeta{
+        width: 124px;
+        float: left;
+        margin-right: 24px;
+        text-align: right;
+    }
+        .codepage__codemetadata{
+            width: 112px;
+            @include box-shadow(0 2px 9px rgba(3,94,48,.43), inset 0 -1px 0 rgba(255,255,255,.29));
+            @include border-radius(5px);
+            margin-left: 11px;
+        }
+            .codepage__codedate{
+                position: relative;
+                z-index: 1;
+                height: 35px;
+                line-height: 35px;
+                vertical-align: middle;
+                //display: block;
+                color: #fefdcc;
+                font-size: 16px;
+                text-align: center;
+                @include border-radius(5px);
+                background: #017939;
+            }
+            .codepage__codetime{
+                height: 20px;
+                padding-top: 5px;
+                //display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                color: #1e620f;
+                font-size: 14px;
+                background: #95c63c;
+                margin-top: -5px;
+                @include border-radius(5px);
+            }
+    .codepage__codetext{
+        overflow: hidden;
+        height: 55px;
+        line-height: 55px;
+        vertical-align: middle;
+        display: inline-block;
     }
