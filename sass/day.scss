@@ -2,13 +2,14 @@
 
 .aday{
 	height: 356px;
+	height: 468px;
 	width: 960px;
+	width: 975px;
 	margin: 0 auto 160px auto;
-
-	@include border-radius(3px);
-	@include background-size(cover);
-	background: #036f35 url(../img/bg.jpg) no-repeat 50% 0;
-	@include box-shadow(0 3px 5px rgba(10,66,23,.47), inset 0 5px 43px rgba(91,91,91,.87));
+// 	@include border-radius(20px);
+// 	@include background-size(cover);
+	background:  url(../img/bill.png) no-repeat 0 0;
+// 	@include box-shadow(0 3px 5px rgba(10,66,23,.47), inset 0 5px 43px rgba(91,91,91,.87));
 	position: relative;
 	.aday__logo{
 		position: absolute;
@@ -67,8 +68,8 @@
 	width: 615px;
 	height: 81px;
 	border-radius: 10px;
-	box-shadow:0 2px 5px rgba(#000,.6);
-	background: #006034;
+// 	box-shadow:0 2px 5px rgba(#000,.6);
+// 	background: #006034;
 	.sms__av{
 		position: absolute;
 		left: 0;
@@ -81,7 +82,8 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		border: 2px solid #6CAF3C;
+		border: 2px solid #63AB49;
+		border-left: none;
 		height: 81px - 4px - 10px;
 		width: 513px - 19px;
 		padding-left: 19px;
@@ -90,28 +92,28 @@
 		border-bottom-right-radius:10px;
 		label{
 			font-size: 16px;
-			color: #fefdcc;
+			color: #FFFA55;
 			font-family: 'pragmaticalightcregular',arial,sans-serif;
 			margin-bottom: 4px;
 			display: inline-block;
 		}
 		.phone{
 			font-size: 15px;
-			color: #e6f9bb;
+			color: #fff;
 			width: 183px;
 			@include border-radius(5px);
 			background-color: #519535;
 			@include box-shadow(inset 1px 1px 1px rgba(24,78,20,.77));
-			@include background-image(linear-gradient(top, #338e47 0%, #61ab45 100%));
-			@include placeholder-color(#e6f9bb);
+			background-color: #70B74F;
 			padding: 4px 10px;
+			@include placeholder-color(#fff);
 		}
 	}
 	.sms__arr{
 		position: absolute;
 		bottom: 12px;
 		left: -13px;
-		@include s($icons, smsarr);
+		@include s($icons, arrnew);
 	}
 }
 .advs{
