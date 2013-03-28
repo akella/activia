@@ -259,12 +259,15 @@
 .popup { z-index: 1001; }
 
 .popup_medal { width: 496px; margin-left: -285px; padding: 30px 50px 20px; }
+.popup_medal .popup__left { float: left; width: 125px; }
+.popup_medal .popup__right { float: right; width: 310px; }
+
+.popup__thankscode .popup__left { float: left; width: 114px; margin-right: 35px; }
+.popup__thankscode .popup__right { overflow: hidden; }
+
+.popup__plus { margin-top: 25px; }
 
 .popup_boutique { width: 416px; margin-left: -245px; }
-
-.popup__left { float: left; width: 125px; }
-
-.popup__right { float: right; width: 310px; }
 
 .popup__medal { text-align: center; font-size: 14px; font-style: italic; font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif; }
 
@@ -279,9 +282,10 @@
 
 .popup__vk { background: url('../img/icons-s3e13a5f9d7.png') 0 -1913px no-repeat; width: 35px; height: 34px; }
 
-.popup__text { margin-bottom: 25px; position: relative; }
+.popup__text { margin-bottom: 25px; position: relative; font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; }
 .popup__text .h1 { font-weight: normal; font-style: normal; font-family: 'pragmaticalightcregular'; font-size: 24px; }
-.popup__text p { font-size: 18px; font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; }
+.popup__text p { font-size: 18px; }
+.popup__text strong { font-size: 24px; font-weight: normal; }
 
 .popup__medaltitle { margin-bottom: 25px; }
 

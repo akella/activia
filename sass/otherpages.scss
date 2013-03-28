@@ -1050,11 +1050,6 @@
     width: 496px;
     margin-left: -285px;
     padding: 30px 50px 20px;
-}
-.popup_boutique{
-    width: 416px;
-    margin-left: -245px;
-}
     .popup__left{
         float: left;
         width: 125px;
@@ -1063,7 +1058,26 @@
         float: right;
         width: 310px;
     }
-        .popup__medal{
+}
+.popup__thankscode{
+    .popup__left{
+        float: left;
+        width: 114px;
+        margin-right: 35px;
+    }
+    .popup__right{
+        overflow: hidden;
+    }
+}
+.popup__plus{
+    margin-top: 25px;
+}
+.popup_boutique{
+    width: 416px;
+    margin-left: -245px;
+}
+
+.popup__medal{
             text-align: center;
             font-size: 14px;
             font-style: italic;
@@ -1091,13 +1105,17 @@
     .popup__text{
         margin-bottom: 25px;
         position: relative;
+        font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
         .h1{
             @include r;
             font-size: 24px;
         }
         p{
             font-size: 18px;
-            font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+        }
+        strong{
+            font-size: 24px;
+            font-weight: normal;
         }
     }
         .popup__medaltitle{
