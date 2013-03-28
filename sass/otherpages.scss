@@ -1033,3 +1033,88 @@
             display: inline-block;
         }
     }
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+.popup{
+    z-index: 1001;
+}
+.popup_medal{
+    width: 496px;
+    margin-left: -285px;
+    padding: 30px 50px 20px;
+}
+    .popup__left{
+        float: left;
+        width: 125px;
+    }
+    .popup__right{
+        float: right;
+        width: 310px;
+    }
+        .popup__medal{
+            text-align: center;
+            font-size: 14px;
+            font-style: italic;
+            font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+        }
+        .popup__medal_right{
+        } 
+
+            .popup__socials{
+                margin-top: 5px;
+                li{
+                    display: inline-block;
+                    vertical-align: top;
+                    @extend %hide-text;
+                }
+            }
+            .popup__icons{
+                display: inline-block;
+            }
+                .popup__od{@include sized-sprite($icons, p_od);}
+                .popup__fb{@include sized-sprite($icons, p_fb);}
+                .popup__vk{@include sized-sprite($icons, p_vk);}
+
+
+    .popup__text{
+        margin-bottom: 25px;
+        .h1{
+            @include r;
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+            font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+        }
+    }
+        .popup__medaltitle{
+            margin-bottom: 25px;
+        }
+.popup__btn{
+
+}
+    .popup__btn_yellow{
+        @include border-radius(5px);
+        @include background-clip(padding-box);
+        background-color: #ffe903;
+        @include box-shadow(0 2px 4px rgba(3,94,48,.43), inset 0 0 2px rgba(255,255,255,.51));
+        height: 32px;
+        line-height: 32px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        color: #025f32;
+        text-decoration: none;
+    }
