@@ -1133,6 +1133,12 @@
             text-align: center;
             margin-bottom: 10px;
         }
+        .popup__entercode-title{
+            @include r;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 .popup__btn{
 
 }
@@ -1225,5 +1231,24 @@
     strong{
         font-size: 18px;
         color: #f5e104;
+    }
+}
+.popup__entercode-img{
+    width: 145px;
+    height: 106px;
+    border: 2px solid #fdfdcb;
+    @include border-radius(3px);
+    @include background-clip(padding-box);
+    background-color: #01833d;
+    overflow: hidden;
+    img{
+        max-width: 145px;
+        min-height: 106px;
+    }
+}
+.popup__entercode{
+    margin-bottom: 20px;
+    .popup__left{
+        width: 145px;
     }
 }
