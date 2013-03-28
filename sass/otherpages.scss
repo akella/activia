@@ -1076,7 +1076,10 @@
     width: 416px;
     margin-left: -245px;
 }
-
+.popup_boutique-big{
+    width: 499px;
+    margin-left: -286px;
+}
 .popup__medal{
             text-align: center;
             font-size: 14px;
@@ -1117,9 +1120,18 @@
             font-size: 24px;
             font-weight: normal;
         }
+        &.popup__text_buy{
+            margin-bottom: 7px;
+        }
     }
         .popup__medaltitle{
             margin-bottom: 25px;
+        }
+        .popup__buyit-title{
+            @include r;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
         }
 .popup__btn{
 
@@ -1140,6 +1152,9 @@
         font-size: 12px;
         color: #025f32;
         text-decoration: none;
+    }
+    .popup__btn_white{
+        background-color: #fff7a8;
     }
 
 .popup__bodoimg{
@@ -1163,4 +1178,52 @@
     float: left;
     width: 55%;
     text-align: right;
+}
+
+.popup__buy{
+    overflow: hidden;
+    margin-bottom: 20px;
+    .popup__left{
+        float: left;
+        width: 200px;
+        margin-right: 20px;
+    }
+    .popup__right{
+        overflow: hidden;
+    }
+}
+
+.popup__buymedia{
+    position: relative;
+    width: 200px;
+    height: 140px;
+    overflow: hidden;
+    border: 1px solid #fdfdcb;
+    @include border-radius(4px);
+    @include background-clip(padding-box);
+    background-color: #e5f9bb;
+    img{
+        max-width: 200px;
+        min-height: 140px;
+    }
+}
+
+.popup__buymedia-info{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    background: rgba(0,102,47,.8);
+    text-align: center;
+    padding: 5px 11px;
+    @include border-radius(5px 0 0 5px);
+    p{
+        font-size: 12px;
+        color: #fff;
+        font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+        line-height: 1;
+    }
+    strong{
+        font-size: 18px;
+        color: #f5e104;
+    }
 }
