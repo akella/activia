@@ -338,6 +338,41 @@
 		overflow: hidden;
 		padding-top: 74px;
 	}
+	.minitest__content{
+		padding-top: 74px;
+		overflow: hidden;
+		padding-bottom: 10px;
+		.bubble{
+			float: left;
+			margin-right: 20px;
+		}
+	}
+	.minitest__text{
+		color: #003d20;
+		font-size: 16px;
+		font-style: italic;
+		padding-top: 5px;
+		display: inline-block;
+		width: 200px;
+	}
+	.minitest__wrap{
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	.minitest__next{
+
+		font-weight: bold;
+		font-size: 14px;
+		padding: 0 15px;
+		height: 34px;
+		line-height: 34px;
+		@include border-radius(18px);
+		background-color: #fcd438;
+		@include box-shadow(3px 3px 4px rgba(0,0,0,.12), inset 0 -1px 0 rgba(255,255,255,.29));
+		@include background-image(linear-gradient(bottom, #edb11b 0%, #f9bf1f 36.69%, #fde349 100%));
+		display: inline-block;
+		text-decoration: none;
+	}
 	.minitest__bubble{
 		position: absolute;
 		left: 204px + 20px;
