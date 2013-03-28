@@ -1459,3 +1459,29 @@
                         .p_share__od{@include sized-sprite($icons, p_od);}
                         .p_share__fb{@include sized-sprite($icons, p_fb);}
                         .p_share__vk{@include sized-sprite($icons, p_vk);}
+
+
+            .popup__basket{
+                text-align: center;
+                p{
+                    position: relative;
+                    margin-bottom: 20px;
+                }
+                .popup__buyit-title{
+                    margin-bottom: 20px;
+                }
+            }
+                .popup__basket-img{
+                    margin-top: 5px;
+                    border: 1px solid #fdfdcb;
+                    @include border-radius(4px);
+                    @include background-clip(padding-box);
+                    background-color: #e5f9bb;
+                }
+                .p-selected{
+                    position: absolute;
+                    @include sized-sprite($icons, select);
+                    top: -35px;
+                    left: 0;
+                    content: "";
+                }
