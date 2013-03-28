@@ -386,7 +386,8 @@
 		font-size: 16px;
 		color: #003d20;
 		font-style: italic;
-		white-space:nowrap;
+// 		white-space:nowrap;
+		width: 550px;
 		&:before{
 			content:' ';
 			position: absolute;
