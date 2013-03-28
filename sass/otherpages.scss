@@ -1051,6 +1051,10 @@
     margin-left: -285px;
     padding: 30px 50px 20px;
 }
+.popup_boutique{
+    width: 416px;
+    margin-left: -245px;
+}
     .popup__left{
         float: left;
         width: 125px;
@@ -1066,10 +1070,10 @@
             font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
         }
         .popup__medal_right{
-        } 
+        }
 
             .popup__socials{
-                margin-top: 5px;
+                margin-top: 10px;
                 li{
                     display: inline-block;
                     vertical-align: top;
@@ -1086,6 +1090,7 @@
 
     .popup__text{
         margin-bottom: 25px;
+        position: relative;
         .h1{
             @include r;
             font-size: 24px;
@@ -1118,3 +1123,26 @@
         color: #025f32;
         text-decoration: none;
     }
+
+.popup__bodoimg{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.popup_bodoinfo{
+    overflow: hidden;
+}
+.popup_bodosite{
+    float: left;
+    width: 40%;
+    a{
+        font-size: 18px;
+        color: #d5f390;
+    }
+}
+.popup_bodotel{
+    font-size: 24px;
+    @include r;
+    float: left;
+    width: 55%;
+    text-align: right;
+}
