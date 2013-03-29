@@ -1512,7 +1512,8 @@
 }
 
 .sidebar__alt{
-    float: right; 
+    float: right;
+    margin-top: 10px;
 }
 .scroll-shop_alt{
     float: left;
@@ -1698,3 +1699,79 @@
 .loading_green{
     background: url(../img/icons/loading_green.gif) no-repeat;
 }
+
+.user-adv{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    width: 272px;
+    border-radius: 10px;
+    @include box-shadow(2px 3px 0 rgba(110,179,83,.75));
+    background-color: #036f35;
+    margin-left: -5px;
+}
+    .user-adv__image{
+        position: relative;
+        background: url("../img/adv_bg.png") no-repeat;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        overflow: hidden;
+        height: 189px;
+        &:before{
+            @include sized-sprite($icons, flowers);
+            position: absolute;
+            top: 26px;
+            left: 26px;
+            content: "";
+        }
+        img{
+            position: relative;
+            z-index: -1;
+            top: 15px;
+            min-height: 190px;
+            max-width: 260px;
+        }
+    }
+    .user-adv__info{
+        padding: 10px 30px 20px;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+         @include background-image(linear-gradient(bottom, rgba(3,111,53,.77) 0%, rgba(3,111,53,.77) 26.37%, rgba(255,254,203,.77) 100%));
+        strong{
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #006435;
+            line-height: 1;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        em{
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    .user-adv__btn{
+        position: relative;
+        margin-top: 20px;
+        display: inline-block;
+        font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+        font-size: 15px;
+        color: #d5f390;
+        &:after{
+            @include sized-sprite($icons, adv_btn_aft);
+            position: absolute;
+            top: 5px;
+            right: -15px;
+            content: "";
+        }
+    }
+
+    .user-info{
+        .wrapper_alt{
+            border-top: none;
+            padding-bottom: 20px;
+            .funny-btn_small{
+                padding: 0 70px;
+            }
+        }
+    }
