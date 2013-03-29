@@ -17,6 +17,9 @@
     <header class="header">
         <div class="header__wrap">
             <h1 class="logo"><a href="#"></a></h1>
+            <div class="enter-code">
+                <span>Введи код</span>
+            </div>
             <nav class="nav">
                 <ul>
                     <li><a href="#">14 Днів легкості</a></li>
@@ -26,7 +29,7 @@
                     <li><a href="#">Смаки Активiа</a></li>
                 </ul>
             </nav>
-            <div class="download">
+            <div class="download download_small">
                 <div class="download__wrap">
                     <div class="download__head">
                         <i class="icon-phone"></i>
@@ -49,135 +52,409 @@
                     </ul>
                 </div>
             </div>
-            <button class="btn-enter">Вхід</button>
+            <div class="user-log">
+                <a href="#" class="user-log__img">
+                    <img src="http://placehold.it/32x32" alt="">
+                </a>
+                <div class="user-log__info">
+                    <a href="#">Милосердова Илона</a>
+                    <div>
+                        <strong>23567</strong> балів
+                    </div>
+                </div>
+            </div>
             <div class="clr"></div>
         </div>
     </header>
-    <div class="main-wrap">
+    <div class="common-wrap">
         <div class="l-container">
-            <div class="code">
-                <div class="code__text">Маєш <strong>код з упаковки</strong>? <span>Введи його тут</span></div>
-                <div class="code__form">
-                    <form>
-                        <input type="text" class="code__input">
-                        <input type="submit" class="code__submit" value="Зарахувати">
-                    </form>
+            <ul class="scroll-tabs scroll-tabs_shop">
+                <li data-tab=".tab1"><i class="icon-1"></i><span>Все</span></li>
+                <li data-tab=".tab2"><i class="icon-2"></i><span>Фитнес</span></li>
+                <li data-tab=".tab3"><i class="icon-3"></i><span>Питание</span></li>
+                <li data-tab=".tab4"><i class="icon-4"></i><span>Красота</span></li>
+                <li data-tab=".tab5"><i class="icon-5"></i><span>Твои покупки</span></li>
+            </ul>
+            <div class="scroll-shop scroll-shop_alt js-tab-cont tab1">
+                <div>
+                    <div class="scroll-shop__wrap scroll-shop__wrap_alt js-scroll-shop">
+                        <div class="scroll-shop__items">
+                            <div class="slide">
+                                <div class="s-boutique__img">
+                                    <img src="img/irbk.jpg" alt="rbk">
+                                </div>
+                                <div class="s-boutique__info">
+                                    <div class="s-boutique__score">
+                                        <strong>453</strong>
+                                        бала
+                                    </div>
+                                    <div class="s-boutique__btn">
+                                        <a href="#" class="funny-btn funny-btn_boutique">Хочу!</a>
+                                    </div>
+                                    <div class="s-boutique__grant">
+                                        Предоставлено
+                                        <a href="#" class="s-boutique__logo">Reebok</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="s-boutique__img">
+                                    <img src="img/irbk.jpg" alt="rbk">
+                                </div>
+                                <div class="s-boutique__info">
+                                    <div class="s-boutique__score">
+                                        <strong>453</strong>
+                                        бала
+                                    </div>
+                                    <div class="s-boutique__btn">
+                                        <a href="#" class="funny-btn funny-btn_boutique">Хочу!</a>
+                                    </div>
+                                    <div class="s-boutique__grant">
+                                        Предоставлено
+                                        <a href="#" class="s-boutique__logo">Reebok</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="s-boutique__img">
+                                    <img src="img/irbk.jpg" alt="rbk">
+                                </div>
+                                <div class="s-boutique__info">
+                                    <div class="s-boutique__score">
+                                        <strong>453</strong>
+                                        бала
+                                    </div>
+                                    <div class="s-boutique__btn">
+                                        <a href="#" class="funny-btn funny-btn_boutique">Хочу!</a>
+                                    </div>
+                                    <div class="s-boutique__grant">
+                                        Предоставлено
+                                        <a href="#" class="s-boutique__logo">Reebok</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="prod-nav prod-prev prod-prev_alt"></button>
+                    <button class="prod-nav prod-next prod-next_alt"></button>
+                </div>
+                <div class="s-boutique__text">
+                    <h1 class="h1">Кросівки <span>Reebok slimtone</span></h1>
+                    <p class="promo">Подушечки з піноматеріалу в підошві кросівок SlimTone Divine створюють ефект легкої нестійкості, а анатомічна устілка дає підтримку і комфорт. Верх кросівок дихає. Підошва захищає. <br> Неперевершене поєднаня стилю та зручності</p>
+                    <p>Всі продукти Активиа® – унікальні, тому що містять особливі біфідобактерії ActiRegularis®. Біфідобактерії бувають різні. Більшість їх видів можуть гинути або в продукті, не доживаючи до кінця терміну придатності.</p>
+                    <div class="s-boutique__comments">
+                            <h1 class="h1">Коментарі</h1>
+                            <div class="s-boutique__comment s-boutique__comment_alt">
+                                <a href="#"><img src="img/bt_pic.jpg" alt="" class="s-boutique__comment-userpic"></a>
+                                <div class="s-boutique__comment-info">
+                                    <form>
+                                        <textarea class="s-boutique__comment-textarea" placeholder="Введи свій коментар"></textarea>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="s-boutique__comment">
+                                <a href="#"><img src="img/bt_pic.jpg" alt="" class="s-boutique__comment-userpic"></a>
+                                <div class="s-boutique__comment-info">
+                                    <div class="s-boutique__comment-metadata">
+                                        <div class="s-boutique__comment-name"><a href="#">Володимир Бабічев</a></div>
+                                        <div class="s-boutique__comment-date">21. 03. 2013</div>
+                                    </div>
+                                    <div class="s-boutique__comment-text">Кросовки просто супер! И акция тоже ничего я за несколько баллов получил такие кросы!</div>
+                                </div>
+                            </div>
+                            <div class="s-boutique__comment">
+                                <a href="#"><img src="img/bt_pic.jpg" alt="" class="s-boutique__comment-userpic"></a>
+                                <div class="s-boutique__comment-info">
+                                    <div class="s-boutique__comment-metadata">
+                                        <div class="s-boutique__comment-name"><a href="#">Володимир Бабічев</a></div>
+                                        <div class="s-boutique__comment-date">21. 03. 2013</div>
+                                    </div>
+                                    <div class="s-boutique__comment-text">Кросовки просто супер! И акция тоже ничего я за несколько баллов получил такие кросы!</div>
+                                </div>
+                            </div>
+                            <div class="s-boutique__comment">
+                                <a href="#"><img src="img/bt_pic.jpg" alt="" class="s-boutique__comment-userpic"></a>
+                                <div class="s-boutique__comment-info">
+                                    <div class="s-boutique__comment-metadata">
+                                        <div class="s-boutique__comment-name"><a href="#">Володимир Бабічев</a></div>
+                                        <div class="s-boutique__comment-date">21. 03. 2013</div>
+                                    </div>
+                                    <div class="s-boutique__comment-text">Кросовки просто супер! И акция тоже ничего я за несколько баллов получил такие кросы!</div>
+                                </div>
+                            </div>
+                     </div>
+                     <i class="loading loading_green"></i>
                 </div>
             </div>
-            <div class="main">
-                <div class="prog-ban">
-                    <span class="prog-ban__title">
-                        <span>Программа</span><strong>легкості</strong>
-                        <i></i>
-                    </span>
-                    <p>Готуйся до літа з персональною программою вдосконалення від Активіа</p>
-                    <a href="#" class="funny-btn">Розпочати программу</a>
+            <div class="scroll-shop js-tab-cont tab2">
+                <div class="scroll-nav scroll-nav_mod"></div>
+                <div class="scroll-shop__wrap js-scroll-shop">
+                    <div class="scroll-shop__items">
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="video">
+                <button class="prod-nav prod-prev"></button>
+                <button class="prod-nav prod-next"></button>
+            </div>
+            <div class="scroll-shop js-tab-cont tab3">
+                <div class="scroll-nav scroll-nav_mod"></div>
+                <div class="scroll-shop__wrap js-scroll-shop">
+                    <div class="scroll-shop__items">
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prod-nav prod-prev"></button>
+                <button class="prod-nav prod-next"></button>
+            </div>
+            <div class="scroll-shop js-tab-cont tab4">
+                <div class="scroll-nav scroll-nav_mod"></div>
+                <div class="scroll-shop__wrap js-scroll-shop">
+                    <div class="scroll-shop__items">
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prod-nav prod-prev"></button>
+                <button class="prod-nav prod-next"></button>
+            </div>
+            <div class="scroll-shop js-tab-cont tab5">
+                <div class="scroll-nav scroll-nav_mod"></div>
+                <div class="scroll-shop__wrap js-scroll-shop">
+                    <div class="scroll-shop__items">
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="http://placehold.it/432x350" alt="">
+                                <span>Залишилось <strong>6</strong> штук</span>
+                            </div>
+                            <div class="slide__main">
+                                <div class="slide__title">
+                                    Колекція <strong>Reebok slimtone</strong>
+                                </div>
+                                <div class="slide__descr">Кроссовки и форма</div>
+                                <a href="#" class="funny-btn">Хочу!</a>
+                                <div class="slide__price">
+                                    <span><strong>453</strong> бала</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="prod-nav prod-prev"></button>
+                <button class="prod-nav prod-next"></button>
+            </div>
+
+            <aside class="sidebar sidebar__alt">
+                <div class="user-img">
                     <a href="#">
-                        <img src="img/video.png" alt="">
-                        <i></i>
+                        <img src="http://placehold.it/180x180" alt="">
+                        <strong>Евгения <span>Милевская</span></strong>
                     </a>
                 </div>
-                <div class="clr"></div>
-            </div>
+                <div class="user-info">
+                    <span class="user-info__top"></span>
+                    <div class="user-info__wrap">
+                        <div class="user-info__day">
+                            <strong>10</strong>
+                            <span>День легкості</span>
+                        </div>
+                       <div class="wrapper">
+                            <div class="user-info__place">
+                                <strong>2307</strong>
+                                <span>балів</span>
+                                <div>
+                                    <span>23 місце</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-green">Витратити</a>
+                       </div>
+                       <div class="user-info__soc">
+                           <span>Розкажи друзям про свої досягнення!</span>
+                            <ul class="soc">
+                                <li><a href="#" class="soc__odn"><i></i></a></li>
+                                <li><a href="#" class="soc__fb"><i></i></a></li>
+                                <li><a href="#" class="soc__vk"><i></i></a></li>
+                            </ul>
+                       </div>
+                    </div>
+                 </div>
+            </aside>
+
+
+            <div class="clear"></div>
         </div>
         <span class="line-1"></span>
-    </div>
-    <div class="benefits-wrap">
-        <div class="l-container">
-            <h2 class="benefit-title">Скористайся перевагами Активіа клубу</h2>
-            <div class="wrapper">
-                <a class="benefit" href="#">
-                    <div class="benefit__wrap">
-                        <div class="benefit__img">
-                            <img src="img/img1.png" alt="">
-                        </div>
-                        <strong class="benefit__title">Персональна программа</strong>
-                        <p>Чому Активіа корисна?</p>
-                    </div>
-                </a>
-                <a class="benefit" href="#">
-                    <div class="benefit__wrap">
-                        <div class="benefit__img">
-                            <img src="img/img2.png" alt="">
-                        </div>
-                        <strong class="benefit__title">Спілкування <span>та</span> консультації</strong>
-                        <p>зі справжніми експертами!</p>
-                    </div>
-                </a>
-                <a class="benefit" href="#">
-                    <div class="benefit__wrap">
-                        <div class="benefit__img">
-                            <img src="img/img3.png" alt="">
-                        </div>
-                        <strong class="benefit__title">знижки <span>та</span> спеціальні пропозиції</strong>
-                        <p>від партнерів клубу!</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div> 
-    <div class="outer">
-        <div class="banners-wrap">
-            <div class="banner-hot-wrap">
-                <strong class="banner__title">Гарячі пропозиції</strong>
-                <a class="banner banner_hot" href="#">
-                    <div class="banner__img">
-                        <img src="img/ban1.png" alt="">
-                        <span class="badge">
-                            <strong>4652</strong>
-                            балiв
-                        </span>
-                    </div>
-                    <span class="banner__link">Сертификат на 250 грн в ModnaKasta</span>
-                </a>
-                <a class="banner banner_hot" href="#">
-                    <div class="banner__img">
-                        <img src="img/ban2.png" alt="">
-                        <span class="badge">
-                            <strong>4652</strong>
-                            балiв
-                        </span>
-                    </div>
-                    <span class="banner__link">Знижка на антистрессовий тайський массаж</span>
-                </a>
-            </div>
-            <div class="banner-events-wrap">
-                <strong class="banner__title">Останні події</strong>
-                <div class="banner banner_events js-scroll-ban">
-                    <a href="#">
-                        <div class="banner__img">
-                            <img src="img/ban3.png" alt="">
-                        </div>
-                        <span class="banner__link">Смакуй нову Activia!</span>
-                    </a>
-                    <a href="#">
-                        <div class="banner__img">
-                            <img src="img/ban3.png" alt="">
-                        </div>
-                        <span class="banner__link">Смакуй нову Activia!</span>
-                    </a>
-                    <a href="#">
-                        <div class="banner__img">
-                            <img src="img/ban3.png" alt="">
-                        </div>
-                        <span class="banner__link">Смакуй нову Activia!</span>
-                    </a>
-                </div>
-                <div class="scroll-nav"></div>
-            </div>
-            <div class="banner-news-wrap">
-                <strong class="banner__title">Гарячі пропозиції</strong>
-                <a class="banner banner_news" href="#">
-                    <div class="banner__img">
-                        <img src="img/ban4.png" alt="">
-                    </div>
-                    <span class="banner__link">Спробуй новий смак Активіа</span>
-                </a>
-            </div>
-        </div>
-        <span class="line-2"></span>
     </div>
 </section>
 <footer class="footer">
@@ -198,144 +475,15 @@
             <ul class="soc">
                 <li><a href="#" class="soc__vk"><i></i></a></li>
                 <li><a href="#" class="soc__fb"><i></i></a></li>
-                <li><a href="#" class="soc__tw"><i></i></a></li>
+                <li><a href="#" class="soc__odn"><i></i></a></li>
             </ul>
         </div>
-        <span class="footer__circle"></span>
+        <div class="footer__copy">
+            <span>© 2013 Activia</span>
+            <a href="#">Використання iнформацii</a>
+        </div>
     </div>
 </footer>
-
-<div class="popup popup_boutique-big" style="position:absolute;display:block;top:960px;left:75%;">
-    <div class="popup__basket">
-        <div class="popup__buyit-title">Шкода!</div>
-        <div class="popup__text">
-            <p>Тобi не вистачае трохи балiв.</p>
-            <div class="popup__buymedia">
-                <img src="img/cross.png" alt="plus">
-                <div class="popup__buymedia-info">
-                    <p><strong>256</strong></p>
-                    <p>балiв</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup__basket">
-        <div class="popup__buyit-title">Хочеш заробити балiв?</div>
-        <div class="popup__text">
-            <p>Поділись цiєю акцією!</p>
-            <ul class="popup__socials">
-                <li><a class="popup__icons popup__od" href="#">Одноклассники</a></li>
-                <li><a class="popup__icons popup__fb" href="#">Facebook</a></li>
-                <li><a class="popup__icons popup__vk" href="#">Вконтакте</a></li>
-            </ul>
-            <p><em>+5 балів за кожну мережу</em></p>
-        </div>
-    </div>
-    <button class="popup__close"></button>
-</div>
-
-
-<div class="popup popup_boutique-big" style="position:absolute;display:block;top:500px;left:75%;">
-    <div class="popup__basket">
-        <div class="popup__buyit-title">Вітаємо!</div>
-        <div class="popup__text">
-            <p><i class="p-selected"></i>Подробицi надiслано тобi на e-mail.</p>
-            <p>Також придбаний товар знаходиться у розділі<br> «Твої покупки»:
-            <br>
-            <a href="#"><img src="img/basket.png" class="popup__basket-img" alt="Також придбаний товар знаходиться у розділі «Твої покупки»"></a>
-            </p>
-        </div>
-        <div class="popup__btn">
-            <a href="#" class="popup__btn_yellow">Переглянути</a>
-        </div>
-    </div>
-    <button class="popup__close"></button>
-</div>
-
-
-<div class="popup popup_boutique" style="position:absolute;display:block;top:535px;left:30%;">
-    <div class="popup__entercode popup__thankscode">
-        <div class="popup__entercode-title">Маеш код з Activia?</div>
-        <div class="popup__left">
-            <div class="popup__entercode-img"><img src="img/pic21.jpg"></div>
-        </div>
-        <div class="popup__right">
-            <div class="popup__text">
-                <p>Введи код тут:</p>
-                <p><input type="text" class="yourcode" name="phone" value="" placeholder="3456729" id=""></p>
-            </div>
-            <div class="popup__btn">
-                <a href="#" class="popup__btn_yellow">Зарахувати</a>
-            </div>
-        </div>
-    </div>
-    <button class="popup__close"></button>
-</div>
-
-<div class="popup popup_boutique-big" style="position:absolute;display:block;top:160px;left:75%;">
-    <div class="popup__buy">
-        <div class="popup__buyit-title">Придбати</div>
-        <div class="popup__left">
-            <div class="popup__buymedia">
-                <img src="img/cross.png" alt="plus">
-                <div class="popup__buymedia-info">
-                    <p><strong>256</strong></p>
-                    <p>балiв</p>
-                </div>
-            </div>
-        </div>
-        <div class="popup__right">
-            <div class="popup__text popup__text_buy">
-               <p>Придбати "Скидка 30% на посещение всего горнолыжного комплекса «СНЕЖ.КОМ» от bodo"?</p>
-            </div>
-            <div class="popup__btn">
-                <a href="#" class="popup__btn_yellow">Придбати</a>
-                <a href="#" class="popup__btn_yellow popup__btn_white">Iншого разу</a>
-            </div>
-        </div>
-    </div>
-    <button class="popup__close"></button>
-</div>
-
-<div class="popup popup_boutique" style="position:absolute;display:block;top:830px;left:30%;">
-    <div class="popup__thankscode">
-        <div class="popup__left">
-            <div class="popup__plus"><img src="img/pic20.png" alt="plus"></div>
-        </div>
-        <div class="popup__right">
-            <div class="popup__text">
-                <h1 class="h1 popup__medaltitle">Дякую!</h1>
-                <p>Тобі зараховано бали.<br>в тебе <strong>2047</strong> балів</p>
-            </div>
-            <div class="popup__btn">
-                <a href="#" class="popup__btn_yellow">Ввести ще код</a>
-            </div>
-        </div>
-    </div>
-    <button class="popup__close"></button>
-</div>
-
-<div class="popup popup_boutique" style="position:absolute;display:block;top:160px;left:30%;">
-    <div class="popup__bodo">
-        <div class="popup__bodoimg"><a href="#"><img src="img/bodo.png" alt="bodo"></a></div>
-        <div class="popup__text">
-            <p>Збирай коди з упаковок та вводь iх на сайтi щоб збирати бали та отримувати чудовi подарунки! Збирай коди з упаовок та вводь iх на сайтi щоб збирати бали та отримувати чудовi подарунки!</p>
-        </div>
-        <div class="popup__bodoinfo">
-            <div class="popup_bodosite"><a href="#">www.bodo.com</a></div>
-            <div class="popup_bodotel">+3(072) 307-23-07</div>
-        </div>
-    </div>
-    <button class="popup__close"></button>
-</div>
-
-
-
-
-
-
-
-
-<div class="overlay"></div>
+<div class="test"></div>
 </body>
 </html>

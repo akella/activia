@@ -162,6 +162,22 @@ $('.js-aday').cycle({
             activeClass: 'is-active'
         });
     });
+
+// --------------------- Scrollable shop for boutique pages ---------------------------- //
+    $(".scroll-shop div").each(function(){
+        var current = $(this).children(".js-scroll-shop");
+        var prev = $(this).children(".prod-prev");
+        var next = $(this).children(".prod-next");
+        var nav = $(this).children(".scroll-nav_mod");
+        current.scrollable({
+            prev: prev,
+            next: next
+        }).navigator({
+            navi: nav,
+            naviItem: 'button',
+            activeClass: 'is-active'
+        });
+    });
     
 
 
