@@ -1245,7 +1245,9 @@
 .loading {
     display: block;
     margin: 29px auto;
-    @include sized-sprite($icons, loading);
+    background: url(../img/icons/loading.gif) no-repeat;
+    width: 32px;
+    height: 32px;
 }
 
 .achieve {
