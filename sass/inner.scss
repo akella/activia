@@ -243,10 +243,11 @@
     position: relative;
 }
 .scroll-prod {
-    float: left;
+    //float: left;
+    float: none;
     position: relative;
     padding-top: 17px;
-    margin: 0 0 -40px 62px;
+    margin: 0 auto -40px;
     width: 690px;
     height: 255px;
     overflow: hidden;
@@ -300,11 +301,11 @@
     top: 52px;
 } 
 .prod-prev {
-    left: 12px;
+    left: 90px;
     @include sized-sprite($icons, prev);
 }
 .prod-next {
-    right: 177px;
+    right: 90px;
     @include sized-sprite($icons, next);
 }
 
