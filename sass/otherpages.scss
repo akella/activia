@@ -1794,3 +1794,106 @@
             }
         }
     }
+
+
+.club__newsitem{
+    position: relative;
+    width: 500px;
+    background-color: #f7ffe4;
+    //@include box-shadow(2px 3px 21px rgba(3,111,53,.6));
+    @include box-shadow(2px 3px 21px rgba(8,41,23,.6));
+    color: #575757;
+    border-radius: 10px;
+    margin: 0 auto 50px;
+    &:after{
+        @include sized-sprite($icons, newsitem_line);
+        position: absolute;
+        bottom: -50px;
+        left: 160px;
+        content: "";
+    }
+    &:first-child{
+        margin-top: 20px;
+    }
+    &:last-child:after{
+        content: none;
+    }
+    .p-share{
+        display: none;
+        background: none;
+        background-color: none;
+    }
+    &:hover{
+        .p-share{
+            display: block;
+            right: -124px;
+            width: 105px;
+            padding-left: 30px;
+        }
+    }
+}
+
+    .club__newsitem-text{
+        font-size: 14px;
+        margin: 0 20px 0 34px;
+        padding: 20px 0;
+        .h1{
+            color: #003d20;
+            font-size: 18px;
+            margin-bottom: 0.5em;
+            a{
+                text-decoration: none;
+                color: #003d20;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        p{
+            margin-bottom: 0.5em;
+        }
+    }
+    .club__newsitem-media{
+        height: 240px;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+        img{
+            min-width: 500px;
+            max-height: 240px;
+            display: block;
+        }
+    }
+    .club__newsitem-meta{
+        @extend %clr;
+        padding-bottom: 30px;
+        .club__newsitem-date{
+            font-size: 12px;
+            color: #07873f;
+            font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+            float: left;
+            width: 50%;
+            margin-left: 34px;
+        }
+        .club__newsitem-comments{
+            float: right;
+            width: 50px;
+            color: #fff238;
+            font-size: 18px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #01833d;
+            border-radius: 18px 0 0 18px;
+            padding-left: 18px;
+            a{
+                color: #fff238;
+                text-decoration: none;
+                height: 100%;
+                display: inline-block;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
