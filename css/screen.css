@@ -1047,10 +1047,17 @@ a:hover { text-decoration: none; }
 .codepage__entercode a:hover { border-bottom: 1px dotted transparent; }
 .codepage__entercode:after { position: absolute; background: url('../img/icons-sa0ebed5fc5.png') 0 -3893px no-repeat; width: 50px; height: 62px; top: -2px; right: -2px; content: ""; }
 
-.yourcode { font-size: 15px; color: #D5EDB5; width: 145px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: #519535; -webkit-box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); -moz-box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); background-color: #70B74F; padding: 4px 10px; }
-.yourcode.placeholder { color: #d5edb5; }
-.yourcode:-moz-placeholder { color: #d5edb5; }
-.yourcode::-webkit-input-placeholder { color: #d5edb5; }
+.yourcode, .popup_profile input[type=text] { font-size: 15px; color: #D5EDB5; width: 145px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background-color: #519535; -webkit-box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); -moz-box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); box-shadow: inset 1px 1px 1px rgba(24, 78, 20, 0.77); background-color: #70B74F; padding: 4px 10px; }
+.yourcode.placeholder, .popup_profile input.placeholder[type=text] { color: #d5edb5; }
+.yourcode:-moz-placeholder, .popup_profile input[type=text]:-moz-placeholder { color: #d5edb5; }
+.yourcode::-webkit-input-placeholder, .popup_profile input[type=text]::-webkit-input-placeholder { color: #d5edb5; }
+
+.popup_profile input[type=text] { width: 430px; }
+.popup_profile label { display: block; padding-bottom: 4px; }
+.popup_profile p { margin-bottom: 12px; }
+.popup_profile .popup__title { text-align: center; margin-bottom: 14px; }
+
+.popup__btn_center { text-align: center; }
 
 .codepage__codeinfo li { padding: 25px 0; position: relative; }
 .codepage__codeinfo li:before { position: absolute; top: 0; left: 0; content: ""; background: url('../img/icons-sa0ebed5fc5.png') 0 -5678px no-repeat; width: 610px; height: 2px; }

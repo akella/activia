@@ -827,7 +827,26 @@
         padding: 4px 10px;
         @include placeholder-color(#D5EDB5);
     }
-
+.popup_profile{
+    input[type=text]{
+        @extend .yourcode;
+        width: 430px;
+    }
+    label{
+        display: block;
+        padding-bottom: 4px;
+    }
+    p{
+        margin-bottom: 12px;
+    }
+    .popup__title{
+        text-align: center;
+        margin-bottom: 14px;
+    }
+}
+.popup__btn_center{
+    text-align: center;
+}
 .codepage__codeinfo{
     @extend %clr;
     li{
