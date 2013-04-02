@@ -170,6 +170,11 @@
 			@include background-image(linear-gradient(top, #69B54F 0%, #A1C74A 100%));
 		}
 	}
+	&:hover{
+		.adv__bg .adv__bggreen{
+			@include background-image(linear-gradient(top, lighten(#69B54F, 10%) 0%, lighten(#A1C74A, 10%) 100%));
+		}
+	}
 // 	&.adv_2 .adv__bg{
 // 		@include transform(rotate(-2deg));
 // 	}
