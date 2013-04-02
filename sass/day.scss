@@ -131,6 +131,7 @@
 	position: relative;
 	float: left;
 	cursor: pointer;
+	@include transition(all .3s linear);
 	&:first-child{
 		margin-left: 0;
 	}
@@ -171,6 +172,9 @@
 		}
 	}
 	&:hover{
+		position: relative;
+		top: -10px;
+		@include transition(all .3s ease-in-out);
 		.adv__bg .adv__bggreen{
 			@include background-image(linear-gradient(top, lighten(#69B54F, 10%) 0%, lighten(#A1C74A, 10%) 100%));
 		}
