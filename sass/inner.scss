@@ -9,6 +9,7 @@
     }
 }
 .bubble {
+    position: relative;
     float: right;
     width: 70px;
     height: 70px;
@@ -29,6 +30,7 @@
         color: #fff;
     }
 }
+
 
 .scroll {
     clear: both;
