@@ -204,8 +204,17 @@ $('.js-aday').cycle({
         //html = html.wrap('<div class="child__1" />')
         //$('.child').after(html);
     });   
+    $('#sendeverything').click(function () {
+        error = 0;
+        $('.row__item').each(function(event) {
+            alert('a');
+        });
+
+        if(!error) {$('.popup_tnx').show();}
+    });
 
 });
+
 
 
 

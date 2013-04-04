@@ -39,3 +39,5 @@
 
 .new-test__end { height: 44px; padding: 0 20px; line-height: 44px; background: #f1b419; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; font: bold 14px Arial, sans-serif; color: #644a09; }
 .new-test__end:hover { background-color: #f1b41a; }
+
+.popup_tnx { left: 50%; margin-left: -240px; top: 200px; display: block !important; }

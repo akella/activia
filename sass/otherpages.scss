@@ -2041,6 +2041,8 @@
 
 .ibubble{
     position: relative;
+    display: inline-block;
+    vertical-align: middle;
     width: 102px;
     height: 107px;
     border: 6px solid #ffed03;

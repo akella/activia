@@ -69,8 +69,12 @@
     <div class="l-container common-wrap">
         <div class="new-test">
             <h1 class="new-test__title">Ваша анкета</h1>
-            <p class="new-test__instructions">
-                Будь-ласка, вкажіть дані про себе
+            <div class="new-test__instructions">
+                Будь-ласка, вкажіть дані про себе  и отримайте &nbsp; <div class="ibubble ibubble_small" >
+        <div class="ibubble__text"><strong>+50</strong>баллiв</div>
+        </div>
+    </div>
+
             </p>
             <div class="rows">
                 <div class="row__item">
@@ -261,7 +265,7 @@
                 </div>
             </div>
             <div class="l-new-test__end">
-                <button class="btn">Відправити</button>
+                <button class="btn" id="sendeverything">Відправити</button>
             </div>    
         </div>    
     </div>
@@ -293,5 +297,29 @@
         </div>
     </div>
 </footer>
+
+
+
+<div class="popup popup_boutique popup_tnx" >
+    <div class="popup__thankscode">
+        <div class="popup__left">
+            <div class="popup__plus">
+                <div class="ibubble">
+                    <div class="ibubble__text"><strong>+50</strong>балiв</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__right">
+            <div class="popup__text">
+                <h1 class="h1 popup__medaltitle">Дякую!</h1>
+                <p>Тобі зараховано бали.<br>в тебе <strong>2047</strong> балів</p>
+            </div>
+            <div class="popup__btn">
+                <a href="#" class="popup__btn_yellow">Далi</a>
+            </div>
+        </div>
+    </div>
+    <button class="popup__close"></button>
+</div>
 </body>
 </html>
