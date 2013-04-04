@@ -180,6 +180,30 @@ $('.js-aday').cycle({
     });
     
 
+// ----------------add new form for test ----------------
+    $(".children input:radio").click(function() {
+         if ($(this).hasClass("children-true")) {
+            $(".child").addClass("child_is-checked");
+        }
+        else {
+            $(".child").removeClass("child_is-checked");
+        }
+    });
+
+
+// ---------------add more children to new form-----------
+    var a = new Array("Перша", "Друга", "Третя", "Четверта", "П'ята", "Шоста", "Сьома", "Восьма", "Дев'ята");
+
+    $(".btn_add-child").click(function() {
+        var html = $('.child__1:eq(0)').clone().appendTo('.child');
+        var i = 0;
+        $('.child__1').each(function(index, val) {
+             $(this).children('span').text(a[i]);
+             i++;
+        });
+        //html = html.wrap('<div class="child__1" />')
+        //$('.child').after(html);
+    });   
 
 });
 

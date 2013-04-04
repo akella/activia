@@ -1451,3 +1451,49 @@ a:hover { text-decoration: none; }
 
 * + html .soc li, * + html .soc i, * + html .code__text, * + html .code__form, * + html .funny-btn, * + html .scroll-pagin li, * + html .video-preview, * + html .user-log__img, * + html .scroll-tabs li, * + html .popup__user img, * + html .popup__user div, * + html .action__text span, * + html .user-img, * + html .user-info__place div, * + html .prof-tab li { display: inline; }
 * + html .soc li i { vertical-align: top; margin-top: 10px; }
+
+.share .share__fb, .share .share__od, .share .share__vk, .popup__socials li, .s-boutique__logo { font: 0/0 a; text-shadow: none; color: transparent; }
+
+.wrap:after, .nav ul:after, .atext .atext__pic:after, .minitest:after, .questions li:after, .bubble_tick:after, .club__text-guide:after, .club__text-info:after, .codepage__codeinfo:after, .exitlight__nothing-special:after, .club__newsitem-meta:after, .persons:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.new-test { margin-top: -56px; padding: 50px 10px 0; border: 2px solid #fff600; border-top: none; -webkit-border-radius: 0 0 7px 7px; -moz-border-radius: 0 0 7px 7px; -ms-border-radius: 0 0 7px 7px; -o-border-radius: 0 0 7px 7px; border-radius: 0 0 7px 7px; background-color: #fff; font-family: Helvetica, Arial, sans-serif; }
+
+.new-test__title { line-height: 60px; font-size: 65px; font-weight: 700; color: #175704; }
+
+.new-test__instructions { margin: 10px 0 20px; font-size: 17.5px; font-weight: 300; color: #000; }
+
+.rows { overflow: hidden; padding-bottom: 30px; color: #000; }
+
+.row__item { overflow: hidden; border-top: 1px solid #efefef; padding: 20px 0 10px 0; }
+.row__item table { width: 96%; margin: 0 20px; border: none; border-collapse: collapse; }
+.row__item table tbody { vertical-align: middle; }
+.row__item table tr { border-top: 1px solid #efefef; }
+.row__item table .table-head { font-weight: bold; }
+.row__item table td { text-align: center; padding: 8px; }
+.row__item table td:first-child { width: 120px; }
+
+.row__question { float: left; width: 140px; text-align: right; font-weight: bold; }
+
+.row__question_table { float: none; width: 100%; text-align: center; margin-bottom: 20px; }
+
+.row__answers { float: left; width: 620px; margin-left: 20px; }
+.row__answers .row__answer { display: block; float: left; width: 33%; margin-bottom: 10px; }
+.row__answers .row__answer input { margin-right: 6px; }
+.row__answers .row__answer_long { float: none; width: 100%; }
+
+.child { display: none; }
+.child p { margin: 10px 0; font-weight: bold; }
+
+.child_is-checked { display: block; position: relative; }
+
+.btn_add-child { position: absolute; left: 170px; width: 22px; height: 22px; padding: 0 5px; line-height: 22px; text-align: center; }
+
+.child__1 { margin-bottom: 10px; }
+.child__1 span { display: block; float: left; width: 60px; }
+.child__1 .child__age { width: 25px; height: 18px; margin: 0 4px; padding-left: 5px; vertical-align: middle; border: 1px solid #efefef; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
+.child__1 .child__age:focus { -webkit-box-shadow: inset 0 0 1px #fff600; -moz-box-shadow: inset 0 0 1px #fff600; box-shadow: inset 0 0 1px #fff600; background-color: #f9f9f9; }
+
+.l-new-test__end { margin-bottom: 20px; text-align: center; }
+
+.new-test__end { height: 44px; padding: 0 20px; line-height: 44px; background: #f1b419; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; font: bold 14px Arial, sans-serif; color: #644a09; }
+.new-test__end:hover { background-color: #f1b41a; }
