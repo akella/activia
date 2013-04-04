@@ -206,11 +206,33 @@ $('.js-aday').cycle({
     });   
     $('#sendeverything').click(function () {
         error = 0;
-        $('.row__item').each(function(event) {
-            alert('a');
-        });
+        // $('.row__item').each(function(event) {
+        //     alert('a');
+        // });
+        num1 = $('input[name=row__radio]:checked').length;
+        if(num1==0){$('.row__item1').addClass('error');error = 1;} else{$('.row__item1').removeClass('error');}
+
+        num2 = $('input[name=row__radio1]:checked').length;
+        if(num2==0){$('.row__item2').addClass('error');error = 1;} else{$('.row__item2').removeClass('error');}
+
+
+        num3 = $('input[name=row__radio2]:checked').length;
+        if(num3==0){$('.row__item3').addClass('error');error = 1;} else{$('.row__item3').removeClass('error');}
+
+        num4 = $('.row__item4 input[type=radio]:checked').length;
+        if(num4 != 7){$('.row__item4').addClass('error');error = 1;} else{$('.row__item4').removeClass('error');}
+
+        num5 = $('.row__item5 input[type=radio]:checked').length;
+        if(num5 != 4){$('.row__item5').addClass('error');error = 1;} else{$('.row__item5').removeClass('error');}
 
         if(!error) {$('.popup_tnx').show();}
+        else{
+            $("html, body").animate({ scrollTop: $('.error:eq(0)').offset().top - 150 }, 1000);
+        }
+    });
+
+    $('.popup__close').click(function (e) {
+        $(this).parent().hide();
     });
 
 });
