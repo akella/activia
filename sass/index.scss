@@ -9,7 +9,9 @@
     right: 0;
     width: 100%;
     height: 41px;
-    background: url(../img/line1.png) 50% 0 repeat;
+    display: block;
+    background: url(../img/line12.png) 50% 0 repeat-x;
+
 }
 .code {
     margin-bottom: 13px;
@@ -213,9 +215,10 @@
     text-decoration: none;
     @include border-radius(45px);
     @include box-shadow(3px 3px 0 rgba(35,119,25,.75));
+    @include transition(all .3s ease-in-out);
     &:hover {
-        @include transition(all .5s ease-in-out);
-        @include translate(0, -10px);
+        //@include translate3d(0, -10px, 0);
+        top: -10px;
     }
     &:first-child {
         margin-left: 0; 
