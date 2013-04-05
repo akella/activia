@@ -59,9 +59,9 @@
 
 .banners-wrap { margin: 0 auto; padding: 17px 0 0; width: 1020px; overflow: hidden; }
 
-.banner { float: left; text-decoration: none; }
+.banner { float: left; text-decoration: none; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; position: relative; }
 .banner .banner__link { border-bottom: 1px dotted #005f32; }
-.banner:hover { -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -webkit-transform: translate(0, -5px); -moz-transform: translate(0, -5px); -ms-transform: translate(0, -5px); -o-transform: translate(0, -5px); transform: translate(0, -5px); }
+.banner:hover { position: relative; top: -5px; }
 .banner:hover .banner__link { border-bottom: 1px solid transparent; }
 
 .banner-hot-wrap { overflow: hidden; float: left; margin-right: 20px; }

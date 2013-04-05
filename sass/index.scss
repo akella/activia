@@ -283,6 +283,8 @@
 .banner {
     float: left;
     text-decoration: none;
+    @include transition(all .2s ease-in-out);
+    position: relative;
         .banner__link {
             border-bottom: 1px dotted #005f32;
         }
@@ -290,8 +292,9 @@
         .banner__link {
              border-bottom: 1px solid transparent;
         }
-        @include transition(all .5s ease-in-out);
-        @include translate(0, -5px);
+        
+        position: relative;
+        top: -5px;
     }
 }
 .banner-hot-wrap {
