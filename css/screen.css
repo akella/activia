@@ -441,7 +441,7 @@ a:hover { text-decoration: none; }
 
 .content-outer { padding-bottom: 82px; position: relative; background: #fff; }
 
-.line-4 { position: absolute; left: 0; top: -46px; right: 0; width: 100%; height: 46px; background: url(../img/line4.png) 50% 0 repeat-x; }
+.line-4 { position: absolute; left: 0; top: -49px; right: 0; width: 100%; height: 49px; background: url(../img/line42.png) 50% 0 repeat-x; }
 
 .content { overflow: hidden; margin: 0 auto; padding-top: 10px; width: 980px; color: #003d20; font: normal 14px Verdana,sans-serif; }
 .content h1 { margin: 32px 0 10px; font-size: 36px; font-weight: normal; font-style: normal; font-family: 'pragmaticalightcregular'; }
