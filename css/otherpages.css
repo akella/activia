@@ -379,6 +379,13 @@
 .p-experts__comments { font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif; }
 .p-experts__comments .h1 { font-size: 30px; font-weight: normal; font-style: normal; font-family: 'pragmaticalightcregular'; }
 
+.p-experts__comment.p-experts__comment_alt { clear: both; }
+.p-experts__comment.p-experts__comment_alt .p-experts__comment-input { text-align: center; }
+.p-experts__comment.p-experts__comment_alt .p-experts__comment-userpic { display: none; }
+.p-experts__comment.p-experts__comment_alt .p-experts__comment-textarea { width: 620px; }
+.p-experts__comment.p-experts__comment_alt .p-experts__comment-input input { font-size: 16px; }
+.p-experts__comment.p-experts__comment_alt label { font-size: 18px; display: block; padding-bottom: 5px; color: #e6f9bb; }
+
 .p-experts__comment { margin-bottom: 20px; }
 
 .p-experts__comment-userpic { max-width: 50px; min-height: 50px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; float: left; width: 50px; margin-right: 30px; }
