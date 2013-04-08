@@ -1287,6 +1287,9 @@
         margin-bottom: 25px;
     }
 }
+.popup_expertsask{
+    width: 510px - 70px !important;
+}
     .s-boutique__comments-image{
         float: left;
         width: 120px;
@@ -1436,7 +1439,8 @@
             display: none;
         }
         .p-experts__comment-textarea{
-            width: 620px;
+            width: 397px;
+            height: 100px;
         }
         .p-experts__comment-input input{
             font-size: 16px;

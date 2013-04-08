@@ -337,6 +337,8 @@
 .popup_experts { position: relative; width: 666px; margin-left: -426px; }
 .popup_experts .h1 { font-weight: normal; font-style: normal; font-family: 'pragmaticalightcregular'; font-size: 28px; margin-bottom: 25px; }
 
+.popup_expertsask { width: 440px !important; }
+
 .s-boutique__comments-image { float: left; width: 120px; height: 120px; overflow: hidden; margin-right: 15px; margin-bottom: 10px; }
 .s-boutique__comments-image img { max-width: 120px; min-height: 120px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
 
@@ -382,7 +384,7 @@
 .p-experts__comment.p-experts__comment_alt { clear: both; }
 .p-experts__comment.p-experts__comment_alt .p-experts__comment-input { text-align: center; }
 .p-experts__comment.p-experts__comment_alt .p-experts__comment-userpic { display: none; }
-.p-experts__comment.p-experts__comment_alt .p-experts__comment-textarea { width: 620px; }
+.p-experts__comment.p-experts__comment_alt .p-experts__comment-textarea { width: 397px; height: 100px; }
 .p-experts__comment.p-experts__comment_alt .p-experts__comment-input input { font-size: 16px; }
 .p-experts__comment.p-experts__comment_alt label { font-size: 18px; display: block; padding-bottom: 5px; color: #e6f9bb; }
 
