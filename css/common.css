@@ -241,4 +241,6 @@ a:hover { text-decoration: none; }
 .footer__copy span { display: block; margin-bottom: 15px; font-size: 18px; color: #fff; font-weight: normal; font-style: normal; font-family: 'pragmaticalightcregular'; }
 .footer__copy a { color: #9ecb3a; text-decoration: none; font: normal 12px Verdana,sans-serif; }
 
+.action__hr { margin: 0 -1000px; height: 49px; background: url(../img/line41.png) repeat-x 50% 0; }
+
 /* -------------------------------------- //END Footer ------------------------------------------- */
