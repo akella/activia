@@ -12,7 +12,7 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
     <![endif]-->
 </head>
-<body>
+<body class="index">
 <section class="l-layout">
     <header class="header">
         <div class="header__wrap">
@@ -54,16 +54,10 @@
         </div>
     </header>
     <div class="main-wrap">
+        <div class="video-index">
+            <img src="img/video-index.jpg" alt="">
+        </div>
         <div class="l-container">
-            <div class="code">
-                <div class="code__text">Маєш <strong>код з упаковки</strong>? <span>Введи його тут</span></div>
-                <div class="code__form">
-                    <form>
-                        <input type="text" class="code__input">
-                        <input type="submit" class="code__submit" value="Зарахувати">
-                    </form>
-                </div>
-            </div>
             <div class="main">
                 <div class="prog-ban">
                     <span class="prog-ban__title">
@@ -71,51 +65,62 @@
                         <i></i>
                     </span>
                     <p>Готуйся до літа з персональною программою вдосконалення від Активіа</p>
-                    <a href="#" class="funny-btn">Розпочати программу</a>
-                </div>
-                <div class="video">
-                    <a href="#">
-                        <img src="img/video.png" alt="">
-                        <i></i>
-                    </a>
+                    <a href="#" class="btn-orange btn-orange_large">Розпочати программу</a>
+                    <a href="#" class="play-index"></a>
                 </div>
                 <div class="clr"></div>
             </div>
+            <div class="code code_mod">
+                <div class="code__text">Маєш <strong>код з упаковки</strong>? <span>Введи його тут</span></div>
+                <div class="code__form">
+                    <form>
+                        <input type="text" class="code__input" placeholder="Введіть код">
+                        <input type="submit" class="btn-orange" value="Зарахувати">
+                    </form>
+                </div>
+            </div>
         </div>
-        <span class="line-1"></span>
+        <span class="line-1 line-1_direct"></span>
     </div>
-    <div class="benefits-wrap">
+    <div class="how-work">
         <div class="l-container">
-            <h2 class="benefit-title">Скористайся перевагами Активіа клубу</h2>
-            <a href="#" class="i-want-more">Дізнатися більше</a>
-            <div class="wrapper">
-                <a class="benefit" href="#">
-                    <div class="benefit__wrap">
-                        <div class="benefit__img">
-                            <img src="img/img1.png" alt="">
-                        </div>
-                        <strong class="benefit__title">науково <br>доведено</strong>
-                        <p>Чому Активіа корисна?</p>
+            <div class="how-work__title">
+                <i></i>
+                <strong>як це</strong>
+                <span>працює</span>    
+            </div>
+            <div class="how-work__wrap">
+                <div class="how-work__step">
+                    <div class="ibubble ibubble_img">
+                        <span class="ibubble__counter">1</span>
+                        <img src="img/step1.png" alt="">
                     </div>
-                </a>
-                <a class="benefit" href="#">
-                    <div class="benefit__wrap">
-                        <div class="benefit__img">
-                            <img src="img/img2.png" alt="">
-                        </div>
-                        <strong class="benefit__title">Спілкування <span>та</span> консультації</strong>
-                        <p>зі справжніми експертами!</p>
+                    <strong>Розпочни</strong>
+                    <span>програму легкості <br> 14 днів</span>
+                </div>
+                <span class="how-work__step-arrow">
+                    <i></i>
+                </span>
+                <div class="how-work__step">
+                    <div class="ibubble ibubble_img">
+                        <span class="ibubble__counter">2</span>
+                        <img src="img/step2.png" alt="">
                     </div>
-                </a>
-                <a class="benefit" href="#">
-                    <div class="benefit__wrap">
-                        <div class="benefit__img">
-                            <img src="img/img3.png" alt="">
-                        </div>
-                        <strong class="benefit__title">знижки <span>та</span> спеціальні пропозиції</strong>
-                        <p>від партнерів клубу!</p>
+                    <strong>вживай</strong>
+
+                    <span>Активіа кожен день <br> та збирай коди</span>
+                </div>
+                 <span class="how-work__step-arrow">
+                    <i></i>
+                </span>
+                <div class="how-work__step how-work__step_last">
+                    <div class="ibubble ibubble_img">
+                        <span class="ibubble__counter">3</span>
+                        <img src="img/step3.png" alt="">
                     </div>
-                </a>
+                    <strong>отримай</strong>
+                    <span>легкість та <br>гарантовані призи</span>
+                </div>
             </div>
         </div>
     </div> 
@@ -178,7 +183,7 @@
                 </a>
             </div>
         </div>
-        <span class="line-2"></span>
+        <span class="line-2 line-2_direct"></span>
     </div>
 </section>
 <footer class="footer">

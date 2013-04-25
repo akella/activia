@@ -129,23 +129,30 @@ $('.js-aday').cycle({
         $(this).parent().parent().parent().children(".scroll-message").html(descr);
     });
 // --------------------- Input change ---------------------------- //
-    $('.code__input').focusin(function() {
-         $(this).next().fadeIn();
-    });
-    $('.code__input').focusout(function() {
-        $(this).next().fadeOut();
-        if($(this).val() == "") {
-            $(this).next().removeClass("is-active");
-        }
 
-    });
-    $('.code__input').keydown(function() {
-        var text_length = $(this).val().length;
-        if (text_length >= 8) {
-            $(this).next().addClass("is-active");
-        }
-        else {}   
-    });
+    if ($("body").hasClass("index")) {
+        
+    }
+    else {
+        $('.code__input').focusin(function() {
+            $(this).next().fadeIn();
+        });
+        $('.code__input').focusout(function() {
+            $(this).next().fadeOut();
+            if($(this).val() == "") {
+                $(this).next().removeClass("is-active");
+            }
+
+        });
+        $('.code__input').keydown(function() {
+            var text_length = $(this).val().length;
+            if (text_length >= 8) {
+                $(this).next().addClass("is-active");
+            }
+            else {}   
+        });
+    }
+    
 
 // --------------------- Scrollable shop ---------------------------- //
     $(".scroll-shop").each(function(){

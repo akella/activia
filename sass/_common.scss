@@ -721,7 +721,10 @@ a{
     top: -49px;
     background: url(../img/line22.png) 50% 0 repeat;
 }
-
+.line-2_direct {
+    top: 0;
+    background: url(../img/line2_direct.png) 50% 0 repeat-x;
+}
 .video-preview {
     width: 270px;
     display: inline-block;

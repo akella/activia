@@ -121,6 +121,18 @@ $break-large: 1180px;
     color: $color;
   }
 }
+// placeholder style
+@mixin placeholder-style($style) {
+  &.placeholder {
+    font-style: $style;
+  }
+  &:-moz-placeholder {
+    font-style: $style;
+  }
+  &::-webkit-input-placeholder {
+    font-style: $style;
+  }
+}
 
 @mixin gray(){
   filter: url(../img/filter.svg#grayscale);

@@ -2120,7 +2120,33 @@
             }
     }
 }
-.popup__commentswrap{
+.ibubble_img {
+    width: 163px;
+    height: 140px;
+    line-height: 140px;
+    @include border-radius(50%);
+    background-color: #32b808;
+    text-align: center;
+    @include background-image(radial-gradient(center center, 80px 80px, rgba(232,252,62,1) 0%, rgba(94,161,19,.1) 100%));
+    img {
+        vertical-align: middle;
+    }
+}
+.ibubble__counter {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: -2px;
+    left: -8px;
+    line-height: 52px;
+    color: #844901;
+    font-size: 26px;
+    text-align: center;
+    background: #fde50b;
+    @include r;
+    @include border-radius(50%);
+}
+.popup__commentswrap {
     position: absolute;
     left: 50%;
     top: 200px;
