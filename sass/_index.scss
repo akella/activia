@@ -18,6 +18,7 @@
     .main-wrap {
         margin-top: -26px;
         height: 488px;
+        overflow: hidden;
         .l-container {
             position: relative;
             z-index: 2;
@@ -31,7 +32,7 @@
         font-size: 18px;
         p {
             margin-bottom: 48px;
-            width: 90%;
+            width: 90%;  
         }
         .play-index {
             position: absolute;
