@@ -45,40 +45,6 @@ table {
 *{-webkit-text-size-adjust: none; }
 /* ------------------------------------- //END Reset css --------------------------------------- */
 
-@font-face {
-    font-family: 'pragmaticalightcregular';
-    src: url('../fonts/pragmaticalightc-webfont.eot');
-    src: url('../fonts/pragmaticalightc-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pragmaticalightc-webfont.woff') format('woff'),
-         url('../fonts/pragmaticalightc-webfont.ttf') format('truetype'),
-         url('../fonts/pragmaticalightc-webfont.svg#pragmaticalightcregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'pragmaticalightcbold';
-    src: url('../fonts/pragmaticalightc-bold-webfont.eot');
-    src: url('../fonts/pragmaticalightc-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pragmaticalightc-bold-webfont.woff') format('woff'),
-         url('../fonts/pragmaticalightc-bold-webfont.ttf') format('truetype'),
-         url('../fonts/pragmaticalightc-bold-webfont.svg#pragmaticalightcbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-  font-family: 'Conv_MyriadPro-BoldCond';
-  src: url('../fonts/MyriadPro-BoldCond.eot');
-  src: local('☺'), 
-    url('../fonts/MyriadPro-BoldCond.woff') format('woff'), 
-    url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'), 
-    url('../fonts/MyriadPro-BoldCond.svg') format('svg');
-  font-weight: normal;
-  font-style: normal; 
-}
-
-
 /* ----------------------------------------- Main styles --------------------------------------- */
 body{
     min-width: 1030px;
@@ -212,119 +178,6 @@ a{
         text-shadow: 0 1px 0 rgba(18,83,22,.5);
     }
 }
-.download {
-    position: relative;
-    z-index: 100;
-    width: 80px;
-    min-height: 90px;
-    float: left;
-    font-size: 11px;
-    line-height: 10px;
-    text-align: center;
-    i {
-        display: inline-block;
-    }
-    &:hover {
-        @include transition(all .5s ease-in-out);
-        .download__head {
-            background: none;
-            .icon-arr { 
-                @include sized-sprite($icons, arr2);
-            }
-        }
-        .download__drop {
-            height: 125px;
-            padding: 12px 0;
-            border-top: 1px dotted #fffc00;
-        }
-    }
-}
-.download__wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    @include background-image(linear-gradient(top, #00a336, #8fc33c));
-    @include border-radius(0 0 10px 10px);
-    background-color: #00a336;
-    @include box-shadow(inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4,93,49,.3));
-}
-.download__head {
-    position: relative;
-    z-index: 2;
-    padding: 0 10px;
-    height: 90px;
-    color: #fff;
-    font-weight: bold; 
-    cursor: pointer;
-    @include user-select;
-    @include border-radius(0 0 8px 8px);
-    .icon-phone {
-        margin: 7px 0 2px;
-        @include sized-sprite($icons, mob);
-    }
-    .icon-arr { 
-        position: absolute;
-        bottom: 10px; 
-        left: 50%;
-        @include transition(all .5s ease-in-out);
-        margin-left: -7px;
-        @include sized-sprite($icons, arr1);
-    }
-    span, strong {
-        display: block;
-    }
-    strong {
-        color: #fffc00;
-    } 
-}
-.download__drop {
-    position: relative;
-    height: 0;
-    overflow: hidden; 
-    @include transition(all 500ms ceaser($easeInOutBack));
-    padding: 0;
-    border: 0;
-    li {
-        margin-bottom: 10px;
-    }
-    a {
-        color: #fff; 
-        &:hover {
-            text-decoration: none;
-        }
-    }
-    span {
-        display: block;
-    }
-}
-    .icon-ios {
-        @include sized-sprite($icons, ios);
-    }
-    .icon-android {
-        @include sized-sprite($icons, android);
-    }
-.download_small {
-    position: absolute;
-    top: 0;
-    right: 71px;
-    min-height: 40px;
-    .download__head {
-        height: 37px;
-        padding-top: 2px;
-        span {
-            line-height: .7;
-        }
-        strong {
-            color: #fff;
-        }
-    }
-    .icon-phone {
-        display: none;
-    }
-    .icon-arr {
-        bottom: 3px;
-    }
-}
 
 .btn-enter {
     float: right;
@@ -379,6 +232,189 @@ a{
 /* -------------------------------------- //END Header ------------------------------------------ */
 
 /* ------------------------------------- Independent blocks -------------------------------------- */
+.download {
+    position: relative;
+    z-index: 100;
+    width: 80px;
+    min-height: 90px;
+    float: left;
+    font-size: 11px;
+    line-height: 10px;
+    text-align: center;
+    i {
+        display: inline-block;
+    }
+    
+}
+.download_header {
+    &:hover {
+        @include transition(all .5s ease-in-out);
+        .download__head {
+            background: none;
+            .icon-arr { 
+                @include sized-sprite($icons, arr2);
+            }
+        }
+        .download__drop {
+            height: 125px;
+            padding: 12px 0;
+            border-top: 1px dotted #fffc00;
+        }
+    }
+    .download__drop {
+        height: 0;
+    }
+}
+.download__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include background-image(linear-gradient(top, #00a336, #8fc33c));
+    @include border-radius(0 0 10px 10px);
+    background-color: #00a336;
+    @include box-shadow(inset 0 -1px 0 #b8e120, 0 3px 3px rgba(4,93,49,.3));
+}
+.download__head {
+    position: relative;
+    z-index: 2;
+    padding: 0 10px;
+    height: 90px;
+    color: #fff;
+    font-weight: bold; 
+    cursor: pointer;
+    @include user-select;
+    @include border-radius(0 0 8px 8px);
+    .icon-phone {
+        margin: 7px 0 2px;
+        @include sized-sprite($icons, mob);
+    }
+    .icon-arr { 
+        position: absolute;
+        bottom: 10px; 
+        left: 50%;
+        @include transition(all .5s ease-in-out);
+        margin-left: -7px;
+        @include sized-sprite($icons, arr1);
+    }
+    span, strong {
+        display: block;
+    }
+    strong {
+        color: #fffc00;
+    } 
+}
+.download__drop {
+    position: relative;
+    //height: 0; 
+    overflow: hidden; 
+    @include transition(all 500ms ceaser($easeInOutBack));
+    padding: 0;
+    border: 0;
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        color: #fff; 
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    span {
+        display: block;
+    }
+}
+    .icon-ios {
+        @include sized-sprite($icons, ios);
+    }
+    .icon-android {
+        @include sized-sprite($icons, android);
+    }
+.download_small {
+    position: absolute;
+    top: 0;
+    right: 71px;
+    min-height: 40px;
+    .download__head {
+        height: 37px;
+        padding-top: 2px;
+        span {
+            line-height: .7;
+        }
+        strong {
+            color: #fff;
+        }
+    }
+    .icon-phone {
+        display: none;
+    }
+    .icon-arr {
+        bottom: 3px;
+    }
+}
+.download_fixed {
+    position: fixed;
+    right: 0;
+    top: 320px;
+    width: 80px;
+    height: 120px;
+    @include transition(all 500ms ceaser($easeInOutBack));
+    &:hover {
+        @include transition(all 500ms ceaser($easeInOutBack));
+        width: 282px;
+        .download__head {
+            background: none;
+            .icon-arr { 
+                opacity: 1;
+                @include sized-sprite($icons, arr5);
+            }
+        }
+        .download__drop {
+            margin-left: 30px;
+            padding-right: 10px;
+            border-right: 1px dotted #fffc00;
+            width: 125px;
+            overflow: hidden;
+            @include transition(all 500ms ceaser($easeInOutBack));
+        }
+    }
+    .download__wrap {
+        position: static;
+        @extend %clr;
+        width: 100%;  
+        height: 120px;
+        @include border-radius(10px 0 0 10px);
+    }
+    .download__head {
+        position: absolute;
+        right: 0;
+        top: 14px;
+        .icon-arr {
+            left: -15px;
+            top: 50%;
+            margin-top: -8px;
+            opacity: 0;
+            @include sized-sprite($icons, arr5);
+        }
+    }
+    .icon-phone {
+        @include sized-sprite($icons, mob2);
+    }
+    .download__drop {
+        float: left;
+        margin: 18px 0 0 ;
+        width: 0;
+        height: 85px;
+        li {
+            float: left;
+            margin-top: 14px;
+            margin-bottom: 0;
+            &:first-child {
+                margin-right: 30px;
+            }
+        } 
+    }
+}
+
 .soc {
     li {
         display: inline-block;
