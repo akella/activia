@@ -42,6 +42,7 @@ $experimental-support-for-svg: true;
 // global sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 $badges: sprite-map("badges/*.png", $spacing: 10px);
+$icons_new: sprite-map("icons_new/*.png", $spacing: 10px);
 
 // responsive
 $break-small: 500px;

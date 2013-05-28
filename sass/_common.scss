@@ -244,7 +244,20 @@ a{
     i {
         display: inline-block;
     }
-    
+    &:hover {
+        @include transition(all .5s ease-in-out);
+        .download__head {
+            background: none;
+            .icon-arr { 
+                @include sized-sprite($icons, arr2);
+            }
+        }
+        .download__drop {
+            height: 125px;
+            padding: 12px 0;
+            border-top: 1px dotted #fffc00;
+        }
+    }
 }
 .download_header {
     &:hover {
@@ -305,7 +318,7 @@ a{
 }
 .download__drop {
     position: relative;
-    //height: 0; 
+    height: 0; 
     overflow: hidden; 
     @include transition(all 500ms ceaser($easeInOutBack));
     padding: 0;
@@ -370,9 +383,11 @@ a{
         }
         .download__drop {
             margin-left: 30px;
-            padding-right: 10px;
+            padding: 0 10px 0 0;
             border-right: 1px dotted #fffc00;
+            border-top: 0;
             width: 125px;
+            height: 85px;
             overflow: hidden;
             @include transition(all 500ms ceaser($easeInOutBack));
         }
