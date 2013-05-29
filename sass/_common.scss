@@ -118,11 +118,10 @@ a{
 .enter-code {
     cursor: pointer;
     position: absolute;
-    bottom: 11px;
+    bottom: 10px;
     left: 102px;
-    padding: 0 5px 0 40px;
+    padding: 0 30px 0 40px;
     height: 32px;
-    width: 96px;
     color: #e6f9bb;
     font-size: 15px;
     font-family: Verdana,sans-serif;
@@ -474,6 +473,18 @@ a{
     }
 }   
 
+.soc_mod {
+    a {
+        @include background-image(linear-gradient(#ede272, #f1b419));
+        &:hover {
+            @include background-image(linear-gradient(#e9c230, #f2c932));
+        }
+        &:active {
+            background: #fed334;
+        }
+    }
+}
+
 .enter-soc { 
     margin: 22px auto 0;
     width: 184px;  
@@ -623,15 +634,19 @@ a{
     color: #fefdcc;
     text-decoration: none;
     @include border-radius(20px);
-    @include box-shadow(0 2px 9px rgba(3,94,48,.43), inset 0 -1px 0 rgba(255,255,255,.29));
+    @include box-shadow(0 2px 9px rgba(3,94,48,.43));
     @include background-image(linear-gradient(bottom, #01833d 0%, #55a341 100%));
     &:hover {
-        @include transition(all .2s ease-in-out);
         @include box-shadow(none);
-    }
-    &:active {
         @include background-image(linear-gradient(bottom, #55a341 0%, #01833d 100%));
     }
+    &:active {
+        background: #379841;
+    }
+}
+.btn-green_s {
+    height: 28px;
+    line-height: 28px;
 }
 // form
 .field {
@@ -831,6 +846,8 @@ a{
         background: #ffed03;
     }
 }
+
+
 
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
