@@ -136,6 +136,14 @@ a{
         display: inline-block;
     }
 }
+.enter-code_mod {
+    bottom: 17px;
+    height: 25px;
+    @include border-radius(0 0 4px 0);
+    span {
+        margin-top: 1px;
+    }
+}
 .nav {
     float: left;
     margin: 34px 20px 0 0;
@@ -175,6 +183,36 @@ a{
         font-size: 16px;
         text-decoration: none;
         text-shadow: 0 1px 0 rgba(18,83,22,.5);
+    }
+}
+
+.nav_mod {
+    .is-active {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: 50%;
+            margin-left: -85px;
+            z-index: -1;
+            @include sized-sprite($icons, menu-act);
+        }
+        a {
+            color: #994f00;
+            text-shadow: none;
+        }
+        &:hover {
+            border: 0;
+            @include box-shadow(none);
+            a {
+                &:after {
+                    content: "";
+                    display: none;
+                }
+            }
+            
+        }
     }
 }
 
@@ -648,6 +686,98 @@ a{
     height: 28px;
     line-height: 28px;
 }
+.btn-green_dark {
+    @include border-radius(7px);
+    background-color: #157719;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    @include box-shadow(0 1px 1px #003a02, inset 0 1px 1px rgba(255,255,255,.03));
+    @include background-image(linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%));
+    &:hover {
+        background: #129518;
+        @include box-shadow(inset 0 -2px 0 rgba(0,0,0,.43));
+    }
+    &:active {
+        @include opacity(.6);
+        background: #157719;
+        @include box-shadow(0 1px 1px #003a02, inset 0 1px 1px rgba(255,255,255,.03));
+        @include background-image(linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%));
+    }
+}
+
+
+.btn-orange {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px; 
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 12px;
+    color: #844800;
+    text-shadow: 1px 1px 1px #fef302;
+    text-transform: uppercase;
+    @include border-radius(5px);
+    background: #fdd333;
+    border-top: 1px solid #fffce7;
+    border-bottom: 2px solid #9d6b00;
+    @include box-sizing(border-box);
+    @include box-shadow(0 3px 7px rgba(165,127,1,.6));
+    background: #f8b801;
+    @include background-image(linear-gradient(#fef377, #f6a501));
+    &:hover {
+        background: #ffe703;
+    }
+    &:active {
+        background: #ffe703;
+        @include box-shadow(none);
+        border-bottom: 0;
+    }
+    
+}
+.btn-orange_with-arr {
+    padding-left: 33px;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 13px;
+        top: 50%;
+        margin-top: -7px;
+        @include sized-sprite($icons, arr-btn);
+    }
+}
+.btn-orange_large {
+    padding: 0 34px;
+    height: 72px;
+    line-height: 72px;
+    font-size: 18px;
+} 
+.btn-orange_big {
+    height: 42px;
+    font: normal 14px/42px Arial,sans-serif;
+}
+
+.btn-gray {
+    display: inline-block;
+    padding: 0 15px; 
+    height: 31px;
+    line-height: 31px;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    @include border-radius(5px);
+    background: #b4b4b4;
+    border-bottom: 2px solid #949494;
+    @include box-sizing(border-box);
+    @include box-shadow(0 3px 7px rgba(91,91,91,.6));
+    @include background-image(linear-gradient(top, #b4b4b4, #d9d9d9 10%, #b4b4b4));
+}
+
 // form
 .field {
     margin-bottom: 21px;

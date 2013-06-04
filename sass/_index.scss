@@ -215,44 +215,6 @@
     }
 }
 
-.btn-orange {
-    display: inline-block;
-    padding: 0 15px; 
-    height: 38px;
-    line-height: 38px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 12px;
-    color: #844800;
-    text-shadow: 1px 1px 1px #fef302;
-    text-transform: uppercase;
-    @include border-radius(5px);
-    background: #fdd333;
-    border-top: 1px solid #fffce7;
-    border-bottom: 2px solid #9d6b00;
-    @include box-sizing(border-box);
-    @include box-shadow(0 3px 7px rgba(165,127,1,.6));
-    background: #f8b801;
-    @include background-image(linear-gradient(#fef377, #f6a501));
-    &:hover {
-        background: #ffe703;
-    }
-    &:active {
-        background: #ffe703;
-        @include box-shadow(none);
-        border-bottom: 0;
-    }
-}
-.btn-orange_large {
-    padding: 0 34px;
-    height: 72px;
-    line-height: 72px;
-    font-size: 18px;
-} 
-.btn-orange_big {
-    height: 42px;
-    font: normal 14px/42px Arial,sans-serif;
-}
 .video-index {
     position: absolute;
     left: 50%;
